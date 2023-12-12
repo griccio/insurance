@@ -1,0 +1,398 @@
+701  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 28372 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+702  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+703  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2981 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.486 seconds (process running for 3.583)
+4674 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+748  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 4304 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+749  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+750  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3204 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.671 seconds (process running for 3.799)
+5037 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+659  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 18376 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+660  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+661  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2801 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.344 seconds (process running for 3.331)
+4471 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4500 [main] DEBUG i.p.m.service.HolderService - Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4503 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+868  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 29516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+869  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+870  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3012 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.348 seconds (process running for 3.335)
+4692 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4706 [main] ERROR i.p.m.service.HolderService - Error: NULL not allowed for column "NAME"; SQL statement: insert into holder (name, surname, birth_date, fiscal_code, residence, domicile, tel, email, login, password) values (?,?,?,?,?,?,?,?,?,?) [23502-224]
+703  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 30364 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+704  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+705  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3016 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.519 seconds (process running for 3.643)
+4761 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4775 [main] DEBUG i.p.m.service.HolderService - Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4778 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4800 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4807 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4811 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4812 [main] ERROR i.p.m.service.HolderService - Error: NULL not allowed for column "NAME"; SQL statement: insert into holder (name, surname, birth_date, fiscal_code, residence, domicile, tel, email, login, password) values (?,?,?,?,?,?,?,?,?,?) [23502-224]
+851  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 32148 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+852  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+853  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3134 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.493 seconds (process running for 3.449)
+4761 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4777 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4780 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4781 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4782 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4782 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+909  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 25444 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+910  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+910  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3460 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.78 seconds (process running for 3.83)
+11303 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+11317 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+11321 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+11322 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+11333 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:1, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+15071 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+843  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 21232 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+844  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+845  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3066 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.415 seconds (process running for 3.4)
+4732 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4746 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4750 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4751 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4753 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:1, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4754 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+803  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 24300 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+804  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+804  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2935 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.307 seconds (process running for 3.263)
+4603 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4619 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4622 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4623 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4625 [main] ERROR i.p.m.service.HolderService - Error: NULL not allowed for column "NAME"; SQL statement: update holder set name=? where id=? [23502-224]
+853  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 31076 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+854  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+855  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3055 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.397 seconds (process running for 3.395)
+4761 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4778 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4782 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4783 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4786 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:1, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: NULL not allowed for column "NAME"; SQL statement: update holder set name=? where id=? [23502-224]
+907  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 28692 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+908  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+908  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3371 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.657 seconds (process running for 3.726)
+5246 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+5261 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5263 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+5268 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5268 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5269 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+684  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 30832 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+685  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+686  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3024 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.54 seconds (process running for 3.619)
+4876 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4893 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4896 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4911 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4911 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:2, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4912 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4914 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:2, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4921 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:2, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4922 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4927 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4927 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:3, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4927 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:3, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4928 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:3, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4930 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:3, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4931 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:3, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4935 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4940 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4944 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4946 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: NULL not allowed for column "NAME"; SQL statement: insert into holder (name, surname, birth_date, fiscal_code, residence, domicile, tel, email, login, password) values (?,?,?,?,?,?,?,?,?,?) [23502-224]
+4952 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4952 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:5, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4953 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:5, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4953 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:5, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4954 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:5, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: NULL not allowed for column "NAME"; SQL statement: update holder set name=? where id=? [23502-224]
+510  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 16176 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+511  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+511  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1909 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.651 seconds (process running for 2.47)
+214442 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+292330 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+312435 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+322099 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+779  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21060 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+780  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+781  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2916 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.524 seconds (process running for 3.986)
+31231 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+813  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 31224 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+814  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+814  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+3105 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.72 seconds (process running for 3.985)
+40212 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding the holder with id =2
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+777  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 1512 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+778  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+779  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2913 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.481 seconds (process running for 3.815)
+42900 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+67510 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+709  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 18856 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+710  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+711  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2533 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.166 seconds (process running for 3.339)
+744  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 33448 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+745  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+745  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2847 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.523 seconds (process running for 3.645)
+9669 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+9670 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+786  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 7480 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+786  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+787  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2748 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.319 seconds (process running for 3.594)
+12968 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+12969 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+793  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26304 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+794  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+795  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2842 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.45 seconds (process running for 3.773)
+789  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 32836 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+790  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+790  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2676 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.33 seconds (process running for 3.726)
+924  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34028 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+925  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+926  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2987 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.48 seconds (process running for 3.928)
+869  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34656 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+870  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+871  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2970 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.53 seconds (process running for 3.831)
+955  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 12980 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+956  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+957  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+3199 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.722 seconds (process running for 4.506)
+832  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 33684 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+832  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+833  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2976 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.575 seconds (process running for 3.87)
+760  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 32228 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+761  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+761  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2875 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.493 seconds (process running for 3.817)
+736  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 3708 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+736  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+737  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2551 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.181 seconds (process running for 3.583)
+770  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 7036 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+773  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+774  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2690 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.319 seconds (process running for 3.746)
+7108 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+7110 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:1, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+36818 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+Error: ERRORE: il valore è troppo lungo per il tipo character varying(15)
+140341 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+419040 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_pkey"   Dettaglio: La chiave (id)=(2) esiste già.
+528599 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_pkey"   Dettaglio: La chiave (id)=(2) esiste già.
+586126 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(id:2, name:Angelo Modified, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_pkey"   Dettaglio: La chiave (id)=(2) esiste già.
+659014 [http-nio-8080-exec-10] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(id:2, name:Angelo Modified, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_pkey"   Dettaglio: La chiave (id)=(2) esiste già.
+786  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 20920 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+787  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+788  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2582 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.167 seconds (process running for 3.391)
+29171 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+30359 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:2, name:Angelo Modified, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+229841 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:2, name:Angelo Modified, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+229842 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:2, name:AAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+726  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 17220 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+726  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+727  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2538 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.173 seconds (process running for 3.383)
+1088 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21612 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1089 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+1091 [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+3623 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 3.099 seconds (process running for 4.462)
+25871 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:2, name:AAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:aaa, password:aaaa)
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+42968 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+687  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26068 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+688  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+689  [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+2546 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.221 seconds (process running for 3.267)
+676  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 31016 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+677  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+678  [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+2309 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.984 seconds (process running for 3.011)
+13741 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+1450 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 18272 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1452 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1452 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4543 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.429 seconds (process running for 5.082)
+12632 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+34981 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+81413 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1334 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 24680 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1334 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1335 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4308 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.286 seconds (process running for 4.856)
+10838 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+19822 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+40254 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1377 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 11436 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1377 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1378 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4517 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.508 seconds (process running for 5.055)
+7543 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7566 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7573 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1384 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 30824 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1385 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1386 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4487 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.425 seconds (process running for 5.023)
+7784 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7805 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7811 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1327 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 12448 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1328 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1329 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4648 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.656 seconds (process running for 5.184)
+7778 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+22247 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+1412 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 30744 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1412 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1414 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4437 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.382 seconds (process running for 4.972)
+7451 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+12881 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+24341 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1350 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 2324 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1351 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1352 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4577 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.58 seconds (process running for 5.125)
+7865 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+30915 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+38925 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+1445 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 1772 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1446 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1447 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4088 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.966 seconds (process running for 5.013)
+14101 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+1303 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 5004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1304 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1306 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+3949 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.938 seconds (process running for 4.489)
+11344 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+1302 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 18280 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1303 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1304 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+3972 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.965 seconds (process running for 4.506)
+10732 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+1374 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 23052 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1375 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1375 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+4277 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.207 seconds (process running for 4.801)
+12708 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+1322 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 6232 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1323 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1324 [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+3837 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.804 seconds (process running for 4.286)
+6527 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+925  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 28892 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+926  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+927  [main] INFO  i.p.m.service.HolderServiceTest - The following 1 profile is active: "dev"
+2909 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.179 seconds (process running for 3.385)
+16939 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+446  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 22308 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+447  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+447  [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+1640 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.422 seconds (process running for 2.209)
+20221 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+461  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21936 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+461  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+462  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1682 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.462 seconds (process running for 2.2)
+37546 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+457  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26804 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+458  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+458  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1630 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.411 seconds (process running for 2.197)
+24753 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Cannot invoke "Object.toString()" because "holder" is null
+470  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 30196 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+470  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+471  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1678 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.448 seconds (process running for 2.219)
+452  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 3428 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+454  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+455  [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+1634 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.415 seconds (process running for 2.165)
+48973 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+464  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 27428 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+464  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+464  [restartedMain] INFO  i.p.m.MyinsuranceApplication - The following 1 profile is active: "dev"
+1642 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.413 seconds (process running for 2.299)
+26876 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ? [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 where t0.id = ?
+455  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 24024 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+456  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+456  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1634 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.414 seconds (process running for 2.135)
+65556 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding all holder Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name
+111197 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding all holder Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name
+243336 [http-nio-8080-exec-8] ERROR i.p.m.service.HolderService - Error finding all holder Query threw SQLException:Table "HOLDER" not found (this database is empty); SQL statement:
+select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name [42104-224] Bind values:[null] Query was:select t0.id, t0.name, t0.surname, t0.birth_date, t0.fiscal_code, t0.residence, t0.domicile, t0.tel, t0.email, t0.login, t0.password from holder t0 order by t0.name
+516  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 29016 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+517  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+517  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1795 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.527 seconds (process running for 2.419)
+29367 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holders Found: 3
+59072 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Cannot invoke "Object.toString()" because "holder" is null
+67940 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - Error finding the holder with id =2
+Cannot invoke "Object.toString()" because "holder" is null
+139838 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService - Error finding the holder with id =2
+Cannot invoke "Object.toString()" because "holder" is null
+151514 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+157357 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:101, name:Mario, surname:Rossi, birthDate:Tue Jan 18 00:00:00 CET 2000, fiscalCode:MRARSS07A01L788R, residence:Piazza Garibaldi Genova , domicile:Piazza Garibaldi Genova , tel:994537215, email:m.rossi@gmail,com, login:mrossi, password:13QWER)
+179058 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com)
+209214 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com)
