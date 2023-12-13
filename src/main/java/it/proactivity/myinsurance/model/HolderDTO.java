@@ -12,21 +12,43 @@ import java.util.Date;
 
 
 public class HolderDTO {
-
+    @NotBlank
+    @NotNull
+    @Size(max = 100)
     private String name;
 
+    @NotBlank
+    @NotNull
+    @Size(max = 100)
     private String surname;
 
+    @NotNull
+    @Column(name = "birth_date")
     private Date birthDate;
 
+    @NotBlank
+    @NotNull
+    @Size(max = 25)
     private String fiscalCode;
 
+    @NotBlank
+    @NotNull
+    @Size(max = 250)
     private String residence;
 
+    @NotBlank
+    @NotNull
+    @Size(max = 250)
     private String domicile;
 
+    @NotBlank
+    @NotNull
+    @Size(max = 20)
     private String tel;
 
+    @NotBlank
+    @NotNull
+    @Size(min = 10, max = 50)
     private String email;
 
     public String getName() {

@@ -411,3 +411,348 @@ Cannot invoke "Object.toString()" because "holder" is null
 434  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
 1545 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.346 seconds (process running for 2.038)
 17524 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holders Found: 3
+450  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26736 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+451  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+451  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1544 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.317 seconds (process running for 2.069)
+45899 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (3, null, Santamaria, 1968-07-08, STRANGCCO456789A, Via Manzoni 23 Albisola (SV), Via Manzoni 23 Albisola (SV), 123456789, giu.riccio@gmail,com, null, null).
+130014 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,comsdf sdlkf sdlkf ds lkflsdkflkdsflk sdklfsdkl fskdlfklsfkl sfkldskflsklfsdklfsdklfskdlfklsdfklsklfdslkfsldkfklsdfkldskflsdlkfslkfsklfklsdfklsklfsdlkfdslkfklskflsdklfsdklfklsdfklsdklfsddklfskldfklsfklsddklfsdklfkslddfklsdfklsklfskldfklsdklfsdklfklsdfklsdlkfslkdfklsdfklsdkfl)
+Error: ERRORE: il valore è troppo lungo per il tipo character varying(50)
+440  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 12240 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+446  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+446  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1558 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.349 seconds (process running for 2.057)
+105532 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:4, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail.com)
+879  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 2924 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+879  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 2924 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+880  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+880  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+881  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+881  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2969 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.29 seconds (process running for 3.584)
+2969 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.29 seconds (process running for 3.584)
+850  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28600 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+850  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28600 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+851  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+851  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+852  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+852  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2878 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.22 seconds (process running for 3.213)
+2878 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.22 seconds (process running for 3.213)
+790  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 14516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+790  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 14516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+791  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+791  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+791  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+791  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2606 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.0 seconds (process running for 2.91)
+2606 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.0 seconds (process running for 2.91)
+841  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 27544 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+841  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+842  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2897 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.253 seconds (process running for 3.239)
+4976 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+5006 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:7, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5016 [main] DEBUG i.p.m.service.HolderService - Email is correct g.villafranca@gmail.com
+5025 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:7, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5026 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+5028 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+865  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 5848 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+866  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+866  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2899 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.23 seconds (process running for 3.224)
+5045 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+5056 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:8, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5068 [main] DEBUG i.p.m.service.HolderService - Email is correct g.villafranca@gmail.com
+5071 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:8, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+5073 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+5075 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+809  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 24104 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+810  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+811  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2514 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.888 seconds (process running for 2.8)
+4298 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+817  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 8820 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+818  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+818  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2552 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.927 seconds (process running for 2.842)
+4503 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4512 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:9, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4519 [main] DEBUG i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email g.villafranca@gmail.com
+4522 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:9, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4524 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4525 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+788  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 7632 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+788  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+789  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2582 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.975 seconds (process running for 2.896)
+4401 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4409 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:10, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4416 [main] DEBUG i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: g.villafranca@gmail.com
+4420 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:10, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4421 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4421 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+597  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 23796 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+597  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+598  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2272 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.864 seconds (process running for 2.773)
+4281 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4289 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:11, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4291 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4305 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4305 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:12, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4306 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4308 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:12, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4309 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4310 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4316 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4316 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:13, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4322 [main] DEBUG i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: g.villafranca@gmail.com
+4322 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:13, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4323 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4324 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4329 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4330 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:14, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4331 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:14, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4332 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:14, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4333 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:14, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4334 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:14, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4339 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4343 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4348 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4355 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (15, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4361 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4367 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4368 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:16, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4369 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4374 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+4379 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4379 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:17, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4380 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:17, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4381 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:17, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4381 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:17, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (17, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4386 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4386 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:18, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4387 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+584  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 1632 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+585  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+585  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2226 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.82 seconds (process running for 2.729)
+4116 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4125 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:19, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4127 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4142 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4143 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:20, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4144 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4146 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:20, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4147 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4148 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4154 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4154 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:21, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4159 [main] DEBUG i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: g.villafranca@gmail.com
+4164 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4165 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:22, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4166 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:22, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4167 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:22, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4168 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:22, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4169 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:22, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4175 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4180 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4183 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4190 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (23, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4195 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4200 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4201 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:24, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4203 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4207 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+4212 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4212 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:25, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4213 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:25, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4214 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:25, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4214 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:25, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (25, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4219 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4220 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:26, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4221 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+445  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 24288 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+445  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+446  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1592 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.391 seconds (process running for 2.053)
+10586 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Email is not present: giu.riccio@gmail.com
+10596 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:27, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail.com)
+42508 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: giu.riccio@gmail.com
+184461 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Email is not present: a.santamariao@gmail.com
+184462 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:28, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.santamariao@gmail.com)
+828  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 20224 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+828  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 20224 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+829  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+829  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+829  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+829  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2683 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.043 seconds (process running for 2.979)
+2683 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.043 seconds (process running for 2.979)
+800  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 21660 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+800  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 21660 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+800  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+800  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+801  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+801  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2785 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.173 seconds (process running for 3.069)
+2785 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.173 seconds (process running for 3.069)
+587  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 23488 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+587  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 23488 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+588  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+588  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+588  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+588  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2401 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 1.997 seconds (process running for 2.88)
+2401 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 1.997 seconds (process running for 2.88)
+4262 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (32, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4262 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (32, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4270 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4270 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4277 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4277 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+614  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28068 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+614  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28068 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+614  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+614  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+615  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+615  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2468 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.046 seconds (process running for 2.958)
+2468 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.046 seconds (process running for 2.958)
+4280 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (39, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4280 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (39, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4288 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4288 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4294 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4294 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+662  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 10688 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+662  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 10688 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+663  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+663  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+663  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+663  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2737 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.281 seconds (process running for 3.306)
+2737 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.281 seconds (process running for 3.306)
+5134 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (46, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+5134 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (46, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+5141 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+5141 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+5149 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+5149 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+614  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 8064 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+614  [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 8064 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+615  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+615  [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+615  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+615  [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2511 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.094 seconds (process running for 2.997)
+2511 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.094 seconds (process running for 2.997)
+4472 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (53, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4472 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (53, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4480 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4480 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4486 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+4486 [main] ERROR i.p.m.r.HolderRepositoryTest - Error: ERRORE: il valore è troppo lungo per il tipo character varying(100)
+609  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 7996 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+609  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+610  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2359 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.93 seconds (process running for 2.861)
+4296 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4304 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:57, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4310 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VLLGTV80A01F205F
+4330 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VXXGTV80A01F205F
+4336 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4336 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:58, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4338 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4342 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4343 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:59, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4344 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4345 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:59, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4347 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4348 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4352 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4353 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:60, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4354 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: g.villafranca@gmail.com
+4358 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4359 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4359 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4360 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4361 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:61, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4362 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:61, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4367 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4371 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4375 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4382 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (62, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4387 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4392 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4393 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:63, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4394 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4399 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+4403 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4403 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:64, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4404 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:64, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4404 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:64, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4405 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:64, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (64, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4409 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4410 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:65, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4411 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+589  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 27688 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+589  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+590  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2387 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.953 seconds (process running for 2.884)
+4206 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4214 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:66, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4221 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already registered with the same Fiscal Code: VLLGTV80A01F205F
+4235 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VXXGTV80A01F205F
+4240 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4241 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:67, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4242 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4247 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4247 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:68, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4248 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4250 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:68, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4251 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+4252 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4257 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4258 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:69, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4259 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already registered with the same email: g.villafranca@gmail.com
+4263 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4264 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:70, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4265 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:70, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4266 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:70, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4267 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:70, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4268 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:70, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+4274 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4278 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+4282 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4289 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (71, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4294 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4300 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4301 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:72, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4302 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+4306 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+4311 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4311 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:73, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4312 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:73, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4313 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:73, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4313 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:73, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (73, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+4318 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4319 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:74, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4320 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+806  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 7704 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+807  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+808  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2629 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.013 seconds (process running for 2.927)
+4826 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+4834 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:75, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+4841 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already registered with the same Fiscal Code: VLLGTV80A01F205F

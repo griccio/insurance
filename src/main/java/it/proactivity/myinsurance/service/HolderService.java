@@ -67,6 +67,7 @@ public class HolderService {
         try {
             Holder holderBeforeUpdate = holderRepository.findById(holder.getId());
             logger.debug("Holder before updating " +holderBeforeUpdate.toString());
+            //
             holderRepository.update(holder);
             logger.debug("Holder after updating " +holder.toString());
             return holder.getId();
@@ -90,4 +91,38 @@ public class HolderService {
         }
     }
 
+
+    /**
+     * return true if the email is already present into DB
+     * @param email
+     * @return
+     */
+    public Boolean verifyEmailExistence(String email){
+        Boolean verifyEmail = holderRepository.verifyEmailExistence(email);
+
+        if(verifyEmail)
+            logger.error("Email is present,  another holder has already registered with the same email: " + email);
+        else
+            logger.debug("Email is not present: " + email);
+
+        return verifyEmail;
+    }
+
+
+    /**
+     * verify if the Fiscal Code is already assigned to an holder.
+     * If it is present, the method returns true
+     * @param fiscalCode
+     * @return
+     */
+    public Boolean verifyFiscalCodeExistence(String fiscalCode){
+        Boolean verifyFiscalCode = holderRepository.verifyFiscalCodeExistence(fiscalCode);
+
+        if(verifyFiscalCode)
+            logger.error("Fiscal Code is present,  another holder has already registered with the same Fiscal Code: " + fiscalCode);
+        else
+            logger.debug("Fiscal Code is not present: " + fiscalCode);
+
+        return verifyFiscalCode;
+    }
 }

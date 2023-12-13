@@ -3,6 +3,7 @@ package it.proactivity.myinsurance.repository;
 import io.ebean.DB;
 import io.ebean.Database;
 import it.proactivity.myinsurance.model.Holder;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,6 +24,12 @@ public class HolderRepositoryTest {
 
     @BeforeEach
     public void initTable() {
+        Database database = DB.getDefault();
+        database.script().run("/scripttest/insert_db.sql");
+    }
+
+    @AfterAll
+    public static void restoreDb() {
         Database database = DB.getDefault();
         database.script().run("/scripttest/insert_db.sql");
 
@@ -211,7 +218,59 @@ public class HolderRepositoryTest {
 
         Assertions.assertEquals(holdersBeforeInsert, holderRepository.findAll().size());
 
+    }
+
+    @Test
+    public void verifyEmailExistence(){
+
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+        holderRepository.save(holder);
+        Assertions.assertNotNull(holder.getId());
+
+        Assertions.assertTrue(holderRepository.verifyEmailExistence(holder.getEmail()));
 
     }
 
+
+    @Test
+    public void verifyEmailNotExist(){
+        int holdersBeforeInsert = holderRepository.findAll().size();
+
+        Assertions.assertFalse(holderRepository.verifyEmailExistence("g.villafrancaxxx@gmail.com"));
+
+    }
+
+
+    @Test
+    public void verifyFiscalCodeThatIsPresent(){
+
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+        holderRepository.save(holder);
+        Assertions.assertNotNull(holder.getId());
+
+        Assertions.assertTrue(holderRepository.verifyFiscalCodeExistence(holder.getFiscalCode()));
+
+    }
+
+
+    @Test
+    public void verifyFiscalCodeThatNotExist(){
+        Assertions.assertFalse(holderRepository.verifyFiscalCodeExistence("VXXGTV80A01F205F"));
+    }
 }

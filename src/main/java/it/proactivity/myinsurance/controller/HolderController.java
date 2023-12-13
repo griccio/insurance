@@ -66,6 +66,14 @@ public class HolderController {
 
     @PostMapping
     public ResponseEntity<Long> save(@Valid @RequestBody HolderDTO holderDTO) {
+
+        if(holderService.verifyEmailExistence(holderDTO.getEmail()))
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+
+        if(holderService.verifyFiscalCodeExistence(holderDTO.getFiscalCode()))
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+
+
         Holder holder = new Holder();
         BeanUtils.copyProperties(holderDTO, holder);
         Long id = holderService.save(holder);
@@ -78,6 +86,12 @@ public class HolderController {
 
     @PutMapping
     public ResponseEntity<Long> update(@Valid @RequestBody HolderWithIdDTO holderWithIdDTO) {
+
+        if(holderService.verifyEmailExistence(holderWithIdDTO.getEmail()))
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+
+        if(holderService.verifyFiscalCodeExistence(holderWithIdDTO.getFiscalCode()))
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
 
         Holder holder = new Holder();
         BeanUtils.copyProperties(holderWithIdDTO, holder);

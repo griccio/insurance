@@ -49,4 +49,17 @@ public class HolderRepository {
     }
 
 
+    public Boolean verifyEmailExistence(String email) {
+       Holder  holder = new QHolder().email.eq(email).findOne();
+       return holder != null;
+    }
+
+
+    public Boolean verifyFiscalCodeExistence(String fiscalCode) {
+        Holder  holder = new QHolder().fiscalCode.eq(fiscalCode).findOne();
+        return holder != null;
+    }
+
+
+
 }

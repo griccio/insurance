@@ -233,4 +233,60 @@ public class HolderServiceTest {
 
     }
 
+
+
+    @Test
+    public void verifyEmailThatIsPresent() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+
+        holderService.save(holder);
+        Assertions.assertTrue(holderService.verifyEmailExistence(holder.getEmail()));
+
+    }
+
+
+
+    @Test
+    public void verifyEmailThatNotExist() {
+        Assertions.assertFalse(holderService.verifyEmailExistence("g.villafrancaxxx@gmail.com"));
+    }
+
+
+
+
+
+    @Test
+    public void verifyFiscalCodeThatIsPresent() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+
+        holderService.save(holder);
+        Assertions.assertTrue(holderService.verifyFiscalCodeExistence(holder.getFiscalCode()));
+
+    }
+
+
+
+    @Test
+    public void verifyFiscalCodeThatNotExist() {
+        Assertions.assertFalse(holderService.verifyFiscalCodeExistence("VXXGTV80A01F205F"));
+    }
+
 }
