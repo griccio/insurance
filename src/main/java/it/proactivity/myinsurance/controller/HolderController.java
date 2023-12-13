@@ -49,7 +49,7 @@ public class HolderController {
     @GetMapping("/{id}")
     public ResponseEntity<HolderDTO> getById(@PathVariable Long id) {
 
-        if (id == null || id == 0)
+        if (id == null || id <= 0)
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 
         Holder holder = holderService.findById(id);
@@ -104,8 +104,12 @@ public class HolderController {
     }
 
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<Long> delete(@PathVariable Long id) {
+
+        if (id == null || id <= 0)
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+
         Long deletedHolderId = holderService.delete(id);
 
         if (deletedHolderId != null)

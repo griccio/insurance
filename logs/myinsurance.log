@@ -1067,3 +1067,88 @@ Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_fisca
 85106 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789A
 85128 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:35, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANXXCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamariaxx@gmail.com)
 85131 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:35, name:AAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+526  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 20508 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+527  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+527  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1786 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.521 seconds (process running for 2.4)
+78933 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holders Found: 5
+189182 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+193290 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - Error finding the holder with id =10089
+Cannot invoke "Object.toString()" because "holder" is null
+229018 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error finding the holder with id =-1
+Cannot invoke "Object.toString()" because "holder" is null
+302424 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding the holder with id =-1
+Cannot invoke "Object.toString()" because "holder" is null
+304774 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - Error finding the holder with id =-1
+Cannot invoke "Object.toString()" because "holder" is null
+306090 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - Error finding the holder with id =-1
+Cannot invoke "Object.toString()" because "holder" is null
+324886 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - Error finding the holder with id =-1
+Cannot invoke "Object.toString()" because "holder" is null
+476  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 24692 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+476  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+476  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1643 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.422 seconds (process running for 2.165)
+19944 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding the holder with id =1
+Cannot invoke "Object.toString()" because "holder" is null
+31007 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com, login:Riccio, password:Riccio)
+125339 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Email is not present: giu.riccio@gmail.com
+125340 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANCCO456789A
+125350 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:36, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:giu.riccio@gmail.com)
+166620 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - Email is present,  another holder has already  been registered with the same email: giu.riccio@gmail.com
+286145 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria@gmail.com
+286146 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANCCO456789A
+286146 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:37, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria@gmail.com)
+434  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11292 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+435  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+435  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1518 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.315 seconds (process running for 1.97)
+19577 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:37, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria@gmail.com)
+19587 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+433  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11892 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+434  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+434  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1547 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.342 seconds (process running for 1.998)
+13709 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria@gmail.com
+13710 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANCCO456789A
+13720 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:38, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria@gmail.com)
+30682 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding the holder with id =37
+Cannot invoke "Object.toString()" because "holder" is null
+57036 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:38, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria@gmail.com)
+68504 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - Email is present,  another holder has already  been registered with the same email: a.santamaria@gmail.com
+106549 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria123@gmail.com
+106550 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: STRANCCO456789A
+120429 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria123@gmail.com
+120430 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANCCO456789QA
+120431 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:39, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789QA, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria123@gmail.com)
+153517 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Email is not present: a.riccio@gmail.com
+153518 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789A
+153519 [http-nio-8080-exec-10] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:35, name:AAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+Cannot invoke "Object.toString()" because "holderBeforeUpdate" is null
+189253 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Email is not present: a.riccio@gmail.com
+189254 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789A
+189254 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:38, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789A, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria@gmail.com)
+189256 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+231083 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Email is not present: a.riccio@gmail.com
+231084 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789A
+231084 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+231091 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:38, name:AAAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+248613 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Email is not present: a.riccio@gmail.com
+248614 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789A
+248615 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:38, name:AAAA, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+248615 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+260577 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Email is not present: a.riccio@gmail.com
+260578 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789
+260579 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+260579 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+281202 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria@gmail.com
+281203 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: STRANGCCO456789
+281204 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.riccio@gmail.com)
+281205 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.santamaria@gmail.com)
+308240 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService - Email is present,  another holder has already been registered with the same email: giu.riccio@gmail.com
+362695 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria@gmail.com
+362696 [http-nio-8080-exec-8] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: GPPIRCCO456789A
+395280 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:38, name:ANGELO, surname:Santamaria Modified, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:a.santamaria@gmail.com)
+395282 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+426401 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:39, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789QA, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria123@gmail.com)
+426402 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
