@@ -101,7 +101,19 @@ public class HolderService {
         Boolean verifyEmail = holderRepository.verifyEmailExistence(email);
 
         if(verifyEmail)
-            logger.error("Email is present,  another holder has already registered with the same email: " + email);
+            logger.error("Email is present,  another holder has already  been registered with the same email: " + email);
+        else
+            logger.debug("Email is not present: " + email);
+
+        return verifyEmail;
+    }
+
+
+    public Boolean verifyEmailExistenceForUpdate(String email, Long id){
+        Boolean verifyEmail = holderRepository.verifyEmailForExistingHolder(email, id);
+
+        if(verifyEmail)
+            logger.error("Email is present,  another holder has already been registered with the same email: " + email);
         else
             logger.debug("Email is not present: " + email);
 
@@ -119,7 +131,19 @@ public class HolderService {
         Boolean verifyFiscalCode = holderRepository.verifyFiscalCodeExistence(fiscalCode);
 
         if(verifyFiscalCode)
-            logger.error("Fiscal Code is present,  another holder has already registered with the same Fiscal Code: " + fiscalCode);
+            logger.error("Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: " + fiscalCode);
+        else
+            logger.debug("Fiscal Code is not present: " + fiscalCode);
+
+        return verifyFiscalCode;
+    }
+
+
+    public Boolean verifyFiscalCodeExistenceForUpdate(String fiscalCode, Long id){
+        Boolean verifyFiscalCode = holderRepository.verifyFiscalCodeForExistingHolder(fiscalCode, id);
+
+        if(verifyFiscalCode)
+            logger.error("Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: " + fiscalCode);
         else
             logger.debug("Fiscal Code is not present: " + fiscalCode);
 

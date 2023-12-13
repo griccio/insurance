@@ -81,6 +81,79 @@ public class HolderServiceTest {
     }
 
     @Test
+    public void createWithErrorBecauseDuplicatedEmail() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        try {
+            Holder holder = new Holder();
+            holder.setName("Gustavo");
+            holder.setSurname("VillaFranca");
+            holder.setFiscalCode("VLLGTV80A01F205F");
+            holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+            holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+            holder.setResidence("Via della Spiga 14/22 20019 Milano");
+            holder.setTel("+346565678");
+            holder.setEmail("g.villafranca@gmail.com");
+
+            holderService.save(holder);
+            Assertions.assertEquals(holdersBeforeInsert + 1, holderService.findAll().size());
+
+            Holder holder2 = new Holder();
+            holder2.setName("Gustavo");
+            holder2.setSurname("VillaFranca");
+            holder2.setFiscalCode("VLLPPP80A01F205F");
+            holder2.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+            holder2.setDomicile("Via della Spiga 14/22 20019 Milano");
+            holder2.setResidence("Via della Spiga 14/22 20019 Milano");
+            holder2.setTel("+346565678");
+            holder2.setEmail("g.villafranca@gmail.com");
+            holderService.save(holder2); //I have an exception because the email
+
+        }catch(Exception e){
+           logger.error(e.getMessage());
+            Assertions.assertEquals(holdersBeforeInsert + 1, holderService.findAll().size());
+        }
+    }
+
+
+
+    @Test
+    public void createWithErrorBecauseDuplicatedFiscalCode() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        try {
+            Holder holder = new Holder();
+            holder.setName("Gustavo");
+            holder.setSurname("VillaFranca");
+            holder.setFiscalCode("VLLGTV80A01F205F");
+            holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+            holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+            holder.setResidence("Via della Spiga 14/22 20019 Milano");
+            holder.setTel("+346565678");
+            holder.setEmail("g.villafranca@gmail.com");
+
+            holderService.save(holder);
+            Assertions.assertEquals(holdersBeforeInsert + 1, holderService.findAll().size());
+
+            Holder holder2 = new Holder();
+            holder2.setName("Gustavo");
+            holder2.setSurname("VillaFranca");
+            holder2.setFiscalCode("VLLGTV80A01F205F");
+            holder2.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+            holder2.setDomicile("Via della Spiga 14/22 20019 Milano");
+            holder2.setResidence("Via della Spiga 14/22 20019 Milano");
+            holder2.setTel("+346565678");
+            holder2.setEmail("g.villafranca2@gmail.com");
+            holderService.save(holder2); //I have an exception because the fiscal code
+
+        }catch(Exception e){
+            logger.error(e.getMessage());
+            Assertions.assertEquals(holdersBeforeInsert + 1, holderService.findAll().size());
+        }
+
+
+    }
+
+
+    @Test
     public void createWithError() {
         int holdersBeforeInsert = holderService.findAll().size();
         try {
@@ -253,13 +326,46 @@ public class HolderServiceTest {
 
     }
 
+    @Test
+    public void verifyEmailExistenceForUpdateFalse() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+
+        holderService.save(holder);
+        Assertions.assertFalse(holderService.verifyEmailExistenceForUpdate(holder.getEmail(), holder.getId()));
+
+    }
 
 
     @Test
     public void verifyEmailThatNotExist() {
         Assertions.assertFalse(holderService.verifyEmailExistence("g.villafrancaxxx@gmail.com"));
     }
+    @Test
+    public void verifyEmailExistenceForUpdateTrue() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
 
+        holderService.save(holder);
+        Assertions.assertTrue(holderService.verifyEmailExistenceForUpdate("giu.riccio@gmail.com", holder.getId()));
+
+    }
 
 
 
@@ -289,4 +395,21 @@ public class HolderServiceTest {
         Assertions.assertFalse(holderService.verifyFiscalCodeExistence("VXXGTV80A01F205F"));
     }
 
+    @Test
+    public void verifyFiscalCodeExistenceForUpdateTrue() {
+        int holdersBeforeInsert = holderService.findAll().size();
+        Holder holder = new Holder();
+        holder.setName("Gustavo");
+        holder.setSurname("VillaFranca");
+        holder.setFiscalCode("VLLGTV80A01F205F");
+        holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+        holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+        holder.setResidence("Via della Spiga 14/22 20019 Milano");
+        holder.setTel("+346565678");
+        holder.setEmail("g.villafranca@gmail.com");
+
+        holderService.save(holder);
+        Assertions.assertTrue(holderService.verifyFiscalCodeExistenceForUpdate("GPPIRCCO456789A", holder.getId()));
+
+    }
 }

@@ -87,10 +87,10 @@ public class HolderController {
     @PutMapping
     public ResponseEntity<Long> update(@Valid @RequestBody HolderWithIdDTO holderWithIdDTO) {
 
-        if(holderService.verifyEmailExistence(holderWithIdDTO.getEmail()))
+        if(holderService.verifyEmailExistenceForUpdate(holderWithIdDTO.getEmail(),holderWithIdDTO.getId()))
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
 
-        if(holderService.verifyFiscalCodeExistence(holderWithIdDTO.getFiscalCode()))
+        if(holderService.verifyFiscalCodeExistenceForUpdate(holderWithIdDTO.getFiscalCode(),holderWithIdDTO.getId()))
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
 
         Holder holder = new Holder();

@@ -1,6 +1,7 @@
 package it.proactivity.myinsurance.repository;
 
 import io.ebean.DB;
+import io.ebean.SqlRow;
 import it.proactivity.myinsurance.model.Holder;
 import it.proactivity.myinsurance.model.query.QHolder;
 import org.springframework.stereotype.Repository;
@@ -50,16 +51,62 @@ public class HolderRepository {
 
 
     public Boolean verifyEmailExistence(String email) {
-       Holder  holder = new QHolder().email.eq(email).findOne();
-       return holder != null;
+        String sql = "select count(id) as tot from holder where email = :email";
+
+        SqlRow row = DB.sqlQuery(sql)
+                .setParameter("email", email)
+                .findOne();
+
+       Long count = row.getLong("tot");
+
+       return (count != null && count>0);
+    }
+
+
+    /**
+     * verify if the holder's email has been assigned to another holder
+     * return true if exist
+     * @param email the mail to verify
+     * @param id the email's owner id
+     * @return
+     */
+    public Boolean verifyEmailForExistingHolder(String email, Long id) {
+        String sql = "select count(id) as tot from holder where email = :email and id <> :id";
+
+        SqlRow row = DB.sqlQuery(sql)
+                .setParameter("email", email)
+                .setParameter("id", id)
+                .findOne();
+
+        Long count = row.getLong("tot");
+
+        return (count != null && count>0);
     }
 
 
     public Boolean verifyFiscalCodeExistence(String fiscalCode) {
-        Holder  holder = new QHolder().fiscalCode.eq(fiscalCode).findOne();
-        return holder != null;
+        String sql = "select count(id) as tot from holder where fiscal_code = ?";
+
+        SqlRow row = DB.sqlQuery(sql)
+                .setParameter(1, fiscalCode)
+                .findOne();
+        Long count = row.getLong("tot");
+        return (count != null && count>0);
     }
 
+
+    public Boolean verifyFiscalCodeForExistingHolder(String fiscalCode, Long id) {
+        String sql = "select count(id) as tot from holder where fiscal_code = :fiscalCode and id <> :id";
+
+        SqlRow row = DB.sqlQuery(sql)
+                .setParameter("fiscalCode", fiscalCode)
+                .setParameter("id", id)
+                .findOne();
+
+        Long count = row.getLong("tot");
+
+        return (count != null && count>0);
+    }
 
 
 }
