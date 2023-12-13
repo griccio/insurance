@@ -396,3 +396,18 @@ Cannot invoke "Object.toString()" because "holder" is null
 157357 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:101, name:Mario, surname:Rossi, birthDate:Tue Jan 18 00:00:00 CET 2000, fiscalCode:MRARSS07A01L788R, residence:Piazza Garibaldi Genova , domicile:Piazza Garibaldi Genova , tel:994537215, email:m.rossi@gmail,com, login:mrossi, password:13QWER)
 179058 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:1, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com)
 209214 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:2, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANGCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail,com)
+909  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 20188 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+910  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+910  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2680 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 1.955 seconds (process running for 3.016)
+4678 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+845  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 5356 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+846  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+847  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+2808 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.172 seconds (process running for 3.108)
+4813 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+433  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26436 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+433  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+434  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1545 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.346 seconds (process running for 2.038)
+17524 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holders Found: 3

@@ -61,19 +61,6 @@ public class HolderService {
         }
     }
 
-    @Transactional
-    public Long save(HolderDTO holderDTO) {
-        try {
-            Holder holder = new Holder();
-            BeanUtils.copyProperties(holderDTO, holder);
-            holderRepository.save(holder);
-            logger.debug("Holder saved correctly; "+ holder.toString());
-            return holder.getId();
-        } catch (Exception e) {
-            logger.error("Error saving the holder " + holderDTO.toString() +"\n" + e.getMessage());
-            return null;
-        }
-    }
 
     @Transactional
     public Long update(Holder holder) {

@@ -1,8 +1,6 @@
 package it.proactivity.myinsurance.controller;
 
-import freemarker.template.utility.NumberUtil;
-import freemarker.template.utility.StringUtil;
-import it.proactivity.myinsurance.exception.HolderControllerException;
+
 import it.proactivity.myinsurance.model.Holder;
 import it.proactivity.myinsurance.model.HolderDTO;
 import it.proactivity.myinsurance.model.HolderWithIdDTO;
@@ -12,7 +10,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.NumberUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -33,19 +30,17 @@ public class HolderController {
         List<Holder> holders = holderService.findAll();
         List<HolderDTO> holdersDTO = new ArrayList<>();
 
-        if(holders == null){
+        if (holders == null) {
             return ResponseEntity.ok(holdersDTO);
         }
 
-         holdersDTO = holders.stream()
+        holdersDTO = holders.stream()
                 .sorted(Comparator.comparing(Holder::getSurname))
-                .collect(Collectors.mapping(
-                        holder -> {
-                            HolderDTO holderDTO = new HolderDTO();
-                            BeanUtils.copyProperties(holder, holderDTO);
-                            return holderDTO;
-                        },
-                        Collectors.toList()));
+                .map(holder -> {
+                    HolderDTO holderDTO = new HolderDTO();
+                    BeanUtils.copyProperties(holder, holderDTO);
+                    return holderDTO;
+                }).collect(Collectors.toList());
 
         return ResponseEntity.ok(holdersDTO);
 
@@ -54,17 +49,16 @@ public class HolderController {
     @GetMapping("/{id}")
     public ResponseEntity<HolderDTO> getById(@PathVariable Long id) {
 
-        if(id == null || id == 0 )
+        if (id == null || id == 0)
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 
         Holder holder = holderService.findById(id);
 
-        if(holder != null) {
+        if (holder != null) {
             HolderDTO holderDTO = new HolderDTO();
             BeanUtils.copyProperties(holder, holderDTO);
             return ResponseEntity.ok(holderDTO);
-        }
-        else {
+        } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
     }
@@ -76,10 +70,10 @@ public class HolderController {
         BeanUtils.copyProperties(holderDTO, holder);
         Long id = holderService.save(holder);
 
-        if(id != null && id >0)
+        if (id != null && id > 0)
             return ResponseEntity.ok(id);
         else
-           return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
     }
 
     @PutMapping
@@ -89,7 +83,7 @@ public class HolderController {
         BeanUtils.copyProperties(holderWithIdDTO, holder);
         Long id = holderService.update(holder);
 
-        if(id != null && id >0)
+        if (id != null && id > 0)
             return ResponseEntity.ok(id);
         else
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
@@ -98,12 +92,12 @@ public class HolderController {
 
     @DeleteMapping
     public ResponseEntity<Long> delete(@PathVariable Long id) {
-         Long deletedHolderId = holderService.delete(id);
+        Long deletedHolderId = holderService.delete(id);
 
-         if(deletedHolderId!=null)
-             return ResponseEntity.ok(id);
-         else
-             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
+        if (deletedHolderId != null)
+            return ResponseEntity.ok(id);
+        else
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
     }
 
 }

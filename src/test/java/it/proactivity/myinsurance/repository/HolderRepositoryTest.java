@@ -2,12 +2,10 @@ package it.proactivity.myinsurance.repository;
 
 import io.ebean.DB;
 import io.ebean.Database;
-import io.ebean.SqlUpdate;
 import it.proactivity.myinsurance.model.Holder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.postgresql.core.SqlCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

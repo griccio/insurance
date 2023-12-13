@@ -45,13 +45,11 @@ public class HolderServiceTest {
         List<Holder> holders = holderService.findAll();
         List<HolderDTO> holdersDTO = holders.stream()
                 .sorted(Comparator.comparing(Holder::getSurname))
-                .collect(Collectors.mapping(
-                        holder -> {
-                            HolderDTO holderDTO = new HolderDTO();
-                            BeanUtils.copyProperties(holder, holderDTO);
-                            return holderDTO;
-                            },
-                        Collectors.toList()));
+                .map(holder -> {
+                    HolderDTO holderDTO = new HolderDTO();
+                    BeanUtils.copyProperties(holder, holderDTO);
+                    return holderDTO;
+                }).collect(Collectors.toList());
 
         Assertions.assertEquals(3, holdersDTO.size());
     }
@@ -136,8 +134,9 @@ public class HolderServiceTest {
         holderDTO.setResidence("Via della Spiga 14/22 20019 Milano");
         holderDTO.setTel("+346565678");
         holderDTO.setEmail("g.villafranca@gmail.com");
-//        BeanUtils.copyProperties(holderDTO,holder);
-        Long id = holderService.save(holderDTO);
+        Holder holder = new Holder();
+        BeanUtils.copyProperties(holderDTO,holder);
+        Long id = holderService.save(holder);
         Assertions.assertNotNull(id);
         Assertions.assertEquals(holdersBeforeInsert + 1, holderService.findAll().size());
     }
