@@ -1152,3 +1152,547 @@ Cannot invoke "Object.toString()" because "holderBeforeUpdate" is null
 395282 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
 426401 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:39, name:Angelo, surname:Santamaria, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:STRANCCO456789QA, residence:Via Francesco Damilano 16/8 Cagliari, domicile:Via Francesco Damilano 16/8 Cagliari, tel:123456789, email:a.santamaria123@gmail.com)
 426402 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+1097 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 17304 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1098 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1099 [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3798 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 3.03 seconds (process running for 4.645)
+7048 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7063 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:40, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7074 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: VLLGTV80A01F205F
+7096 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7098 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:41, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7102 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafranca@gmail.com
+7110 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VXXGTV80A01F205F
+7116 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7118 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:42, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7120 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+7127 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7130 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:43, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7132 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+7134 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:43, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7137 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+7139 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7146 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7148 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:44, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7150 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already  been registered with the same email: g.villafranca@gmail.com
+7158 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7159 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:45, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7161 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:45, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7163 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:45, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7165 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:45, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+7166 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:45, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+7174 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7181 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail.com, login:Riccio, password:Riccio)
+7189 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7200 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (46, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+7207 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7216 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7217 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:47, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7219 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: GPPIRCCO456789A
+7225 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7227 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:48, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7229 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+7236 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7236 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:49, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7239 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+7239 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca2@gmail.com)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_fiscal_code_key"   Dettaglio: La chiave (fiscal_code)=(VLLGTV80A01F205F) esiste già.
+7245 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+7251 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7252 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:51, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7253 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:51, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7254 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:51, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7255 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:51, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (51, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+7262 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7263 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:52, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7264 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already been registered with the same email: giu.riccio@gmail.com
+7271 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7272 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:53, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7273 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+7274 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLPPP80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_email_key"   Dettaglio: La chiave (email)=(g.villafranca@gmail.com) esiste già.
+7281 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+7282 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:55, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+7284 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+904  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 18556 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+905  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+907  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3485 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.888 seconds (process running for 4.229)
+6541 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6557 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:56, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6572 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: VLLGTV80A01F205F
+6593 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6595 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:57, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6598 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafranca@gmail.com
+6608 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VXXGTV80A01F205F
+6618 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6619 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:58, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6621 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6633 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6634 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:59, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6636 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6640 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder@0(id:59, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6644 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+6647 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6656 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6659 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:60, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6660 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already  been registered with the same email: g.villafranca@gmail.com
+6669 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6670 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6673 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6675 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:61, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6678 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder@0(id:61, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+6679 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:61, name:Gustavomodified, surname:VillaFrancamodified, birthDate:Tue Feb 01 00:00:00 CET 2000, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milanomodified, domicile:Via della Spiga 14/22 20019 Milanomodified, tel:+346565678, email:g.villafranca@gmail.com)
+6691 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6699 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:100, name:Giuseppe, surname:Riccio, birthDate:Mon Jul 08 00:00:00 CEST 1968, fiscalCode:GPPIRCCO456789A, residence:Via Manzoni 23 Albisola (SV), domicile:Via Manzoni 23 Albisola (SV), tel:123456789, email:giu.riccio@gmail.com, login:Riccio, password:Riccio)
+6707 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6717 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (62, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+6726 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6736 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6737 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:63, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6739 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: GPPIRCCO456789A
+6745 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6747 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:64, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6749 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6757 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6758 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:65, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6760 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6761 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca2@gmail.com)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_fiscal_code_key"   Dettaglio: La chiave (fiscal_code)=(VLLGTV80A01F205F) esiste già.
+6769 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+6777 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6778 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:67, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6780 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder@0(id:67, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6781 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder@0(id:67, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6783 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder@0(id:67, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (67, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+6796 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6797 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:68, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6798 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already been registered with the same email: giu.riccio@gmail.com
+6806 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6807 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:69, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6808 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6809 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder@0(name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLPPP80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_email_key"   Dettaglio: La chiave (email)=(g.villafranca@gmail.com) esiste già.
+6817 [main] DEBUG i.p.m.service.HolderService - Holders Found: 3
+6818 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder@0(id:71, name:Gustavo, surname:VillaFranca, birthDate:Fri Feb 01 00:00:00 CET 1980, fiscalCode:VLLGTV80A01F205F, residence:Via della Spiga 14/22 20019 Milano, domicile:Via della Spiga 14/22 20019 Milano, tel:+346565678, email:g.villafranca@gmail.com)
+6820 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+661  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 12832 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+662  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+663  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2536 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.218 seconds (process running for 3.274)
+1349 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1349 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1350 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1350 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1351 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1351 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4022 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.984 seconds (process running for 4.508)
+4022 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.984 seconds (process running for 4.508)
+1322 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37460 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1322 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37460 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1322 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1322 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1323 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1323 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3885 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.882 seconds (process running for 4.316)
+3885 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.882 seconds (process running for 4.316)
+1316 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 4396 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1316 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 4396 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1316 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1316 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1317 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1317 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3737 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.722 seconds (process running for 4.292)
+3737 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.722 seconds (process running for 4.292)
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder@0(id:101), registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder@0(id:101), registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder@0(id:101), registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder@0(id:101), registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder@0(id:103), registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder@0(id:103), registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder@0(id:103), registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder@0(id:103), registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder@0(id:100), registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+6701 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder@0(id:100), registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+1274 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 25276 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1274 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 25276 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1275 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1275 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1276 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1276 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3956 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.987 seconds (process running for 4.509)
+3956 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.987 seconds (process running for 4.509)
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6670 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6671 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6671 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6671 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+6671 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+1296 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28692 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1296 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28692 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1298 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1298 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1299 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1299 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4116 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.109 seconds (process running for 4.543)
+4116 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.109 seconds (process running for 4.543)
+7240 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+7240 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+7241 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+1214 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34060 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1214 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34060 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1214 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1214 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1215 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1215 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3673 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.756 seconds (process running for 4.098)
+3673 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.756 seconds (process running for 4.098)
+6430 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6430 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+6430 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6430 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='Giuseppe, surname='Riccio, birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A, residence='Via Manzoni 23 Albisola (SV), domicile='Via Manzoni 23 Albisola (SV), tel='123456789', email='giu.riccio@gmail.com, login='Riccio, password='Riccio}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+6431 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='Giuseppe, surname='Riccio, birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A, residence='Via Manzoni 23 Albisola (SV), domicile='Via Manzoni 23 Albisola (SV), tel='123456789', email='giu.riccio@gmail.com, login='Riccio, password='Riccio}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+2313 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 21776 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2313 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 21776 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2314 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2314 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2315 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2315 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+7505 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.03 seconds (process running for 7.957)
+7505 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.03 seconds (process running for 7.957)
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+11871 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+11872 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+11872 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+11872 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+11872 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+1318 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 23912 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1318 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 23912 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1319 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1319 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1320 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1320 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3869 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.946 seconds (process running for 4.424)
+3869 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.946 seconds (process running for 4.424)
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=???, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=???, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=???, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=???, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=???, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=???, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=???, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=???, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=???, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+9847 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=???, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+2787 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2787 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2787 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2787 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2789 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2789 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+5333 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.349 seconds (process running for 5.691)
+5333 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.349 seconds (process running for 5.691)
+8940 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+8940 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=104, holder=Holder{id=103, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='EF2222WD, registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00, policyType=RCA50, cost=30.00, quoteNumber='100-CD2222A-102}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+8941 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100}
+2355 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 35412 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2355 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 35412 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2356 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2356 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2359 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2359 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+8591 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 7.639 seconds (process running for 8.951)
+8591 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 7.639 seconds (process running for 8.951)
+3930 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16872 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3930 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16872 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3957 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3957 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3974 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3974 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+20948 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 18.548 seconds (process running for 21.347)
+20948 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 18.548 seconds (process running for 21.347)
+2250 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 27192 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2250 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 27192 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2251 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2251 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2252 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2252 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+8581 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.831 seconds (process running for 8.946)
+8581 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.831 seconds (process running for 8.946)
+13037 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+13037 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+2604 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 14516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2604 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 14516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2605 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2605 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2606 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2606 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+5720 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.026 seconds (process running for 6.127)
+5720 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.026 seconds (process running for 6.127)
+10066 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+10066 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+10066 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+10066 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+3653 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34708 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3653 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34708 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3665 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3665 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3672 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3672 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+7494 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.362 seconds (process running for 7.969)
+7494 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.362 seconds (process running for 7.969)
+1552 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 31836 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1552 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 31836 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1552 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1552 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1553 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1553 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+5214 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.134 seconds (process running for 5.564)
+5214 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.134 seconds (process running for 5.564)
+3592 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3592 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3595 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3595 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3597 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3597 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+11199 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 9.873 seconds (process running for 11.587)
+11199 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 9.873 seconds (process running for 11.587)
+17323 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+17323 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101}
+17324 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+17324 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=102, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA12, cost=50.00, quoteNumber='100-CD2222A-102}
+3098 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 5564 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3098 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 5564 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3099 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3099 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3100 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3100 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+8057 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.293 seconds (process running for 8.46)
+8057 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.293 seconds (process running for 8.46)
+11694 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+11694 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=103, holder=Holder{id=103, name='Filippo, surname='Aneto, birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V, residence='Via Mascherpa 22 int 7 Pavia , domicile='Via Mascherpa 22 int 7 Pavia , tel='994537215', email='f.aneto@gmail.com, login='aneto, password='13QQQ12}, registrationMark='EE1111EA, registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00, policyType=RCA6, cost=20.00, quoteNumber='100-CD2222A-102}
+2225 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 5416 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2225 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 5416 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2227 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2227 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2229 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2229 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6106 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.07 seconds (process running for 6.549)
+6106 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.07 seconds (process running for 6.549)
+3069 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37548 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3069 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37548 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3080 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3080 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3091 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3091 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+7293 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.425 seconds (process running for 7.884)
+7293 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.425 seconds (process running for 7.884)
+2968 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36912 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2968 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36912 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2977 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2977 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2982 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2982 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6708 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.732 seconds (process running for 7.174)
+6708 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.732 seconds (process running for 7.174)
+2585 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 10712 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2585 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 10712 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2586 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2586 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2587 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2587 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+9306 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.199 seconds (process running for 9.653)
+9306 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.199 seconds (process running for 9.653)
+2652 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 13560 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2652 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 13560 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2655 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2655 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2656 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2656 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+9285 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.702 seconds (process running for 9.661)
+9285 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.702 seconds (process running for 9.661)
+2636 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16168 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2636 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 16168 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2637 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2637 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2637 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2637 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6748 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.734 seconds (process running for 7.13)
+6748 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.734 seconds (process running for 7.13)
+4023 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 17928 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+4023 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 17928 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+4030 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+4030 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+4048 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4048 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+11463 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 9.33 seconds (process running for 11.859)
+11463 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 9.33 seconds (process running for 11.859)
+2291 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 18972 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2291 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 18972 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2292 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2292 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2294 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2294 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+9260 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.998 seconds (process running for 9.711)
+9260 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.998 seconds (process running for 9.711)
+1370 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 30680 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1370 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 30680 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1371 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1371 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1372 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1372 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+7470 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.598 seconds (process running for 7.864)
+7470 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 6.598 seconds (process running for 7.864)
+2480 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 18184 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2480 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 18184 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2481 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2481 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2482 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2482 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+8671 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.856 seconds (process running for 9.009)
+8671 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.856 seconds (process running for 9.009)
+2477 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28892 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2477 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28892 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2478 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2478 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2479 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2479 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6882 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.481 seconds (process running for 7.282)
+6882 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.481 seconds (process running for 7.282)
+2420 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34568 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2420 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34568 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2421 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2421 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2422 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2422 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6966 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.925 seconds (process running for 7.312)
+6966 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.925 seconds (process running for 7.312)
+3504 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 23540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3504 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 23540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3505 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3505 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3506 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3506 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+9060 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.113 seconds (process running for 9.46)
+9060 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 7.113 seconds (process running for 9.46)
+13704 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (6, null, AA1234BB, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:37:38.197).
+13704 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (6, null, AA1234BB, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:37:38.197).
+2786 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 30516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2786 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 30516 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2787 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2787 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2788 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2788 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+12551 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.787 seconds (process running for 12.895)
+12551 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.787 seconds (process running for 12.895)
+18840 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (7, null, , 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:39:19.633).
+18840 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (7, null, , 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:39:19.633).
+3216 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36268 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3216 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36268 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3217 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3217 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3219 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3219 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+12539 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.924 seconds (process running for 13.042)
+12539 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.924 seconds (process running for 13.042)
+17340 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (8, null, null, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:40:14.405).
+17340 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (8, null, null, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:40:14.405).
+3293 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37416 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3293 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 37416 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3294 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3294 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3294 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3294 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6377 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.866 seconds (process running for 6.762)
+6377 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.866 seconds (process running for 6.762)
+12999 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "registration_mark" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (9, 102, null, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:41:00.754).
+12999 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "registration_mark" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (9, 102, null, 2018-02-01, 20000.00, RCA12, 50.00, 123456, 2023-12-14 16:41:00.754).
+2524 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28676 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2524 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 28676 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2525 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2525 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2526 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2526 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6537 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.555 seconds (process running for 6.935)
+6537 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.555 seconds (process running for 6.935)
+2645 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2556 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2645 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2556 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2649 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2649 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2650 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2650 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+5899 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.453 seconds (process running for 6.266)
+5899 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.453 seconds (process running for 6.266)
+3218 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34952 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3218 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34952 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+3220 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3220 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+3220 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3220 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6760 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.786 seconds (process running for 7.168)
+6760 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 4.786 seconds (process running for 7.168)
+2935 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 29296 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2935 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 29296 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2936 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2936 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2937 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2937 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+7511 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.823 seconds (process running for 7.858)
+7511 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.823 seconds (process running for 7.858)
+2948 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 24364 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2948 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 24364 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2949 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2949 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2950 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2950 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+12369 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.995 seconds (process running for 12.795)
+12369 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 10.995 seconds (process running for 12.795)
+2761 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36212 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2761 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36212 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2763 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2763 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2764 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2764 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+6507 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.492 seconds (process running for 6.891)
+6507 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 5.492 seconds (process running for 6.891)
+2815 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 29828 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2815 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 29828 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2816 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2816 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2818 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2818 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+14328 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 12.824 seconds (process running for 15.201)
+14328 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 12.824 seconds (process running for 15.201)
+19666 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)
+19666 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)

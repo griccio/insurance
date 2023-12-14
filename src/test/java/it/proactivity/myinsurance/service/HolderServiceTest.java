@@ -4,7 +4,6 @@ import io.ebean.DB;
 import io.ebean.Database;
 import it.proactivity.myinsurance.model.Holder;
 import it.proactivity.myinsurance.model.HolderDTO;
-import it.proactivity.myinsurance.repository.HolderRepositoryTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.ResponseEntity;
 
 import java.util.Comparator;
 import java.util.GregorianCalendar;
@@ -31,7 +29,7 @@ public class HolderServiceTest {
     @BeforeEach
     public void initTable() {
         Database database = DB.getDefault();
-        database.script().run("/scripttest/insert_db.sql");
+        database.script().run("/scripttest/insert_db_for_test.sql");
     }
 
     @Test
@@ -81,7 +79,7 @@ public class HolderServiceTest {
     }
 
     @Test
-    public void createWithErrorBecauseDuplicatedEmail() {
+    public void createWithErrorBecauseExistingEmail() {
         int holdersBeforeInsert = holderService.findAll().size();
         try {
             Holder holder = new Holder();
@@ -117,7 +115,7 @@ public class HolderServiceTest {
 
 
     @Test
-    public void createWithErrorBecauseDuplicatedFiscalCode() {
+    public void createWithErrorBecauseExistingFiscalCode() {
         int holdersBeforeInsert = holderService.findAll().size();
         try {
             Holder holder = new Holder();

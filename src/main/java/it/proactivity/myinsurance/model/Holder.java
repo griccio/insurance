@@ -6,11 +6,10 @@ import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.validator.constraints.UniqueElements;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 //@NoArgsConstructor
@@ -78,6 +77,9 @@ public class Holder {
     @Size(max = 20)
     @Column(name = "password")
     private String password;
+
+    @OneToMany(mappedBy = "holder")
+    private List<Quote> quoteList = new ArrayList<>();
 
     public Long getId() {
         return id;
@@ -167,5 +169,28 @@ public class Holder {
         this.password = password;
     }
 
+    public List<Quote> getQuoteList() {
+        return quoteList;
+    }
 
+    public void setQuoteList(List<Quote> quoteList) {
+        this.quoteList = quoteList;
+    }
+
+    @Override
+    public String toString() {
+        return "Holder{" +
+                "id=" + id +
+                ", name='" + name +
+                ", surname='" + surname +
+                ", birthDate=" + birthDate +
+                ", fiscalCode='" + fiscalCode +
+                ", residence='" + residence +
+                ", domicile='" + domicile +
+                ", tel='" + tel + '\'' +
+                ", email='" + email +
+                ", login='" + login +
+                ", password='" + password +
+                '}';
+    }
 }

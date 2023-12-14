@@ -25,13 +25,13 @@ public class HolderRepositoryTest {
     @BeforeEach
     public void initTable() {
         Database database = DB.getDefault();
-        database.script().run("/scripttest/insert_db.sql");
+        database.script().run("/scripttest/insert_db_for_test.sql");
     }
 
     @AfterAll
     public static void restoreDb() {
         Database database = DB.getDefault();
-        database.script().run("/scripttest/insert_db.sql");
+        database.script().run("/scripttest/insert_db_for_test.sql");
 
     }
 
@@ -39,13 +39,19 @@ public class HolderRepositoryTest {
     public void findAll() {
 
         List<Holder> list = holderRepository.findAll();
-        Assertions.assertEquals(3, list.size());
+        Assertions.assertEquals(4, list.size());
     }
 
     @Test
     public void findById() {
         Holder holder = holderRepository.findById(100L);
         Assertions.assertNotNull(holder);
+    }
+
+    @Test
+    public void findByIdNotExist() {
+        Holder holder = holderRepository.findById(1990L);
+        Assertions.assertNull(holder);
     }
 
     @Test

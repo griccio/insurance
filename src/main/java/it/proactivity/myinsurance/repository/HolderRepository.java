@@ -15,7 +15,6 @@ public class HolderRepository {
         return new QHolder().orderBy("name").findList();
     }
 
-    //hello123
     public Holder findById(Long id) {
         return DB.find(Holder.class, id);
     }
