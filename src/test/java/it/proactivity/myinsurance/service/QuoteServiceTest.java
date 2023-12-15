@@ -13,9 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * INSERT INTO quote(
@@ -32,7 +34,7 @@ public class QuoteServiceTest {
     QuoteService quoteService;
 
     private static final Logger logger = LoggerFactory.getLogger(QuoteServiceTest.class);
-    final int TOT_QUOTES_BEFORE_TEST = 5; //this is the tot of records into the holder table before each test
+    final int TOT_QUOTES_BEFORE_TEST = 5; //this is the tot of records into the quote table before each test
 
     @BeforeEach
     public void initTable() {
@@ -95,22 +97,88 @@ public class QuoteServiceTest {
     }
 
     @Test
-    public void calculateCost() {
+    public void calculateCostQuote01() {
         BigDecimal cost= quoteService.calculateQuoteCost(
                 new BigDecimal(10000),
                 new GregorianCalendar(2020,01,01).getTime(),
                 PolicyType.RCA12);
         logger.debug(cost.toString());
+
+        BigDecimal expectedCost = new BigDecimal(10000)
+                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
+
+        expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.12)));
+
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
     }
 
 
     @Test
-    public void calculateCost2() {
+    public void calculateCostQuote02() {
         BigDecimal cost= quoteService.calculateQuoteCost(
                 new BigDecimal(7000),
                 new GregorianCalendar(2021,01,01).getTime(),
                 PolicyType.RCA12);
         logger.debug(cost.toString());
+
+        BigDecimal expectedCost = new BigDecimal(7000)
+                .divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
+
+        expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.12)));
+
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
+    }
+
+
+
+    @Test
+    public void calculateCostQuote03() {
+        BigDecimal cost= quoteService.calculateQuoteCost(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2010,01,01).getTime(), //registration date
+                PolicyType.RCA50); //type of policy
+        logger.debug(cost.toString());
+
+        BigDecimal expectedCost = new BigDecimal(70000)
+                .divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
+
+        expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.25)));
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
+    }
+
+    @Test
+    public void calculateCostQuote04() {
+        BigDecimal cost= quoteService.calculateQuoteCost(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2022,01,01).getTime(), //registration date
+                PolicyType.RCA50); //type of policy
+        logger.debug(cost.toString());
+
+        BigDecimal expectedCost = new BigDecimal(70000)
+                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
+
+        expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.25)));
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
+    }
+
+    @Test
+    public void calculateCostQuote05() {
+        BigDecimal cost= quoteService.calculateQuoteCost(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2022,01,01).getTime(), //registration date
+                PolicyType.RCA6); //type of policy
+        logger.debug(cost.toString());
+
+        BigDecimal expectedCost = new BigDecimal(70000)
+                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP)
+                .add(new BigDecimal(7000).multiply(new BigDecimal(0)));
+
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
     }
 
 

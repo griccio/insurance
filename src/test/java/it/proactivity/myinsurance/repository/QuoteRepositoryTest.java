@@ -47,7 +47,6 @@ public class QuoteRepositoryTest {
     public static void restoreDb() {
         Database database = DB.getDefault();
         database.script().run("/scripttest/insert_db_for_test.sql");
-
     }
 
     @Test

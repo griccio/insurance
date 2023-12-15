@@ -44,7 +44,7 @@ public class QuoteByHolderAndCarDTO {
 
     @Override
     public String toString() {
-        return "QuoteByCarDTO{" +
+        return "QuoteByHolderAndCarDTO{" +
                 "holder_id=" + holder_id +
                 ", registrationMark='" + registrationMark + '\'' +
                 ", quotes=" + quotes +

@@ -24,11 +24,6 @@ public class QuoteService extends MyInsuranceService{
     @Autowired
     HolderRepository holderRepository;
 
-    public static final GregorianCalendar STARTING_NEW_TARIFF_DATE = new GregorianCalendar(2020, Calendar.JANUARY,01);
-    public static final int NEW_TARIFF = 1000;
-    public static final int OLD_TARIFF = 750;
-
-    public static final int WORTH_CAR_LIMIT = 10000;
 
     @Transactional
     public List<Quote> findAll(){
@@ -126,17 +121,29 @@ public class QuoteService extends MyInsuranceService{
     public Quote save(QuoteForCreateDTO quoteForCreateDTO) throws QuoteException {
 
         Holder holder;
-        if((holder = holderRepository.findById(quoteForCreateDTO.getHolderId())) == null)
+        if((holder = holderRepository.findById(quoteForCreateDTO.getHolderId())) == null){
+            logger.error("Holder is not registered. In order to receive our quotes, please register to the site");
             throw new QuoteException("Holder is not registered. In order to receive our quotes, please register to the site");
+        }
 
-        if(!verifyRegistrationMarkPattern(quoteForCreateDTO.getRegistrationMark()))
+
+        if(!verifyRegistrationMarkPattern(quoteForCreateDTO.getRegistrationMark())){
+            logger.error("Registration Mark is invalid");
             throw new QuoteException("Registration Mark is invalid");
+        }
 
-        if(!verifyRegistrationMarkNumber(quoteForCreateDTO.getRegistrationMark()))
+
+        if(!verifyRegistrationMarkNumber(quoteForCreateDTO.getRegistrationMark())){
+            logger.error("You cannot create more than two quotes for the same registration mark ");
             throw new QuoteException("You cannot create more than two quotes for the same registration mark ");
+        }
 
-        if(!verifyRegistrationDateCar(quoteForCreateDTO.getRegistrationDateCar()))
+
+        if(!verifyRegistrationDateCar(quoteForCreateDTO.getRegistrationDateCar())){
+            logger.error("Registration date of the car is incorret ");
             throw new QuoteException("Registration date of the car is incorret ");
+        }
+
 
         Quote quote = new Quote();
         BeanUtils.copyProperties(quoteForCreateDTO,quote);
@@ -163,17 +170,13 @@ public class QuoteService extends MyInsuranceService{
      * @return
      * @throws QuoteException
      */
-    private  Boolean verifyRegistrationMarkPattern(String registrationMark) throws QuoteException {
-        Pattern pattern = Pattern.compile("[a-zA-Z1-9]", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(registrationMark);
+    private  Boolean verifyRegistrationMarkPattern(String registrationMark)  {
 
-        if(!matcher.find())
-            return false;
-        else
-            return true;
+        return Boolean.valueOf(Pattern.matches("[a-zA-Z0-9]{5,10}",registrationMark));
+
     }
 
-    private  Boolean verifyRegistrationMarkNumber(String registrationMark) throws QuoteException {
+    private  Boolean verifyRegistrationMarkNumber(String registrationMark)  {
 
         if(!quoteRepository.verifyRegistrationMarkNumber(registrationMark))
             return false;
@@ -182,6 +185,12 @@ public class QuoteService extends MyInsuranceService{
     }
 
     private  Boolean verifyRegistrationDateCar(Date registrationDate) throws QuoteException {
+
+        if(registrationDate.after(new Date(System.currentTimeMillis())))
+            return false;
+
+        if(registrationDate.before(new GregorianCalendar(1950,Calendar.JANUARY,1).getTime()))
+             return false;
 
         return true;
     }
@@ -200,13 +209,13 @@ public class QuoteService extends MyInsuranceService{
 
         BigDecimal cost = new BigDecimal(0);
 
-        if(registrationDate.after(STARTING_NEW_TARIFF_DATE.getTime())
-                && worth.compareTo(new BigDecimal(WORTH_CAR_LIMIT))!=-1)
-            cost = worth.divide(new BigDecimal(NEW_TARIFF), RoundingMode.UP);
+        if(registrationDate.after(Quote.STARTING_NEW_TARIFF_DATE.getTime())
+                && worth.compareTo(new BigDecimal(Quote.WORTH_CAR_LIMIT))!=-1)
+            cost = worth.divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
         else
-            cost = worth.divide(new BigDecimal(OLD_TARIFF), RoundingMode.UP);
+            cost = worth.divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
 
-        cost = cost.add(cost.multiply(policyType.getPercentage()))
+         cost = cost.add(cost.multiply(policyType.getPercentage()))
                 .setScale(2, RoundingMode.CEILING);
 
        return cost;

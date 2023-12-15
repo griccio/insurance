@@ -47,7 +47,7 @@ public class QuoteController {
     }
 
     @GetMapping("/holder/{id}")
-    public ResponseEntity<List<QuoteByHolderAndCarDTO>> getByHolderId(@PathVariable Long id) {
+    public ResponseEntity<List<QuoteByHolderAndCarDTO>> getAllByHolderIdGroupByCar(@PathVariable Long id) {
 
         if (id == null || id <= 0)
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);

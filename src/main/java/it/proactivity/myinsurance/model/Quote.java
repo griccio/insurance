@@ -7,10 +7,19 @@ import jakarta.validation.constraints.Size;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 @Entity
 public class Quote {
+
+
+    public static final GregorianCalendar STARTING_NEW_TARIFF_DATE = new GregorianCalendar(2020, Calendar.JANUARY,01);
+    public static final int NEW_TARIFF = 1000;
+    public static final int OLD_TARIFF = 750;
+
+    public static final int WORTH_CAR_LIMIT = 10000;
     @Id
     @GeneratedValue
     private Long id;

@@ -2074,3 +2074,292 @@ Unique expecting 0 or 1 results but got 6
 855826 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
 855826 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
 864434 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [AA123BB, EF2222WD, EE1111EA]
+1098180 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - The Holder with this id 101 has these cars [CD2222A]
+1099275 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - The Holder with this id 101 has these cars [CD2222A]
+1128823 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - The Holder with this id 102 has these cars []
+1136856 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - The Holder with this id 100 has these cars [DR1234A]
+1152214 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 104 has these cars []
+1158572 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [AA123BB, EF2222WD, EE1111EA]
+1282 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 7188 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1283 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1284 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3744 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.797 seconds (process running for 4.201)
+6628 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+1213 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 25596 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1214 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1215 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4019 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.106 seconds (process running for 4.476)
+6891 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EF2222WD, EE1111EA]
+6964 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EF2222WD', quotes=[QuoteDTO@0(holder:Filippo Aneto (NTFLPPAL61A001V), registrationMark:EF2222WD, registrationDateCar:Sun Jan 01 00:00:00 CET 2023, worth:30000.00, policyType:RCA50, cost:30.00, quoteNumber:100-CD2222A-102, date:Sun Jul 30 13:16:00 CEST 2023)]}
+6964 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EE1111EA', quotes=[QuoteDTO@0(holder:Filippo Aneto (NTFLPPAL61A001V), registrationMark:EE1111EA, registrationDateCar:Tue Jan 01 00:00:00 CET 2019, worth:30000.00, policyType:RCA6, cost:20.00, quoteNumber:100-CD2222A-102, date:Sun May 14 13:16:00 CEST 2023)]}
+1227 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31176 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1228 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1229 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3847 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.918 seconds (process running for 4.469)
+6555 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+1214 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33500 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1215 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1216 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3776 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.868 seconds (process running for 4.211)
+6545 [main] DEBUG i.p.m.service.QuoteServiceTest - 10
+1206 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 412 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1208 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1210 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3737 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.831 seconds (process running for 4.199)
+6447 [main] DEBUG i.p.m.service.QuoteServiceTest - 1210.00
+1190 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 26360 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1191 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1193 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3778 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.895 seconds (process running for 4.216)
+6776 [main] DEBUG i.p.m.service.QuoteServiceTest - 850.00
+1230 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27388 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1230 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1231 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3871 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.965 seconds (process running for 4.318)
+6778 [main] DEBUG i.p.m.service.QuoteServiceTest - 1210.00
+1194 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27376 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1195 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1196 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3823 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.916 seconds (process running for 4.275)
+6632 [main] DEBUG i.p.m.service.QuoteServiceTest - 850.00
+1240 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27456 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1241 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1242 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3799 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.861 seconds (process running for 4.231)
+6654 [main] DEBUG i.p.m.service.QuoteServiceTest - 850.00
+1229 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31980 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1229 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1230 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3873 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.929 seconds (process running for 4.331)
+6571 [main] DEBUG i.p.m.service.QuoteServiceTest - 1210.00
+1273 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 4004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1274 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1275 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3910 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.935 seconds (process running for 4.361)
+6724 [main] DEBUG i.p.m.service.QuoteServiceTest - 850.00
+1249 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 12812 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1249 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1250 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3921 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.97 seconds (process running for 4.374)
+6757 [main] DEBUG i.p.m.service.QuoteServiceTest - 17594.00
+1179 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 16204 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1180 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1180 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3685 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.804 seconds (process running for 4.131)
+6437 [main] DEBUG i.p.m.service.QuoteServiceTest - 17570.00
+1239 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32824 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1240 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1241 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3849 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.915 seconds (process running for 4.288)
+6559 [main] DEBUG i.p.m.service.QuoteServiceTest - 70.00
+1190 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 15776 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1190 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1191 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3815 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.918 seconds (process running for 4.271)
+6553 [main] DEBUG i.p.m.service.QuoteServiceTest - 70.00
+1222 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 21860 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1222 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1223 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3872 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.955 seconds (process running for 4.317)
+6730 [main] DEBUG i.p.m.service.QuoteServiceTest - 70
+1303 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28820 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1304 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1305 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4364 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.345 seconds (process running for 4.899)
+1267 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31484 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1267 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1269 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4102 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.132 seconds (process running for 4.581)
+11891 [main] DEBUG i.p.m.service.QuoteServiceTest - 10
+1233 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 7720 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1234 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1234 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3692 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.803 seconds (process running for 4.111)
+6393 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+1250 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1251 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1252 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3696 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.727 seconds (process running for 4.125)
+6267 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+328136 [main] DEBUG i.p.m.service.QuoteServiceTest - 70
+1232 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32192 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1233 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1234 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3743 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.827 seconds (process running for 4.159)
+6500 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+1209 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35200 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1210 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1211 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3670 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.738 seconds (process running for 4.12)
+6337 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+1211 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 36764 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1212 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1213 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3760 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.843 seconds (process running for 4.206)
+6413 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+832  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 20576 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+833  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+833  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2707 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.067 seconds (process running for 3.082)
+4587 [main] DEBUG i.p.m.service.QuoteServiceTest - 105.28
+672  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 22532 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+672  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+673  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2734 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.261 seconds (process running for 3.292)
+5013 [main] DEBUG i.p.m.service.HolderService - Quote is null 
+5038 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+5051 [main] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=100, holder=Holder{id=100, name='Giuseppe, surname='Riccio, birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A, residence='Via Manzoni 23 Albisola (SV), domicile='Via Manzoni 23 Albisola (SV), tel='123456789', email='giu.riccio@gmail.com, login='Riccio, password='Riccio}, registrationMark='DR1234A, registrationDateCar=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100, date='Sun Oct 01 13:16:00 CEST 2023}
+5073 [main] DEBUG i.p.m.service.HolderService - Quote saved correctly
+5074 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+5080 [main] DEBUG i.p.m.service.HolderService - Quote is null 
+5085 [main] DEBUG i.p.m.service.QuoteServiceTest - 112.00
+5091 [main] DEBUG i.p.m.service.QuoteServiceTest - 105.28
+5095 [main] DEBUG i.p.m.service.QuoteServiceTest - 1167.50
+5106 [main] DEBUG i.p.m.service.QuoteServiceTest - 875.00
+5112 [main] DEBUG i.p.m.service.QuoteServiceTest - 700.00
+5116 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+5120 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EE1111EA', quotes=[QuoteDTO@0(holder:Filippo Aneto (NTFLPPAL61A001V), registrationMark:EE1111EA, registrationDateCar:Tue Jan 01 00:00:00 CET 2019, worth:30000.00, policyType:RCA6, cost:20.00, quoteNumber:100-CD2222A-102, date:Sun May 14 13:16:00 CEST 2023)]}
+5120 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EF2222WD', quotes=[QuoteDTO@0(holder:Filippo Aneto (NTFLPPAL61A001V), registrationMark:EF2222WD, registrationDateCar:Sun Jan 01 00:00:00 CET 2023, worth:30000.00, policyType:RCA50, cost:30.00, quoteNumber:100-CD2222A-102, date:Sun Jul 30 13:16:00 CEST 2023)]}
+824  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19772 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+824  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+825  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2643 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.019 seconds (process running for 2.937)
+4428 [main] DEBUG i.p.m.service.QuoteServiceTest - 1167.50
+817  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 23292 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+817  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+818  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2582 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.975 seconds (process running for 2.874)
+4307 [main] DEBUG i.p.m.service.QuoteServiceTest - 875.00
+428  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 28992 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+428  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+429  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1536 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.333 seconds (process running for 2.125)
+109222 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote saved correctly
+318089 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+337265 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDateCar=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101, date='Fri Dec 22 13:16:00 CET 2023}
+390242 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Quote saved correctly
+471673 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Quote saved correctly
+439  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 10572 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+440  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+440  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1517 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.31 seconds (process running for 1.972)
+124209 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Email is not present: a.bella@gmail.com
+124210 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: BLLNG2O456789QA
+124231 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=17, name='Angelica, surname='Bella, birthDate=Sun Jul 07 02:00:00 CEST 1968, fiscalCode='BLLNG2O456789QA, residence='Corso delle rimenbranze 16/8 Firenze, domicile='Corso delle rimenbranze 16/8 Firenze, tel='1445566', email='a.bella@gmail.com, login='null, password='null}
+432  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 10896 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+432  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+433  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1516 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.312 seconds (process running for 1.965)
+40232 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Registration date of the car is incorret 
+57256 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Registration date of the car is incorret 
+75336 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - Registration date of the car is incorret 
+98525 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Registration date of the car is incorret 
+123991 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Quote saved correctly
+311700 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 10896 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+311700 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+311701 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+311996 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 0.324 seconds (process running for 312.446)
+313506 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 10896 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+313506 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+313506 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+313711 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 0.226 seconds (process running for 314.16)
+844  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28984 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+845  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+845  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2597 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.973 seconds (process running for 2.89)
+880  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19536 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+881  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+881  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2933 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.247 seconds (process running for 3.264)
+817  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 17608 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+818  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+818  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2558 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.935 seconds (process running for 2.876)
+1057 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 6492 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1058 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1059 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3173 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.334 seconds (process running for 3.573)
+987  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28096 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+988  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+989  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3110 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.341 seconds (process running for 3.473)
+897  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 29152 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+898  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+899  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2902 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.213 seconds (process running for 3.239)
+930  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35368 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+931  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+933  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2835 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.128 seconds (process running for 3.173)
+931  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31660 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+932  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+933  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2837 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.138 seconds (process running for 3.173)
+831  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 24700 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+832  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+832  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2641 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.0 seconds (process running for 2.962)
+869  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 37436 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+870  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+871  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2652 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.978 seconds (process running for 2.987)
+842  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 3384 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+843  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+844  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2774 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.14 seconds (process running for 3.093)
+879  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 20084 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+880  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+881  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2829 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.155 seconds (process running for 3.149)
+883  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28572 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+883  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+884  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2746 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.068 seconds (process running for 3.056)
+939  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 23808 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+940  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+940  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2848 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.109 seconds (process running for 3.288)
+872  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 23868 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+873  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+874  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2763 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.105 seconds (process running for 3.068)
+861  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 29548 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+861  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+863  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2801 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.147 seconds (process running for 3.15)
+911  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33324 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+913  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+914  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3124 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.431 seconds (process running for 3.514)
+859  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 23668 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+859  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+860  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2774 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.122 seconds (process running for 3.112)
+796  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28564 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+797  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+797  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2704 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.089 seconds (process running for 3.049)
+825  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32928 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+826  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+827  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2782 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.157 seconds (process running for 3.07)
+797  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 26080 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+798  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+798  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2696 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.1 seconds (process running for 2.988)
+833  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 25688 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+834  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+834  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2665 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.037 seconds (process running for 2.97)
+813  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31540 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+813  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+814  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2641 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.019 seconds (process running for 2.967)
+828  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33360 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+828  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+829  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2660 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.031 seconds (process running for 2.997)
+836  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 30328 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+837  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+838  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2672 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.029 seconds (process running for 2.983)

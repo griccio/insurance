@@ -7,7 +7,7 @@ public enum PolicyType {
 
     public BigDecimal getPercentage(){
         if(this == RCA6)
-            return new BigDecimal(0.1);
+            return new BigDecimal(0);
         else if(this == RCA12)
             return new BigDecimal(0.12);
         else if (this == RCA50)
