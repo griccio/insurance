@@ -24,7 +24,7 @@ public class HolderServiceTest {
     HolderService holderService;
 
     private static final Logger logger = LoggerFactory.getLogger(HolderServiceTest.class);
-
+    final int TOT_HOLDERS_BEFORE_TEST = 4; //this is the tot of records into the holder table before each test
 
     @BeforeEach
     public void initTable() {
@@ -35,7 +35,7 @@ public class HolderServiceTest {
     @Test
     public void findAll() {
         List<Holder> list = holderService.findAll();
-        Assertions.assertEquals(3, list.size());
+        Assertions.assertEquals(TOT_HOLDERS_BEFORE_TEST, list.size());
     }
 
     @Test
@@ -49,7 +49,7 @@ public class HolderServiceTest {
                     return holderDTO;
                 }).collect(Collectors.toList());
 
-        Assertions.assertEquals(3, holdersDTO.size());
+        Assertions.assertEquals(TOT_HOLDERS_BEFORE_TEST, holdersDTO.size());
     }
 
 

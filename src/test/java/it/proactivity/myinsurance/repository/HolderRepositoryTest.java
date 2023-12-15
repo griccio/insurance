@@ -92,7 +92,7 @@ public class HolderRepositoryTest {
     }
 
     @Test
-    public void createHolderWithoutName() {
+    public void createHolderErrorBecauseNameIsNull() {
         int holdersBeforeInsert = holderRepository.findAll().size();
 
         try {
@@ -104,7 +104,8 @@ public class HolderRepositoryTest {
             holder.setResidence("Via della Spiga 14/22 20019 Milano");
             holder.setTel("+346565678");
             holder.setEmail("g.villafranca@gmail.com");
-            holderRepository.save(holder);
+            holderRepository.save(holder); //throws exception
+            Assertions.fail();
         } catch (Exception e) {
             logger.error(e.getMessage());
             Assertions.assertEquals(holdersBeforeInsert, holderRepository.findAll().size());
@@ -112,7 +113,7 @@ public class HolderRepositoryTest {
     }
 
     @Test
-    public void createHolderWithWrongName() {
+    public void createHolderErrorBecauseWrongName() {
         int holdersBeforeInsert = holderRepository.findAll().size();
 
         try {
@@ -169,7 +170,7 @@ public class HolderRepositoryTest {
 
 
     @Test
-    public void updateHolderWithWrongName() {
+    public void updateHolderErrorBecausehWrongName() {
         int holdersBeforeInsert = holderRepository.findAll().size();
         try {
             Holder holder = new Holder();
@@ -215,14 +216,30 @@ public class HolderRepositoryTest {
         holder.setTel("+346565678");
         holder.setEmail("g.villafranca@gmail.com");
         holderRepository.save(holder);
+
         Assertions.assertNotNull(holder.getId());
-        int holdersAfterInsert = holderRepository.findAll().size();
+        Assertions.assertEquals(holdersBeforeInsert + 1, holderRepository.findAll().size());
+        Assertions.assertTrue(holderRepository.delete(holder));
 
-        Assertions.assertEquals(holdersBeforeInsert + 1, holdersAfterInsert);
+    }
 
-        holderRepository.delete(holder);
 
-        Assertions.assertEquals(holdersBeforeInsert, holderRepository.findAll().size());
+    @Test
+    public void deleteHolderErrorBecauseIdNotExist() {
+        int holdersBeforeInsert = holderRepository.findAll().size();
+
+            Holder holder = new Holder();
+            holder.setId(1234L);
+            holder.setName("Gustavo");
+            holder.setSurname("VillaFranca");
+            holder.setFiscalCode("VLLGTV80A01F205F");
+            holder.setBirthDate(new GregorianCalendar(1980, 01, 01).getTime());
+            holder.setDomicile("Via della Spiga 14/22 20019 Milano");
+            holder.setResidence("Via della Spiga 14/22 20019 Milano");
+            holder.setTel("+346565678");
+            holder.setEmail("g.villafranca@gmail.com");
+            Assertions.assertFalse(holderRepository.delete(holder));
+
 
     }
 

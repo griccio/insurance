@@ -8,8 +8,6 @@ import it.proactivity.myinsurance.model.query.QQuote;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Repository
 public class QuoteRepository {
@@ -18,15 +16,24 @@ public class QuoteRepository {
         return new QQuote().orderBy("quoteNumber").findList();
     }
 
+    /**
+     * return all the Quote with the info of holder
+     * @return
+     */
     public List<Quote> findAllWithHolderData() {
-
-        return new QQuote().orderBy("quoteNumber").holder.fetch().findList();
+       return new QQuote().orderBy("quoteNumber").holder.fetch().findList();
     }
 
 
     public Quote findById(Long id) {
         return DB.find(Quote.class, id);
     }
+
+
+    public Quote findByIdWithHolderData(Long id) {
+        return new QQuote().id.eq(id).holder.fetch().findOne();
+    }
+
 
     public List<Quote> findByRegistrationMark(String registrationMark){
 
@@ -58,10 +65,29 @@ public class QuoteRepository {
     }
 
 
+    /**
+     * return the list of registration marks of the cars owned by holder
+     * @param holderId
+     * @return
+     */
+    public List<String> getCarsListOwnedByHolder(Long holderId) {
+        String sql = "select distinct(registration_mark) as registrationMark from quote where holder_id = :holderId";
+
+        List<SqlRow> registrationsMarkByHolder = DB.sqlQuery(sql)
+                .setParameter("holderId", holderId)
+                .findList();
+
+        List<String> registrationsMark = registrationsMarkByHolder.stream()
+                                            .map(row -> {
+                                                String registration = row.getString("registrationMark");
+                                                return registration;})
+                                            .toList();
+        return (registrationsMark);
+    }
+
 
     public Quote save(Quote quote) {
         DB.save(quote);
-        // Note that the quoteNumber is updated with a trigger
         return quote;
     }
 
@@ -76,11 +102,14 @@ public class QuoteRepository {
     }
 
 
-    public Boolean verifyRegistrationMark(String registrationMark) throws QuoteException {
-        Pattern pattern = Pattern.compile("[a-zA-Z1-9]", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(registrationMark);
-        if(!matcher.find())
-            throw new QuoteException("Registration Mark is invalid");
+    /**
+     * check if there are less than two plates into the quotes,
+     * return true if there are none or if only one is found
+     * @param registrationMark
+     * @return
+     * @throws QuoteException
+     */
+    public Boolean verifyRegistrationMarkNumber(String registrationMark) {
 
         String sql = "select count(id) as tot from quote where registration_mark = :registrationMark";
 
@@ -91,9 +120,9 @@ public class QuoteRepository {
         Long count = row.getLong("tot");
 
         if(count != null && count == 2)
-            throw new QuoteException("You cannot create more than two quotes for the same registration mark ");
-
-        return true;
+            return false;
+        else
+            return true;
     }
     
 }

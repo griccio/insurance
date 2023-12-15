@@ -13,14 +13,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class HolderService {
+public class HolderService extends MyInsuranceService{
     @Autowired
     HolderRepository holderRepository;
-
-
-    private static final Logger logger = LoggerFactory.getLogger(HolderService.class);
-
-
 
 
     public List<Holder> findAll() {

@@ -1696,3 +1696,381 @@ Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_email
 14328 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 12.824 seconds (process running for 15.201)
 19666 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)
 19666 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)
+1404 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 35976 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1404 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 35976 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1405 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1405 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1407 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1407 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3975 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.88 seconds (process running for 4.464)
+3975 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.88 seconds (process running for 4.464)
+7089 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)
+7089 [main] ERROR i.p.m.r.QuoteRepositoryTest - javax.persistence.PersistenceException: Error: ERRORE: il valore è troppo lungo per il tipo character varying(10)
+1217 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 33872 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1217 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 33872 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1218 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1218 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1219 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1219 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3721 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.792 seconds (process running for 4.231)
+3721 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.792 seconds (process running for 4.231)
+1228 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28652 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1228 [main] INFO  i.p.m.r.HolderRepositoryTest - Starting HolderRepositoryTest using Java 20.0.1 with PID 28652 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1229 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1229 [main] DEBUG i.p.m.r.HolderRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1230 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1230 [main] INFO  i.p.m.r.HolderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3838 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.911 seconds (process running for 4.263)
+3838 [main] INFO  i.p.m.r.HolderRepositoryTest - Started HolderRepositoryTest in 2.911 seconds (process running for 4.263)
+1277 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 32612 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1277 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 32612 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1278 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1278 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1279 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1279 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4034 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.054 seconds (process running for 4.556)
+4034 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.054 seconds (process running for 4.556)
+1362 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 8284 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1363 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1364 [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+1321 [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 19472 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1323 [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1324 [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3850 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.82 seconds (process running for 4.312)
+6796 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+945  [main] INFO  i.p.m.service.HolderServiceTest - Starting HolderServiceTest using Java 20.0.1 with PID 7876 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+946  [main] DEBUG i.p.m.service.HolderServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+947  [main] INFO  i.p.m.service.HolderServiceTest - No active profile set, falling back to 1 default profile: "default"
+3264 [main] INFO  i.p.m.service.HolderServiceTest - Started HolderServiceTest in 2.623 seconds (process running for 4.07)
+6233 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6259 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=1, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6286 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: VLLGTV80A01F205F
+6345 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6347 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=2, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6352 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafranca@gmail.com
+6364 [main] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: VXXGTV80A01F205F
+6372 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6373 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=3, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6375 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+6386 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6387 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=4, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6390 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+6393 [main] DEBUG i.p.m.service.HolderService - Holder Found  Holder{id=4, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6396 [main] DEBUG i.p.m.service.HolderService - Holder deleted Correctly 
+6398 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6408 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6409 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=5, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6411 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already  been registered with the same email: g.villafranca@gmail.com
+6419 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6420 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=6, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6422 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=6, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6423 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder{id=6, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6425 [main] DEBUG i.p.m.service.HolderService - Holder after updating Holder{id=6, name='Gustavomodified, surname='VillaFrancamodified, birthDate=Tue Feb 01 00:00:00 CET 2000, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milanomodified, domicile='Via della Spiga 14/22 20019 Milanomodified, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6426 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=6, name='Gustavomodified, surname='VillaFrancamodified, birthDate=Tue Feb 01 00:00:00 CET 2000, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milanomodified, domicile='Via della Spiga 14/22 20019 Milanomodified, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6437 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6445 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=100, name='Giuseppe, surname='Riccio, birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A, residence='Via Manzoni 23 Albisola (SV), domicile='Via Manzoni 23 Albisola (SV), tel='123456789', email='giu.riccio@gmail.com, login='Riccio, password='Riccio}
+6452 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6468 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder{id=null, name='null, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (7, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+6478 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6492 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6492 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=8, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6494 [main] ERROR i.p.m.service.HolderService - Fiscal Code is present,  another holder has already been registered with the same Fiscal Code: GPPIRCCO456789A
+6502 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6505 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=9, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6507 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+6514 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6514 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=10, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6516 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+6518 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder{id=null, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca2@gmail.com, login='null, password='null}
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_fiscal_code_key"   Dettaglio: La chiave (fiscal_code)=(VLLGTV80A01F205F) esiste già.
+6527 [main] DEBUG i.p.m.service.HolderService - Email is not present: g.villafrancaxxx@gmail.com
+6533 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6535 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=12, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6537 [main] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=12, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6537 [main] DEBUG i.p.m.service.HolderService - Holder before updating Holder{id=12, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6538 [main] ERROR i.p.m.service.HolderService - Error updating the holder Holder{id=12, name='null, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+Error: ERRORE: il valore nullo nella colonna "name" della relazione "holder" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (12, null, VillaFranca, 1980-02-01, VLLGTV80A01F205F, Via della Spiga 14/22 20019 Milano, Via della Spiga 14/22 20019 Milano, +346565678, g.villafranca@gmail.com, null, null).
+6546 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6546 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=13, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6548 [main] ERROR i.p.m.service.HolderService - Email is present,  another holder has already been registered with the same email: giu.riccio@gmail.com
+6562 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6565 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=14, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6568 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+6570 [main] ERROR i.p.m.service.HolderService - Error saving the holder Holder{id=null, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLPPP80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+Error: ERRORE: un valore chiave duplicato viola il vincolo univoco "holder_email_key"   Dettaglio: La chiave (email)=(g.villafranca@gmail.com) esiste già.
+6580 [main] DEBUG i.p.m.service.HolderService - Holders Found: 4
+6581 [main] DEBUG i.p.m.service.HolderService - Holder saved correctly; Holder{id=16, name='Gustavo, surname='VillaFranca, birthDate=Fri Feb 01 00:00:00 CET 1980, fiscalCode='VLLGTV80A01F205F, residence='Via della Spiga 14/22 20019 Milano, domicile='Via della Spiga 14/22 20019 Milano, tel='+346565678', email='g.villafranca@gmail.com, login='null, password='null}
+6586 [main] DEBUG i.p.m.service.HolderService - Holders Found: 5
+1373 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35168 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1374 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1375 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4277 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.221 seconds (process running for 4.762)
+7336 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+1204 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31708 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1206 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1208 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3864 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.959 seconds (process running for 4.283)
+6548 [main] DEBUG i.p.m.service.QuoteServiceTest - 1.19999999999999995559107901499373838305473327636718750
+1347 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19832 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1348 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1349 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4111 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.059 seconds (process running for 4.631)
+142593 [main] DEBUG i.p.m.service.QuoteServiceTest - 1.19999999999999995559107901499373838305473327636718750
+1349 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 30052 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1350 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1351 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4345 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.3 seconds (process running for 4.843)
+1274 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19136 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1275 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1276 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4177 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.202 seconds (process running for 4.65)
+381829 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.19999999999999995559107901499373838305473327636718750
+809  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19288 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+810  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+810  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2803 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.194 seconds (process running for 3.096)
+4690 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+816  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 26344 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+816  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+817  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2623 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.004 seconds (process running for 2.921)
+4479 [main] DEBUG i.p.m.service.QuoteServiceTest - 15.68
+854  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 18732 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+855  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+856  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2940 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.291 seconds (process running for 3.267)
+47306 [main] DEBUG i.p.m.service.QuoteServiceTest - 15.68
+845  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33280 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+846  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+847  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2963 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.32 seconds (process running for 3.293)
+24994 [main] DEBUG i.p.m.service.QuoteServiceTest - 30.24
+868  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32668 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+868  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+869  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3158 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.501 seconds (process running for 3.482)
+13094 [main] DEBUG i.p.m.service.QuoteServiceTest - 11.20
+808  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35748 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+808  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+809  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2648 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.024 seconds (process running for 2.944)
+869  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 12832 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+869  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+870  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2903 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.243 seconds (process running for 3.234)
+878  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 25660 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+878  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+879  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3144 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.471 seconds (process running for 3.474)
+5338 [main] ERROR i.p.m.service.HolderService - Error finding the quote with id =999
+Cannot invoke "it.proactivity.myinsurance.model.Quote.toString()" because "quote" is null
+805  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27436 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+806  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+806  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2800 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.176 seconds (process running for 3.102)
+4819 [main] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDateCar=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100, date='Sun Oct 01 13:16:00 CEST 2023}
+811  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 11572 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+812  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+813  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2637 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.008 seconds (process running for 2.939)
+4500 [main] DEBUG i.p.m.service.HolderService - Quote is null 
+806  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 6052 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+806  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+807  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2698 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.084 seconds (process running for 2.991)
+4633 [main] DEBUG i.p.m.service.HolderService - Quote is null 
+800  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 29068 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+801  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+802  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2689 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.071 seconds (process running for 3.013)
+4624 [main] DEBUG i.p.m.service.HolderService - Quote saved correctly
+4640 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+441  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34704 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+442  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+442  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1570 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.358 seconds (process running for 2.129)
+10489 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+477  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 8796 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+478  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+480  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1735 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.507 seconds (process running for 2.274)
+461  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 19728 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+461  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+462  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1665 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.443 seconds (process running for 2.204)
+47531 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+72124 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=100, holder=Holder{id=100, name='null, surname='null, birthDate=null, fiscalCode='null, residence='null, domicile='null, tel='null', email='null, login='null, password='null}, registrationMark='DR1234A, registrationDateCar=Fri Jan 01 00:00:00 CET 2010, worth=10000.00, policyType=RCA6, cost=10.00, quoteNumber='100-DR1234A-100, date='Sun Oct 01 13:16:00 CEST 2023}
+462  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 29912 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+462  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+462  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1722 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.498 seconds (process running for 2.233)
+72325 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+114555 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding the quote with id =100
+Unique expecting 0 or 1 results but got 6
+162556 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - Error finding the quote with id =100
+Unique expecting 0 or 1 results but got 6
+174891 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - Error finding the quote with id =101
+Unique expecting 0 or 1 results but got 6
+487  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 36332 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+488  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+490  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2004 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.772 seconds (process running for 2.521)
+68780 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error finding the quote with id =101
+Unique expecting 0 or 1 results but got 6
+120167 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - Error finding the quote with id =101
+Unique expecting 0 or 1 results but got 6
+474  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 8744 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+474  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+475  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1708 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.478 seconds (process running for 2.228)
+459  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21456 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+460  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+460  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1655 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.428 seconds (process running for 2.203)
+455  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 19976 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+456  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+456  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1651 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.428 seconds (process running for 2.166)
+52496 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDateCar=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101, date='Fri Dec 22 13:16:00 CET 2023}
+441  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 17364 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+441  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+441  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1530 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.323 seconds (process running for 1.982)
+21034 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDateCar=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101, date='Fri Dec 22 13:16:00 CET 2023}
+442  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 28192 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+442  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+442  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1544 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.333 seconds (process running for 2.062)
+13608 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=101, holder=Holder{id=101, name='Mario, surname='Rossi, birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R, residence='Via della Vittoria 14 int 4 , domicile='Via della Vittoria 14 int 4, tel='994537215', email='m.rossi@gmail.com, login='mrossi, password='13QWER}, registrationMark='CD2222A, registrationDateCar=Sat Jan 01 00:00:00 CET 2022, worth=30000.00, policyType=RCA6, cost=30.00, quoteNumber='100-CD2222A-101, date='Fri Dec 22 13:16:00 CET 2023}
+455  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 22388 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+455  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+456  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1692 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.467 seconds (process running for 2.202)
+747  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 32276 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+750  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+751  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2061 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.682 seconds (process running for 2.601)
+465  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 25476 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+465  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+466  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1676 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.447 seconds (process running for 2.198)
+466  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 30380 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+466  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+467  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1708 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.479 seconds (process running for 2.243)
+60554 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Quote saved correctly
+790  [main] INFO  i.p.m.c.QuoteControllerTest - Starting QuoteControllerTest using Java 20.0.1 with PID 20432 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+792  [main] DEBUG i.p.m.c.QuoteControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+792  [main] INFO  i.p.m.c.QuoteControllerTest - No active profile set, falling back to 1 default profile: "default"
+666  [main] INFO  i.p.m.c.QuoteControllerTest - Starting QuoteControllerTest using Java 20.0.1 with PID 36696 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+666  [main] DEBUG i.p.m.c.QuoteControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+667  [main] INFO  i.p.m.c.QuoteControllerTest - No active profile set, falling back to 1 default profile: "default"
+674  [main] INFO  i.p.m.c.QuoteControllerTest - Starting QuoteControllerTest using Java 20.0.1 with PID 33544 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+674  [main] DEBUG i.p.m.c.QuoteControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+675  [main] INFO  i.p.m.c.QuoteControllerTest - No active profile set, falling back to 1 default profile: "default"
+1453 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2188 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1453 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2188 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1454 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1454 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1457 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1457 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+4753 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.621 seconds (process running for 5.764)
+4753 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 3.621 seconds (process running for 5.764)
+1233 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36668 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1233 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 36668 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1234 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1234 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1236 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1236 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3743 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.789 seconds (process running for 4.208)
+3743 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.789 seconds (process running for 4.208)
+6661 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+6661 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+6661 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+6661 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+1239 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 21184 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1239 [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 21184 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1240 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1240 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1241 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+1241 [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+3769 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.81 seconds (process running for 4.232)
+3769 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.81 seconds (process running for 4.232)
+6683 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+6683 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+6684 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+6684 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+1270 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 17824 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1272 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1273 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4112 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.144 seconds (process running for 4.594)
+7047 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+7147 [main] DEBUG i.p.m.service.QuoteServiceTest - it.proactivity.myinsurance.model.QuoteByCarDTO@1f6ba47b
+1279 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 20704 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1280 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1281 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3665 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.732 seconds (process running for 4.113)
+6436 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+6493 [main] DEBUG i.p.m.service.QuoteServiceTest - it.proactivity.myinsurance.model.QuoteByCarDTO@75d95b67
+6493 [main] DEBUG i.p.m.service.QuoteServiceTest - it.proactivity.myinsurance.model.QuoteByCarDTO@40f15786
+1356 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 10508 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1357 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1358 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4248 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.192 seconds (process running for 4.754)
+24654 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+102034 [main] DEBUG i.p.m.service.QuoteServiceTest - it.proactivity.myinsurance.model.QuoteByCarDTO@6ac26e1
+102035 [main] DEBUG i.p.m.service.QuoteServiceTest - it.proactivity.myinsurance.model.QuoteByCarDTO@7fa78659
+1237 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 1864 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1238 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1239 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3849 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.915 seconds (process running for 4.297)
+6615 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+6667 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByCarDTO{holder_id=103, registrationMark='EE1111EA', quotes=[QuoteDTO@0(registrationMark:EE1111EA, registrationDateCar:Tue Jan 01 00:00:00 CET 2019, worth:30000.00, policyType:RCA6, cost:20.00, quoteNumber:100-CD2222A-102, date:Sun May 14 13:16:00 CEST 2023)]}
+6667 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByCarDTO{holder_id=103, registrationMark='EF2222WD', quotes=[QuoteDTO@0(registrationMark:EF2222WD, registrationDateCar:Sun Jan 01 00:00:00 CET 2023, worth:30000.00, policyType:RCA50, cost:30.00, quoteNumber:100-CD2222A-102, date:Sun Jul 30 13:16:00 CEST 2023)]}
+1241 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33512 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1242 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1243 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+4229 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.307 seconds (process running for 4.66)
+6905 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+6966 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByCarDTO{holder_id=103, registrationMark='EE1111EA', quotes=[QuoteDTO@0(registrationMark:EE1111EA, registrationDateCar:Tue Jan 01 00:00:00 CET 2019, worth:30000.00, policyType:RCA6, cost:20.00, quoteNumber:100-CD2222A-102, date:Sun May 14 13:16:00 CEST 2023)]}
+6967 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByCarDTO{holder_id=103, registrationMark='EF2222WD', quotes=[QuoteDTO@0(registrationMark:EF2222WD, registrationDateCar:Sun Jan 01 00:00:00 CET 2023, worth:30000.00, policyType:RCA50, cost:30.00, quoteNumber:100-CD2222A-102, date:Sun Jul 30 13:16:00 CEST 2023)]}
+646  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 29880 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+646  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+647  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2503 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.192 seconds (process running for 3.287)
+104579 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+659  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 32916 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+660  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+660  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2394 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.095 seconds (process running for 3.111)
+27672 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+70574 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote saved correctly
+80300 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Quote saved correctly
+91777 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD, AA123BB, AA123BB]
+677  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26556 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+678  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+678  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2602 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.273 seconds (process running for 3.494)
+10502 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD, AA123BB, AA123BB]
+109996 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD, AA123BB, AA123BB]
+708  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21760 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+708  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+709  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2609 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.271 seconds (process running for 3.386)
+88850 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD, AA123BB, AA123BB]
+88999 [http-nio-8080-exec-1] ERROR i.p.m.service.HolderService - Error loading  quotes by holder idjava.sql.SQLException: Interrupted getting connection from pool
+644  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 25460 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+644  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+645  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2597 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.288 seconds (process running for 3.299)
+26710 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [AA123BB, EF2222WD, EE1111EA]
+701  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 19108 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+702  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+702  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2578 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.223 seconds (process running for 3.361)
+855826 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
+855826 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
+855826 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
+855826 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 108 has these cars []
+864434 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [AA123BB, EF2222WD, EE1111EA]

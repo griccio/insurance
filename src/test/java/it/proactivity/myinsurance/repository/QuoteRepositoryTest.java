@@ -5,7 +5,6 @@ import io.ebean.Database;
 import it.proactivity.myinsurance.model.Holder;
 import it.proactivity.myinsurance.model.PolicyType;
 import it.proactivity.myinsurance.model.Quote;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -221,7 +220,7 @@ public class QuoteRepositoryTest {
 
 
     @Test
-    public void updateQuoteBecauseRegistrationMark() {
+    public void updateQuoteErrorBecauseRegistrationMark() {
 
         Holder holder = holderRepository.findById(102L); // this holder has no quotes
         try {
@@ -246,12 +245,60 @@ public class QuoteRepositoryTest {
             quote2.setCost(BigDecimal.valueOf(100.89));
             quote2.setDate(new Date(System.currentTimeMillis()));
             quote2 = quoteRepository.save(quote2);
+            Assertions.fail();
 
         } catch (Exception e) {
             logger.error(e.toString());
+            Assertions.assertTrue(true);
         }
     }
 
 
+    @Test
+    public void deleteQuote() {
+        int quotesBeforeTest = quoteRepository.findAll().size();
+        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Quote quote  = new Quote();
+        quote.setHolder(holder);
+        quote.setRegistrationMark("AA1234BB");
+        quote.setQuoteNumber("123456");
+        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+        quote = quoteRepository.save(quote);
+
+        Assertions.assertEquals(quotesBeforeTest + 1, quoteRepository.findAll().size());
+
+        Assertions.assertTrue(quoteRepository.delete(quote));
+
+    }
+    @Test
+    public void deleteQuoteErrorBecauseNotExist() {
+        int quotesBeforeTest = quoteRepository.findAll().size();
+        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Quote quote  = new Quote();
+        quote.setId(1234L);
+        quote.setHolder(holder);
+        quote.setRegistrationMark("AA1234BB");
+        quote.setQuoteNumber("123456");
+        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+
+        Assertions.assertFalse(quoteRepository.delete(quote));
+
+    }
+
+    @Test
+    public void getCarsListByHolder(){
+        List<String> registrationsMark = quoteRepository.getCarsListOwnedByHolder(103L);
+        Assertions.assertNotNull(registrationsMark);
+        registrationsMark.forEach(reg -> logger.debug(reg));
+
+    }
 
 }
