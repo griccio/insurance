@@ -4,6 +4,7 @@ import io.ebean.annotation.Transactional;
 import it.proactivity.myinsurance.exception.QuoteException;
 import it.proactivity.myinsurance.model.*;
 import it.proactivity.myinsurance.repository.HolderRepository;
+import it.proactivity.myinsurance.repository.OptionalExtraRepository;
 import it.proactivity.myinsurance.repository.QuoteRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,8 @@ public class QuoteService extends MyInsuranceService{
     @Autowired
     HolderRepository holderRepository;
 
+    @Autowired
+    OptionalExtraRepository optionalExtraRepository;
 
     @Transactional
     public List<Quote> findAll(){
@@ -144,24 +147,44 @@ public class QuoteService extends MyInsuranceService{
             throw new QuoteException("Registration date of the car is incorret ");
         }
 
-
         Quote quote = new Quote();
         BeanUtils.copyProperties(quoteForCreateDTO,quote);
 
         quote.setHolder(holder);
         quote.setCost(calculateQuoteCost(quote.getWorth(),quote.getRegistrationDateCar(),quote.getPolicyType()));
         quote.setDate(new Date(System.currentTimeMillis()));
+        quote.setQuoteNumber(quote.getHolder().getId() + "-"
+               + quote.getRegistrationMark() + "-"
+               + quoteRepository.getValideQuoteCounterForHolderAndRegistrationMark(quote.getHolder().getId(),quote.getRegistrationMark()));
+
         quoteRepository.save(quote);
-
-        quote.setQuoteNumber(quote.getHolder().getId()+"-"+quote.getRegistrationMark()+"-"+ quote.getId());
-
-        quoteRepository.update(quote);
 
         logger.debug("Quote saved correctly");
 
         return quote;
     }
 
+
+    public Quote update(QuoteForUpdateDTO quoteForUpdateDTO) throws QuoteException {
+
+        Quote quote = quoteRepository.findById(quoteForUpdateDTO.getId());
+
+        quoteForUpdateDTO.getOptionalExtraByCodeList().forEach(code ->{
+            quote.addOptionalExtra(optionalExtraRepository.findByCode(code));
+            logger.debug("Added new  optional extra : " + code );
+        });
+
+        quote.setCost(calculateQuoteCost(quote.getWorth(),quote.getRegistrationDateCar(),quote.getPolicyType())
+                .add(addOptionalExtraCosts(quote.getWorth(),quote.getRegistrationDateCar(),quote.getOptionalExtras().size())));
+
+
+        quoteRepository.update(quote);
+
+
+        logger.debug("Quote saved correctly");
+
+        return quote;
+    }
 
     /**
      * check if the plate(registrationMark) has the right pattern match and
@@ -198,8 +221,8 @@ public class QuoteService extends MyInsuranceService{
     /**
      * some examples:
      * car registered 1/1/2020, worth 10000 RCA6 = 10000/1000 = 10
-     * car registered 1/1/2020, worth 10000 RCA12 = 10000/1000 = 10*0.12 = 12
-     * car registered 1/1/1990, worth 10000 RCA12 = 10000/750 * 0.12 = 12
+     * car registered 1/1/2020, worth 10000 RCA12 = 10000/1000 = 10 + 10*0.12 = 12
+     * car registered 1/1/1990, worth 10000 RCA12 = 10000/750 + (10000/750 * 0.12) = 14.93
      * @param worth
      * @param registrationDate
      * @param policyType
@@ -209,15 +232,28 @@ public class QuoteService extends MyInsuranceService{
 
         BigDecimal cost = new BigDecimal(0);
 
-        if(registrationDate.after(Quote.STARTING_NEW_TARIFF_DATE.getTime())
-                && worth.compareTo(new BigDecimal(Quote.WORTH_CAR_LIMIT))!=-1)
-            cost = worth.divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
+        if(registrationDate.after(MyInsuranceConstants.STARTING_NEW_TARIFF_DATE.getTime())
+                && worth.compareTo(new BigDecimal(MyInsuranceConstants.WORTH_CAR_LIMIT))!=-1)
+            cost = worth.divide(new BigDecimal(MyInsuranceConstants.NEW_TARIFF), RoundingMode.UP);
         else
-            cost = worth.divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
+            cost = worth.divide(new BigDecimal(MyInsuranceConstants.OLD_TARIFF), RoundingMode.UP);
 
          cost = cost.add(cost.multiply(policyType.getPercentage()))
                 .setScale(2, RoundingMode.CEILING);
 
        return cost;
+    }
+
+    public BigDecimal addOptionalExtraCosts(BigDecimal worth, Date registrationDate, int optionalExtraTot){
+
+        BigDecimal  extraCost = new BigDecimal(0);
+
+             if(registrationDate.after(MyInsuranceConstants.STARTING_NEW_TARIFF_DATE.getTime())
+                     && worth.compareTo(new BigDecimal(MyInsuranceConstants.WORTH_CAR_LIMIT))!=-1)
+                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRACOST_AFTER_2020).multiply(new BigDecimal(optionalExtraTot));
+             else
+                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRACOST_BEFORE_2020).multiply(new BigDecimal(optionalExtraTot));
+
+        return extraCost;
     }
 }

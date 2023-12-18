@@ -1,25 +1,18 @@
 package it.proactivity.myinsurance.model;
 
+import it.proactivity.myinsurance.model.query.QQuote;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Size;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 @Entity
 public class Quote {
 
 
-    public static final GregorianCalendar STARTING_NEW_TARIFF_DATE = new GregorianCalendar(2020, Calendar.JANUARY,01);
-    public static final int NEW_TARIFF = 1000;
-    public static final int OLD_TARIFF = 750;
-
-    public static final int WORTH_CAR_LIMIT = 10000;
     @Id
     @GeneratedValue
     private Long id;
@@ -62,6 +55,13 @@ public class Quote {
 
     @Column(name="date")
     private Date date;
+
+    @ManyToMany
+    @JoinTable(name="quote_optional_extra",
+            joinColumns = @JoinColumn(name="quote_id"),
+            inverseJoinColumns = @JoinColumn(name="optional_extra_id")
+    )
+    private List<OptionalExtra> optionalExtras = new ArrayList<>();
 
     public Long getId() {
         return id;
@@ -134,6 +134,20 @@ public class Quote {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public List<OptionalExtra> getOptionalExtras() {
+        return optionalExtras;
+    }
+
+    public void addOptionalExtra(OptionalExtra optionalExtras){
+       this.optionalExtras.add(optionalExtras);
+    }
+
+    public void removeOptionalExtra(OptionalExtra optionalExtras){
+        this.optionalExtras.remove(optionalExtras);
+    }
+
+
 
     @Override
     public String toString() {

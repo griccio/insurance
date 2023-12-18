@@ -3,6 +3,7 @@ package it.proactivity.myinsurance.repository;
 import io.ebean.DB;
 import io.ebean.Database;
 import it.proactivity.myinsurance.model.Holder;
+import it.proactivity.myinsurance.model.OptionalExtra;
 import it.proactivity.myinsurance.model.PolicyType;
 import it.proactivity.myinsurance.model.Quote;
 import org.junit.jupiter.api.Assertions;
@@ -25,6 +26,9 @@ public class QuoteRepositoryTest {
 
     @Autowired
     HolderRepository holderRepository;
+
+    @Autowired
+    OptionalExtraRepository optionalExtraRepository;
 
     private static final Logger logger = LoggerFactory.getLogger(QuoteRepositoryTest.class);
 
@@ -299,5 +303,126 @@ public class QuoteRepositoryTest {
         registrationsMark.forEach(reg -> logger.debug(reg));
 
     }
+
+    @Test
+    public void createQuoteWithOptionalExtras(){
+            int quotesBeforeInsert = quoteRepository.findAll().size();
+            Holder holder = holderRepository.findById(102L); // this holder has no quotes
+            Quote quote  = new Quote();
+            quote.setHolder(holder);
+            quote.setRegistrationMark("AA1234BB");
+            quote.setQuoteNumber("123456");
+            quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+            quote.setWorth(BigDecimal.valueOf(20000));
+            quote.setPolicyType(PolicyType.RCA12);
+            quote.setCost(BigDecimal.valueOf(50));
+            quote.setDate(new Date(System.currentTimeMillis()));
+            quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+            quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+            quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
+            quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
+            quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
+            quote = quoteRepository.save(quote);
+
+            Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+
+        }
+
+
+    @Test
+    public void createQuoteWithOptionalExtrasAndCheck(){
+        int quotesBeforeInsert = quoteRepository.findAll().size();
+        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Quote quote  = new Quote();
+        quote.setHolder(holder);
+        quote.setRegistrationMark("AA1234BB");
+        quote.setQuoteNumber("123456");
+        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
+        quote = quoteRepository.save(quote);
+
+        Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+        Quote quote3 = quoteRepository.findById(quote.getId());
+        quote3.getOptionalExtras().forEach(extra ->logger.debug(extra.toString()));
+        Assertions.assertEquals(5, quote3.getOptionalExtras().size());
+
+    }
+
+
+
+    @Test
+    public void createQuoteWithOptionalAndBeforeSavingRemoveSomeAndCheck(){
+        int quotesBeforeInsert = quoteRepository.findAll().size();
+        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Quote quote  = new Quote();
+        quote.setHolder(holder);
+        quote.setRegistrationMark("AA1234BB");
+        quote.setQuoteNumber("123456");
+        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
+
+        quote.removeOptionalExtra(optionalExtraRepository.findByCode("DC"));
+        quote.removeOptionalExtra(optionalExtraRepository.findByCode("TL"));
+
+        quote = quoteRepository.save(quote);
+
+        Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+
+        Quote quote2 = quoteRepository.findById(quote.getId());
+        Assertions.assertEquals(3, quote2.getOptionalExtras().size());
+        quote2.getOptionalExtras().forEach(extra ->logger.debug(extra.toString()));
+
+    }
+
+    @Test
+    public void createQuoteWithOptionalAndAfterSavingRemoveSomeAndCheck(){
+        int quotesBeforeInsert = quoteRepository.findAll().size();
+        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Quote quote  = new Quote();
+        quote.setHolder(holder);
+        quote.setRegistrationMark("AA1234BB");
+        quote.setQuoteNumber("123456");
+        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
+        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
+        quote = quoteRepository.save(quote);
+
+        Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+        Quote quote2 = quoteRepository.findById(quote.getId());
+        quote2.removeOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote2.removeOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote2 = quoteRepository.save(quote2);
+
+        //check values
+        Quote quote3 = quoteRepository.findById(quote2.getId());
+        Assertions.assertEquals(3, quote3.getOptionalExtras().size());
+        quote3.getOptionalExtras().forEach(extra ->logger.debug(extra.toString()));
+
+    }
+
+
 
 }

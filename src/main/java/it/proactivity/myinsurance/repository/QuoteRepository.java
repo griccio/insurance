@@ -107,22 +107,24 @@ public class QuoteRepository {
      * return true if there are none or if only one is found
      * @param registrationMark
      * @return
-     * @throws QuoteException
      */
     public Boolean verifyRegistrationMarkNumber(String registrationMark) {
 
-        String sql = "select count(id) as tot from quote where registration_mark = :registrationMark";
+        int count = new QQuote().registrationMark.eq(registrationMark).findCount();
 
-        SqlRow row = DB.sqlQuery(sql)
-                .setParameter("registrationMark", registrationMark)
-                .findOne();
+        return(count == 2);
 
-        Long count = row.getLong("tot");
-
-        if(count != null && count == 2)
-            return false;
-        else
-            return true;
     }
-    
+
+
+    public int getValideQuoteCounterForHolderAndRegistrationMark(Long holderId, String registrationMark) {
+        int count = new QQuote().holder.id.eq(holderId).registrationMark.eq(registrationMark).findCount();
+        return(count+1);
+
+    }
+
+    public Boolean hasKasko(Long id,String registrationMark){
+        int count = new QQuote().optionalExtras.code.eq("K").registrationMark.eq(registrationMark).findCount();
+        return count > 0;
+    }
 }

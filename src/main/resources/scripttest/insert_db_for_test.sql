@@ -1,4 +1,4 @@
-
+delete from quote_optional_extra;
 delete from quote;
 delete from holder;
 

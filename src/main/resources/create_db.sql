@@ -26,3 +26,27 @@ CREATE TABLE IF NOT EXISTS quote
     FOREIGN KEY (holder_id) REFERENCES holder(id),
     date TIMESTAMP NOT NULL
     );
+
+CREATE TABLE IF NOT EXISTS optional_extra
+(
+    id SERIAL PRIMARY KEY,
+    code VARCHAR(2) NOT NULL UNIQUE,
+    name  VARCHAR(100) NOT NULL
+    );
+
+insert into optional_extra(id,code,name)
+VALUES(1,'C', 'POLIZZA CRISTALLI'),
+    (2,'FI', 'FURTO INCENDIO'),
+    (3,'AS', 'ASSISTENZA STRADALE'),
+    (4,'TL', 'TUTELA LEGALE'),
+    (5,'DC', 'DANNI CONDUCENTE'),
+    (6,'K', 'KASKO');
+
+CREATE TABLE IF NOT EXISTS quote_optional_extra
+(
+    quote_id INT NOT NULL,
+    optional_extra_id INT NOT NULL,
+    PRIMARY KEY (quote_id, optional_extra_id),
+    FOREIGN KEY (quote_id) REFERENCES quote(id),
+    FOREIGN KEY (optional_extra_id) REFERENCES optional_extra(id)
+    );

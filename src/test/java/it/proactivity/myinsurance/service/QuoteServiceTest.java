@@ -4,6 +4,7 @@ import io.ebean.DB;
 import io.ebean.Database;
 import it.proactivity.myinsurance.exception.QuoteException;
 import it.proactivity.myinsurance.model.*;
+import it.proactivity.myinsurance.repository.OptionalExtraRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -32,6 +34,9 @@ import java.util.regex.Pattern;
 public class QuoteServiceTest {
     @Autowired
     QuoteService quoteService;
+
+    @Autowired
+    OptionalExtraRepository optionalExtraRepository;
 
     private static final Logger logger = LoggerFactory.getLogger(QuoteServiceTest.class);
     final int TOT_QUOTES_BEFORE_TEST = 5; //this is the tot of records into the quote table before each test
@@ -105,7 +110,7 @@ public class QuoteServiceTest {
         logger.debug(cost.toString());
 
         BigDecimal expectedCost = new BigDecimal(10000)
-                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
+                .divide(new BigDecimal(MyInsuranceConstants.NEW_TARIFF), RoundingMode.UP);
 
         expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.12)));
 
@@ -123,7 +128,7 @@ public class QuoteServiceTest {
         logger.debug(cost.toString());
 
         BigDecimal expectedCost = new BigDecimal(7000)
-                .divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
+                .divide(new BigDecimal(MyInsuranceConstants.OLD_TARIFF), RoundingMode.UP);
 
         expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.12)));
 
@@ -142,7 +147,7 @@ public class QuoteServiceTest {
         logger.debug(cost.toString());
 
         BigDecimal expectedCost = new BigDecimal(70000)
-                .divide(new BigDecimal(Quote.OLD_TARIFF), RoundingMode.UP);
+                .divide(new BigDecimal(MyInsuranceConstants.OLD_TARIFF), RoundingMode.UP);
 
         expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.25)));
 
@@ -158,7 +163,7 @@ public class QuoteServiceTest {
         logger.debug(cost.toString());
 
         BigDecimal expectedCost = new BigDecimal(70000)
-                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP);
+                .divide(new BigDecimal(MyInsuranceConstants.NEW_TARIFF), RoundingMode.UP);
 
         expectedCost = expectedCost.add(expectedCost.multiply(new BigDecimal(0.25)));
 
@@ -174,8 +179,76 @@ public class QuoteServiceTest {
         logger.debug(cost.toString());
 
         BigDecimal expectedCost = new BigDecimal(70000)
-                .divide(new BigDecimal(Quote.NEW_TARIFF), RoundingMode.UP)
+                .divide(new BigDecimal(MyInsuranceConstants.NEW_TARIFF), RoundingMode.UP)
                 .add(new BigDecimal(7000).multiply(new BigDecimal(0)));
+
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
+    }
+
+
+
+    @Test
+    public void calculateOptionalExtraCost() {
+
+        List<OptionalExtra> optionalExtraList = new ArrayList<>();
+        optionalExtraList.add(optionalExtraRepository.findByCode("C"));
+        optionalExtraList.add(optionalExtraRepository.findByCode("FI"));
+        optionalExtraList.add(optionalExtraRepository.findByCode("AS"));
+        BigDecimal cost= quoteService.calculateQuoteCost(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2022,01,01).getTime(), //registration date
+                PolicyType.RCA6); //type of policy
+        logger.debug(cost.toString());
+
+       cost = cost.add(quoteService.addOptionalExtraCosts(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2022,01,01).getTime(), //registration date
+                optionalExtraList.size())); //list of optional extras
+
+
+        logger.debug("with optional extras" + cost.toString());
+
+
+
+
+        BigDecimal expectedCost = new BigDecimal(70000)
+                .divide(new BigDecimal(MyInsuranceConstants.NEW_TARIFF), RoundingMode.UP)
+                .add(new BigDecimal(70000).multiply(new BigDecimal(0))).add(new BigDecimal(135));//extra = 45*3=135
+
+
+
+        Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
+    }
+
+
+
+
+    @Test
+    public void calculateOptionalExtraCost_02() {
+
+        List<OptionalExtra> optionalExtraList = new ArrayList<>();
+        optionalExtraList.add(optionalExtraRepository.findByCode("C"));
+        optionalExtraList.add(optionalExtraRepository.findByCode("FI"));
+        optionalExtraList.add(optionalExtraRepository.findByCode("AS"));
+        BigDecimal cost= quoteService.calculateQuoteCost(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2000,01,01).getTime(), //registration date
+                PolicyType.RCA6); //type of policy
+        logger.debug(cost.toString());
+
+        cost = cost.add(quoteService.addOptionalExtraCosts(
+                new BigDecimal(70000),//value of the car
+                new GregorianCalendar(2000,01,01).getTime(), //registration date
+                optionalExtraList.size())); //tot of optional extras
+
+        logger.debug("with optional extras" + cost.toString());
+
+
+        BigDecimal expectedCost = new BigDecimal(70000)
+                .divide(new BigDecimal(MyInsuranceConstants.OLD_TARIFF), RoundingMode.UP)
+                .add(new BigDecimal(70000).multiply(new BigDecimal(0))).add(new BigDecimal(105));//extra = 35*3=105
+
 
 
         Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);

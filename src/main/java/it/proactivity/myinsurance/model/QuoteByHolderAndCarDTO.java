@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuoteByHolderAndCarDTO {
-    private Long holder_id;
-    private String  registrationMark;
 
 
     public QuoteByHolderAndCarDTO() {
@@ -14,6 +12,10 @@ public class QuoteByHolderAndCarDTO {
     public QuoteByHolderAndCarDTO(Long holder_id) {
         this.holder_id = holder_id;
     }
+
+
+    private Long holder_id;
+    private String  registrationMark;
 
     private List<QuoteDTO> quotes = new ArrayList<>();
 
