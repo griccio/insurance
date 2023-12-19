@@ -37,7 +37,7 @@ public class HolderService extends MyInsuranceService{
             logger.debug("Holder Found: "+ holder.toString());
             return holder;
         } catch (Exception e) {
-            logger.error("Error finding the holder with id =" + id +"\n" + e.getMessage());
+            logger.error("Error finding the holder with id =" + id +"\nThe Holder with this id" + e.getMessage());
             return null;
         }
     }

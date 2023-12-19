@@ -1,16 +1,18 @@
 package it.proactivity.myinsurance.model;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import org.springframework.beans.BeanUtils;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Entity
-public class QuoteDTO {
+public class QuoteWithOptionalExtraDTO {
 
     private String holder;
 
@@ -28,6 +30,8 @@ public class QuoteDTO {
     private String quoteNumber;
 
     private Date date;
+
+    private List<String> optionalExtras = new ArrayList<>();
 
     public String getHolder() {
         return holder;
@@ -97,11 +101,38 @@ public class QuoteDTO {
         this.date = date;
     }
 
+    public List<String> getOptionalExtras() {
+        return optionalExtras;
+    }
+
+    public void setOptionalExtras(List<String> optionalExtras) {
+        this.optionalExtras = optionalExtras;
+    }
+
     public void map(Quote quote){
         BeanUtils.copyProperties(quote,this);
         this.setHolder(quote.getHolder());
         this.registrationMark = quote.getCar().getRegistrationMark();
-        this.registrationDateCar = quote.getCar().getRegistrationDate();
-        this.worth = quote.getCar().getWorth();
+        this.setRegistrationDateCar(quote.getCar().getRegistrationDate());
+        this.setWorth(quote.getCar().getWorth());
+        this.optionalExtras = quote.getOptionalExtras().stream().map(extra -> {
+            String name = extra.getName();
+            return name;
+        }).collect(Collectors.toList());
+    }
+
+    @Override
+    public String toString() {
+        return "QuoteWithOptionalExtraDTO{" +
+                "holder='" + holder + '\'' +
+                ", registrationMark='" + registrationMark + '\'' +
+                ", registrationDateCar=" + registrationDateCar +
+                ", worth=" + worth +
+                ", policyType=" + policyType +
+                ", cost=" + cost +
+                ", quoteNumber='" + quoteNumber + '\'' +
+                ", date=" + date +
+                ", optionalExtras=" + optionalExtras +
+                '}';
     }
 }

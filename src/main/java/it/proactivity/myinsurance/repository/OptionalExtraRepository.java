@@ -1,5 +1,6 @@
 package it.proactivity.myinsurance.repository;
 
+import it.proactivity.myinsurance.model.MyInsuranceConstants;
 import it.proactivity.myinsurance.model.OptionalExtra;
 import it.proactivity.myinsurance.model.query.QOptionalExtra;
 import org.springframework.stereotype.Repository;
@@ -17,5 +18,14 @@ public class OptionalExtraRepository {
         return  new  QOptionalExtra().code.eq(code).findOne();
     }
 
+
+    /**
+     * return tot of optional extras included into a Kasko
+     * @return
+     */
+    public int getTotOptionalExtrasIntoKasko(){
+
+        return  new  QOptionalExtra().code.ne(MyInsuranceConstants.KASKO_CODE).findCount();
+    }
 
 }

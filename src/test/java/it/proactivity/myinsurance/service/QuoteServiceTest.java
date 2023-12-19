@@ -15,21 +15,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.List;
-import java.util.regex.Pattern;
+import java.util.*;
 
 /**
- * INSERT INTO quote(
- *     id, holder_id, registration_mark, registration_date_car, worth, policy_type, cost, quote_number,date)
- * VALUES (100, 100, 'DR1234A', '2010-01-01',10000, 'RCA6', 10, '100-DR1234A-100','2023-10-01 13:16:00'),
- *        (101, 101, 'CD2222A', '2022-01-01',30000, 'RCA6', 30, '100-CD2222A-101','2023-12-22 13:16:00'),
- *        (102, 101, 'CD2222A', '2022-01-01',30000, 'RCA12', 50, '100-CD2222A-102','2023-09-16 13:16:00'),
- *        (103, 103, 'EE1111EA', '2019-01-01',30000, 'RCA6', 20, '100-CD2222A-102','2023-05-14 13:16:00'),
- *        (104, 103, 'EF2222WD', '2023-01-01',30000, 'RCA50', 30, '100-CD2222A-102','2023-07-30 13:16:00');
- */
+ INSERT INTO quote(
+ id, holder_id, car_id,  policy_type, cost, quote_number,date)
+ VALUES
+ (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
+ (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
+ (302, 101, 202, 'RCA12', 50, '100-CD2222A-2','2023-09-16 13:16:00'),
+ (303, 103, 203, 'RCA6', 20, '100-CD2222A-1','2023-05-14 13:16:00'),
+ (304, 103, 204, 'RCA50', 30, '100-CD2222A-2','2023-07-30 13:16:00'); */
 @SpringBootTest
 public class QuoteServiceTest {
     @Autowired
@@ -72,11 +68,11 @@ public class QuoteServiceTest {
     }
 
     @Test
-    public void findByHolderIdGroupByCar(){
+    public void findByHolderIdAndCar(){
         QuoteByHolderAndCarDTO quoteByCarDTO = new QuoteByHolderAndCarDTO();
         quoteByCarDTO.setHolder_id(103L);
 
-        List<QuoteByHolderAndCarDTO> quoteByCarDTOList = quoteService.findByHolderIdGroupByCar(quoteByCarDTO);
+        List<QuoteByHolderAndCarDTO> quoteByCarDTOList = quoteService.findByHolderIdAndCar(quoteByCarDTO);
         Assertions.assertEquals(2, quoteByCarDTOList.size());
         quoteByCarDTOList.forEach(quote -> logger.debug(quote.toString()));
     }
@@ -98,6 +94,103 @@ public class QuoteServiceTest {
         }catch(QuoteException e){
             logger.error(e.getMessage());
             Assertions.fail();
+        }
+    }
+
+
+
+    @Test
+    public void update(){
+        //I prepare the test data creationg  a new quote
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"AA1234BB",
+                        new GregorianCalendar(2014, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            Quote quote;
+            quote = quoteService.save(quoteForCreateDTO);
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+            quoteForUpdateDTO.setId(quote.getId());
+            quoteForUpdateDTO.setOptionalExtraByCodeList(Arrays.asList("C","FI","TL"));
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+            logger.debug(quoteWithOptionalExtraDTO.toString());
+
+            Quote quote2 = quoteService.findById(quote.getId());
+            Assertions.assertNotNull(quote2);
+            Assertions.assertEquals(3, quote2.getOptionalExtras().size());
+
+        }catch(QuoteException e){
+            logger.error(e.getMessage());
+            Assertions.fail();
+        }
+    }
+
+
+    @Test
+    public void updateWithKasko(){
+        //I prepare the test data creationg  a new quote
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"AA1234BB",
+                        new GregorianCalendar(2014, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            Quote quote;
+            quote = quoteService.save(quoteForCreateDTO);
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+            quoteForUpdateDTO.setId(quote.getId());
+            quoteForUpdateDTO.setOptionalExtraByCodeList(Arrays.asList("C","FI","TL",MyInsuranceConstants.KASKO_CODE));
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+            logger.debug(quoteWithOptionalExtraDTO.toString());
+
+            Quote quote2 = quoteService.findById(quote.getId());
+            Assertions.assertNotNull(quote2);
+            Assertions.assertEquals(1, quote2.getOptionalExtras().size());
+
+        }catch(QuoteException e){
+            logger.error(e.getMessage());
+            Assertions.fail();
+        }
+    }
+
+
+
+
+
+
+    @Test
+    public void updateWithErrorBecauseOptionalExtraNotExist(){
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"AA1234BB",
+                        new GregorianCalendar(2014, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            Quote quote;
+
+            quote = quoteService.save(quoteForCreateDTO);
+
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+            quoteForUpdateDTO.setId(quote.getId());
+            quoteForUpdateDTO.setOptionalExtraByCodeList(Arrays.asList("C","FI","TL","PP"));
+
+            quoteService.update(quoteForUpdateDTO);
+            Assertions.fail();
+
+            Quote quote2 = quoteService.findById(quote.getId());
+            Assertions.assertNotNull(quote2);
+            Assertions.assertEquals(3, quote2.getOptionalExtras().size());
+
+        }catch(QuoteException e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
         }
     }
 
@@ -248,8 +341,6 @@ public class QuoteServiceTest {
         BigDecimal expectedCost = new BigDecimal(70000)
                 .divide(new BigDecimal(MyInsuranceConstants.OLD_TARIFF), RoundingMode.UP)
                 .add(new BigDecimal(70000).multiply(new BigDecimal(0))).add(new BigDecimal(105));//extra = 35*3=105
-
-
 
         Assertions.assertEquals(expectedCost.setScale(2, RoundingMode.CEILING), cost);
     }

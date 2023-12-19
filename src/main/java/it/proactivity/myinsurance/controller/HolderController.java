@@ -1,10 +1,9 @@
 package it.proactivity.myinsurance.controller;
 
 
-import it.proactivity.myinsurance.model.Holder;
-import it.proactivity.myinsurance.model.HolderDTO;
-import it.proactivity.myinsurance.model.HolderWithIdDTO;
+import it.proactivity.myinsurance.model.*;
 import it.proactivity.myinsurance.service.HolderService;
+import it.proactivity.myinsurance.service.QuoteService;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +22,9 @@ public class HolderController {
 
     @Autowired
     HolderService holderService;
+
+    @Autowired
+    QuoteService quoteService;
 
     @GetMapping("/")
     public ResponseEntity<List<HolderDTO>> getAll() {
@@ -46,7 +48,7 @@ public class HolderController {
 
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/info/{id}")
     public ResponseEntity<HolderDTO> getById(@PathVariable Long id) {
 
         if (id == null || id <= 0)
@@ -63,6 +65,18 @@ public class HolderController {
         }
     }
 
+
+    @GetMapping("/{id}")
+    public ResponseEntity<List<QuoteByHolderAndCarDTO>> getQuoteByHolderIdGroupByCar(@PathVariable Long id) {
+
+        if (id == null || id <= 0)
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+
+        QuoteByHolderAndCarDTO quoteByCarDTO = new QuoteByHolderAndCarDTO(id);
+
+        return ResponseEntity.ok(quoteService.findByHolderIdAndCar(quoteByCarDTO));
+
+    }
 
     @PostMapping
     public ResponseEntity<Long> save(@Valid @RequestBody HolderDTO holderDTO) {

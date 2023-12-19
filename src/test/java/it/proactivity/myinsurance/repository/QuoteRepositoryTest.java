@@ -2,8 +2,8 @@ package it.proactivity.myinsurance.repository;
 
 import io.ebean.DB;
 import io.ebean.Database;
+import it.proactivity.myinsurance.model.Car;
 import it.proactivity.myinsurance.model.Holder;
-import it.proactivity.myinsurance.model.OptionalExtra;
 import it.proactivity.myinsurance.model.PolicyType;
 import it.proactivity.myinsurance.model.Quote;
 import org.junit.jupiter.api.Assertions;
@@ -30,16 +30,28 @@ public class QuoteRepositoryTest {
     @Autowired
     OptionalExtraRepository optionalExtraRepository;
 
+    @Autowired
+    CarRepository carRepository;
+
     private static final Logger logger = LoggerFactory.getLogger(QuoteRepositoryTest.class);
 
     /**
-     * INSERT INTO quote(
-     *     id, holder_id, registration_mark, registration_car_date, worth, policy_type, cost, quote_number)
-     * VALUES (100, 100, 'DR1234A', '2010-01-01',10000, 'RCA6', 10, '100-DR1234A-100'),
-     *        (101, 101, 'CD2222A', '2022-01-01',30000, 'RCA6', 30, '100-CD2222A-101'),
-     *        (102, 101, 'CD2222A', '2022-01-01',30000, 'RCA12', 50, '100-CD2222A-102'),
-     *        (103, 103, 'EE1111EA', '2019-01-01',30000, 'RCA6', 20, '100-CD2222A-102'),
-     *        (104, 103, 'EF2222WD', '2023-01-01',30000, 'RCA50', 30, '100-CD2222A-102');
+     * INSERT INTO car(
+     *     id, holder_id, registration_mark, registration_date, worth)
+     * VALUES (200, 100, 'DR1234A', '2010-01-01',10000),
+     *        (201, 101, 'CD2222A', '2022-01-01',30000),
+     *        (202, 101, 'CD2222A', '2022-01-01',30000),
+     *        (203, 103, 'EE1111EA', '2019-01-01',30000),
+     *        (204, 103, 'EF2222WD', '2023-01-01',30000);
+     *
+     INSERT INTO quote(
+     id, holder_id, car_id,  policy_type, cost, quote_number,date)
+     VALUES (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
+     (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
+     (302, 101, 202, 'RCA12', 50, '100-CD2222A-2','2023-09-16 13:16:00'),
+     (303, 103, 203, 'RCA6', 20, '100-CD2222A-1','2023-05-14 13:16:00'),
+     (304, 103, 204, 'RCA50', 30, '100-CD2222A-2','2023-07-30 13:16:00');
+
      */
     @BeforeEach
     public void initTable() {
@@ -69,15 +81,28 @@ public class QuoteRepositoryTest {
      */
     @Test
     public void findAllWithHolderData() {
-        List<Quote> list = quoteRepository.findAllWithHolderData();
+        List<Quote> list = quoteRepository.findAllWithHolderAndCarData();
         Assertions.assertEquals(5, list.size());
-        list.forEach(quote -> logger.debug(quote.toString()));
+        list.forEach(quote -> {logger.debug(quote.toString());
+            logger.debug(quote.getHolder().toString());
+            logger.debug(quote.getCar().toString());});
+
+    }
+
+
+    @Test
+    public void findAllWithoutHolderData() {
+        List<Quote> list = quoteRepository.findAll();
+        Assertions.assertEquals(5, list.size());
+        list.forEach(quote -> {logger.debug(quote.toString());
+            logger.debug(quote.getHolder().toString());
+            logger.debug(quote.getCar().toString());});
 
     }
 
     @Test
     public void findById() {
-        Quote quote = quoteRepository.findById(102L);
+        Quote quote = quoteRepository.findById(302L);
         Assertions.assertNotNull(quote);
         logger.debug(quote.toString());
 
@@ -123,13 +148,11 @@ public class QuoteRepositoryTest {
     @Test
     public void createQuote() {
         int quotesBeforeInsert = quoteRepository.findAll().size();
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
         Quote quote  = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
+        quote.setCar(holder.getCarList().get(0));
         quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -146,14 +169,12 @@ public class QuoteRepositoryTest {
             Holder holder = new Holder(); // this holder is empty
             Quote quote = new Quote();
             quote.setHolder(holder);
-            quote.setRegistrationMark("AA1234BB");
+//            quote.setCar(holder.getCarList().get(0));
             quote.setQuoteNumber("123456"); //this value is overwritten by DB with the trigger updateQuoteNumber
-            quote.setRegistrationDateCar(new GregorianCalendar(2018, 01, 01).getTime());
-            quote.setWorth(BigDecimal.valueOf(20000));
             quote.setPolicyType(PolicyType.RCA12);
             quote.setCost(BigDecimal.valueOf(50));
             quote.setDate(new Date(System.currentTimeMillis()));
-            quote = quoteRepository.save(quote);
+            quoteRepository.save(quote);
             Assertions.fail();
         } catch (Exception e) {
             logger.error(e.getMessage());
@@ -166,13 +187,11 @@ public class QuoteRepositoryTest {
         public void createQuoteWithErrorBecauseEmptyRegistrationMark() {
             int quotesBeforeInsert = quoteRepository.findAll().size();
             try {
-                Holder holder = holderRepository.findById(102L); // this holder has no quotes
+                Holder holder = holderRepository.findById(100L); // this holder has no quotes
                 Quote quote = new Quote();
                 quote.setHolder(holder);
-//                quote.setRegistrationMark("AA1234BB");
                 quote.setQuoteNumber("123456"); //this value is overwritten by DB with the trigger updateQuoteNumber
-                quote.setRegistrationDateCar(new GregorianCalendar(2018, 01, 01).getTime());
-                quote.setWorth(BigDecimal.valueOf(20000));
+               // quote.setCar(holder.getCarList().get(0));
                 quote.setPolicyType(PolicyType.RCA12);
                 quote.setCost(BigDecimal.valueOf(50));
                 quote.setDate(new Date(System.currentTimeMillis()));
@@ -191,12 +210,15 @@ public class QuoteRepositoryTest {
 
         Holder holder = holderRepository.findById(102L); // this holder has no quotes
 
+        Car car = new Car(holder,"123456",
+                new GregorianCalendar(2018,01,01).getTime(),BigDecimal.valueOf(20000));
+        carRepository.save(car);
+        holder.addCar(car);
+        holderRepository.update(holder);
+
         Quote quote  = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
-        quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holderRepository.getCar(holder.getId(),car.getRegistrationMark()));
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -204,50 +226,40 @@ public class QuoteRepositoryTest {
 
 
         Quote quote2 = quoteRepository.findById(quote.getId());
-        quote2.setRegistrationMark("BB111AA");
-        quote2.setQuoteNumber("AABBCCDD");
-        quote2.setRegistrationDateCar(new GregorianCalendar(2020,01,01).getTime());
-        quote2.setWorth(BigDecimal.valueOf(25555));
-        quote2.setPolicyType(PolicyType.RCA50);
-        quote2.setCost(BigDecimal.valueOf(100.89));
-        quote2.setDate(new Date(System.currentTimeMillis()));
+        quote2.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote2.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote2.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
         quote2 = quoteRepository.save(quote2);
 
         Quote quote3 = quoteRepository.findById(quote2.getId());
-        Assertions.assertEquals("BB111AA",quote3.getRegistrationMark());
-        Assertions.assertEquals("AABBCCDD",quote3.getQuoteNumber());
-        Assertions.assertEquals(new GregorianCalendar(2020,01,01).getTime(), quote3.getRegistrationDateCar());
-        Assertions.assertEquals(PolicyType.RCA50,quote3.getPolicyType());
-        Assertions.assertEquals(BigDecimal.valueOf(100.89),quote3.getCost());
+        Assertions.assertEquals(3,quote3.getOptionalExtras().size());
     }
 
 
     @Test
-    public void updateQuoteErrorBecauseRegistrationMark() {
+    public void updateQuoteErrorBecauseCarNotExist() {
 
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+
         try {
-            Quote quote = new Quote();
+            Holder holder = holderRepository.findById(102L); // this holder has no quotes
+
+            Car car = new Car(holder,"123456",
+                    new GregorianCalendar(2018,01,01).getTime(),BigDecimal.valueOf(20000));
+            carRepository.save(car);
+            holder.addCar(car);
+            holderRepository.update(holder);
+
+            Quote quote  = new Quote();
             quote.setHolder(holder);
-            quote.setRegistrationMark("AA1234BB");
+            quote.setCar(holderRepository.getCar(holder.getId(),"AASSWW3344"));
+            quote.setHolder(holder);
+
             quote.setQuoteNumber("123456");
-            quote.setRegistrationDateCar(new GregorianCalendar(2018, 01, 01).getTime());
-            quote.setWorth(BigDecimal.valueOf(20000));
+
             quote.setPolicyType(PolicyType.RCA12);
             quote.setCost(BigDecimal.valueOf(50));
             quote.setDate(new Date(System.currentTimeMillis()));
             quote = quoteRepository.save(quote);
-
-
-            Quote quote2 = quoteRepository.findById(quote.getId());
-            quote2.setRegistrationMark("BB111AAASASASASASASDSDSDSDSDSDSDSDSDSDSDSDSDSDSDSD");
-            quote2.setQuoteNumber("AABBCCDD");
-            quote2.setRegistrationDateCar(new GregorianCalendar(2020, 01, 01).getTime());
-            quote2.setWorth(BigDecimal.valueOf(25555));
-            quote2.setPolicyType(PolicyType.RCA50);
-            quote2.setCost(BigDecimal.valueOf(100.89));
-            quote2.setDate(new Date(System.currentTimeMillis()));
-            quote2 = quoteRepository.save(quote2);
             Assertions.fail();
 
         } catch (Exception e) {
@@ -260,13 +272,18 @@ public class QuoteRepositoryTest {
     @Test
     public void deleteQuote() {
         int quotesBeforeTest = quoteRepository.findAll().size();
+
         Holder holder = holderRepository.findById(102L); // this holder has no quotes
+
+        Car car = new Car(holder,"123456",
+                new GregorianCalendar(2018,01,01).getTime(),BigDecimal.valueOf(20000));
+        carRepository.save(car);
+        holder.addCar(car);
+        holderRepository.update(holder);
+
         Quote quote  = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
-        quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holderRepository.getCar(holder.getId(),car.getRegistrationMark()));
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -275,19 +292,19 @@ public class QuoteRepositoryTest {
         Assertions.assertEquals(quotesBeforeTest + 1, quoteRepository.findAll().size());
 
         Assertions.assertTrue(quoteRepository.delete(quote));
+        Assertions.assertEquals(quotesBeforeTest, quoteRepository.findAll().size());
 
     }
+
     @Test
     public void deleteQuoteErrorBecauseNotExist() {
         int quotesBeforeTest = quoteRepository.findAll().size();
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
         Quote quote  = new Quote();
         quote.setId(1234L);
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
         quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holder.getCarList().get(0));
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -298,47 +315,47 @@ public class QuoteRepositoryTest {
 
     @Test
     public void getCarsListByHolder(){
-        List<String> registrationsMark = quoteRepository.getCarsListOwnedByHolder(103L);
+        List<String> registrationsMark = holderRepository.getRegistrationMarks(103L);
         Assertions.assertNotNull(registrationsMark);
+        Assertions.assertEquals(2, registrationsMark.size() );
         registrationsMark.forEach(reg -> logger.debug(reg));
 
     }
 
     @Test
-    public void createQuoteWithOptionalExtras(){
-            int quotesBeforeInsert = quoteRepository.findAll().size();
-            Holder holder = holderRepository.findById(102L); // this holder has no quotes
-            Quote quote  = new Quote();
-            quote.setHolder(holder);
-            quote.setRegistrationMark("AA1234BB");
-            quote.setQuoteNumber("123456");
-            quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-            quote.setWorth(BigDecimal.valueOf(20000));
-            quote.setPolicyType(PolicyType.RCA12);
-            quote.setCost(BigDecimal.valueOf(50));
-            quote.setDate(new Date(System.currentTimeMillis()));
-            quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
-            quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
-            quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
-            quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
-            quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
-            quote = quoteRepository.save(quote);
+    public void createQuoteWithOptionalExtras() {
+        int quotesBeforeInsert = quoteRepository.findAll().size();
 
-            Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
+        Quote quote = new Quote();
+        quote.setHolder(holder);
+        quote.setCar(holder.getCarList().get(0));
 
-        }
+
+        quote.setPolicyType(PolicyType.RCA12);
+        quote.setCost(BigDecimal.valueOf(50));
+        quote.setDate(new Date(System.currentTimeMillis()));
+
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("C"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("FI"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("AS"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("TL"));
+        quote.addOptionalExtra(optionalExtraRepository.findByCode("DC"));
+        quote = quoteRepository.save(quote);
+
+        Assertions.assertEquals(quotesBeforeInsert + 1, quoteRepository.findAll().size());
+
+    }
 
 
     @Test
     public void createQuoteWithOptionalExtrasAndCheck(){
         int quotesBeforeInsert = quoteRepository.findAll().size();
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
-        Quote quote  = new Quote();
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
+        Quote quote = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
-        quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holder.getCarList().get(0));
+
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -361,13 +378,11 @@ public class QuoteRepositoryTest {
     @Test
     public void createQuoteWithOptionalAndBeforeSavingRemoveSomeAndCheck(){
         int quotesBeforeInsert = quoteRepository.findAll().size();
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
-        Quote quote  = new Quote();
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
+        Quote quote = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
-        quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holder.getCarList().get(0));
+
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -392,14 +407,12 @@ public class QuoteRepositoryTest {
 
     @Test
     public void createQuoteWithOptionalAndAfterSavingRemoveSomeAndCheck(){
+
         int quotesBeforeInsert = quoteRepository.findAll().size();
-        Holder holder = holderRepository.findById(102L); // this holder has no quotes
-        Quote quote  = new Quote();
+        Holder holder = holderRepository.findById(100L); // this holder has no quotes
+        Quote quote = new Quote();
         quote.setHolder(holder);
-        quote.setRegistrationMark("AA1234BB");
-        quote.setQuoteNumber("123456");
-        quote.setRegistrationDateCar(new GregorianCalendar(2018,01,01).getTime());
-        quote.setWorth(BigDecimal.valueOf(20000));
+        quote.setCar(holder.getCarList().get(0));
         quote.setPolicyType(PolicyType.RCA12);
         quote.setCost(BigDecimal.valueOf(50));
         quote.setDate(new Date(System.currentTimeMillis()));
@@ -423,6 +436,17 @@ public class QuoteRepositoryTest {
 
     }
 
+    @Test
+    public void  verifyIfQuoteHasRegistrationMarkTrue(){
+        Long quoteId = 300L;
+        String registrationMark = "DR1234A";
+        Assertions.assertTrue(quoteRepository.verifyRegistrationMarkNumberExist(quoteId, registrationMark));
+}
 
-
+    @Test
+    public void  verifyIfQuoteHasRegistrationMarkFalse(){
+        Long quoteId = 300L;
+        String registrationMark = "GG1234A";
+        Assertions.assertFalse(quoteRepository.verifyRegistrationMarkNumberExist(quoteId, registrationMark));
+    }
 }

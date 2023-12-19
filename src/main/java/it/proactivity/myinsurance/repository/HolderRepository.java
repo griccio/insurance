@@ -2,7 +2,9 @@ package it.proactivity.myinsurance.repository;
 
 import io.ebean.DB;
 import io.ebean.SqlRow;
+import it.proactivity.myinsurance.model.Car;
 import it.proactivity.myinsurance.model.Holder;
+import it.proactivity.myinsurance.model.query.QCar;
 import it.proactivity.myinsurance.model.query.QHolder;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +18,7 @@ public class HolderRepository {
     }
 
     public Holder findById(Long id) {
-        return DB.find(Holder.class, id);
+        return new QHolder().id.eq(id).fetch("carList").findOne();
     }
 
     public List<Holder> findBySurname(String surname) {
@@ -32,6 +34,15 @@ public class HolderRepository {
         return new QHolder().fiscalCode.contains(fiscalCode).findList();
     }
 
+    public List<String> getRegistrationMarks(Long holderId){
+        return new QCar().holder.id.eq(holderId).select("registrationMark").findSingleAttributeList();
+    }
+
+
+    public Car getCar(Long holderId, String registrationMark){
+        Car car = new QCar().holder.id.eq(holderId).registrationMark.eq(registrationMark).findOne();
+        return car;
+    }
 
     public Holder save(Holder holder) {
         DB.save(holder);

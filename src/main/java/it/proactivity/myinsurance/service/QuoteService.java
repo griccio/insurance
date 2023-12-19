@@ -3,6 +3,7 @@ package it.proactivity.myinsurance.service;
 import io.ebean.annotation.Transactional;
 import it.proactivity.myinsurance.exception.QuoteException;
 import it.proactivity.myinsurance.model.*;
+import it.proactivity.myinsurance.repository.CarRepository;
 import it.proactivity.myinsurance.repository.HolderRepository;
 import it.proactivity.myinsurance.repository.OptionalExtraRepository;
 import it.proactivity.myinsurance.repository.QuoteRepository;
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -24,6 +24,9 @@ public class QuoteService extends MyInsuranceService{
 
     @Autowired
     HolderRepository holderRepository;
+
+    @Autowired
+    CarRepository carRepository;
 
     @Autowired
     OptionalExtraRepository optionalExtraRepository;
@@ -79,12 +82,12 @@ public class QuoteService extends MyInsuranceService{
         }
     }
 
-    public List<QuoteByHolderAndCarDTO> findByHolderIdGroupByCar(QuoteByHolderAndCarDTO quoteByCarDTO) {
+    public List<QuoteByHolderAndCarDTO> findByHolderIdAndCar(QuoteByHolderAndCarDTO quoteByCarDTO) {
 
         try {
             List<QuoteByHolderAndCarDTO> quoteByCarDTOList = new ArrayList<>();
             // get the list of the car
-            List<String> list = quoteRepository.getCarsListOwnedByHolder(quoteByCarDTO.getHolder_id());
+            List<String> list = holderRepository.getRegistrationMarks(quoteByCarDTO.getHolder_id());
             logger.debug("The Holder with this id " + quoteByCarDTO.getHolder_id() + " has these cars " + list);
 
             list.forEach(reg -> {
@@ -121,7 +124,7 @@ public class QuoteService extends MyInsuranceService{
     }
 
 
-    public Quote save(QuoteForCreateDTO quoteForCreateDTO) throws QuoteException {
+    public QuoteDTO save(QuoteForCreateDTO quoteForCreateDTO) throws QuoteException {
 
         Holder holder;
         if((holder = holderRepository.findById(quoteForCreateDTO.getHolderId())) == null){
@@ -151,40 +154,100 @@ public class QuoteService extends MyInsuranceService{
         BeanUtils.copyProperties(quoteForCreateDTO,quote);
 
         quote.setHolder(holder);
-        quote.setCost(calculateQuoteCost(quote.getWorth(),quote.getRegistrationDateCar(),quote.getPolicyType()));
+        //add the car to the holder
+        Car car = new Car(holder,quoteForCreateDTO.getRegistrationMark(),quoteForCreateDTO.getRegistrationDateCar(),quoteForCreateDTO.getWorth());
+        car = carRepository.save(car);
+        //add the car to the quote
+        quote.setCar(car);
+        quote.setCost(calculateQuoteCost(quote.getCar().getWorth(),quote.getCar().getRegistrationDate(),quote.getPolicyType()));
         quote.setDate(new Date(System.currentTimeMillis()));
         quote.setQuoteNumber(quote.getHolder().getId() + "-"
-               + quote.getRegistrationMark() + "-"
-               + quoteRepository.getValideQuoteCounterForHolderAndRegistrationMark(quote.getHolder().getId(),quote.getRegistrationMark()));
+               + quote.getCar().getRegistrationMark() + "-"
+               + quoteRepository.getNextValidIndexByHolder(quote.getHolder().getId()));
 
         quoteRepository.save(quote);
+        QuoteDTO quoteDTO = new QuoteDTO();
+        quoteDTO.map(quote);
+        logger.debug("Quote saved correctly"+ quoteDTO.toString());
 
-        logger.debug("Quote saved correctly");
-
-        return quote;
+        return quoteDTO;
     }
 
 
-    public Quote update(QuoteForUpdateDTO quoteForUpdateDTO) throws QuoteException {
+
+    public QuoteWithOptionalExtraDTO update(QuoteForUpdateDTO quoteForUpdateDTO) throws QuoteException {
 
         Quote quote = quoteRepository.findById(quoteForUpdateDTO.getId());
 
-        quoteForUpdateDTO.getOptionalExtraByCodeList().forEach(code ->{
+        if(quote == null) {
+            logger.debug("cannot find Quote with the id: " + quoteForUpdateDTO.getId());
+            throw new QuoteException("cannot find Quote with the id: " + quoteForUpdateDTO.getId());
+        }
+
+        //remove previous extra
+        quote.getOptionalExtras().clear();
+
+        //get the Optional extras
+        for(String code :  quoteForUpdateDTO.getOptionalExtraByCodeList() ){
+            OptionalExtra optionalExtra = optionalExtraRepository.findByCode(code);
+
+            if(optionalExtra == null) {
+                logger.debug("Cannot find Optional extra with code " + code);
+                throw new QuoteException("cannot find Optional extra with code " + code);
+            }
+            //A KASKO include all the Optional Extras for this reason I clean up the
+            //list of optional Extra and  leave only the KASKO
+            if(optionalExtra.getCode().equalsIgnoreCase(MyInsuranceConstants.KASKO_CODE)) {
+                logger.debug("this is a kasko optional Extra" + code);
+                quote.addKaskoOptionalExtra(optionalExtraRepository.findByCode(MyInsuranceConstants.KASKO_CODE));
+                break;
+            }
+
             quote.addOptionalExtra(optionalExtraRepository.findByCode(code));
-            logger.debug("Added new  optional extra : " + code );
-        });
+            logger.debug("Added correctly new  optional extra : " + code );
+        }
 
-        quote.setCost(calculateQuoteCost(quote.getWorth(),quote.getRegistrationDateCar(),quote.getPolicyType())
-                .add(addOptionalExtraCosts(quote.getWorth(),quote.getRegistrationDateCar(),quote.getOptionalExtras().size())));
+        //recalculate the costs with extras
+        quote.setCost(calculateQuoteCost(quote.getCar().getWorth(),quote.getCar().getRegistrationDate(),quote.getPolicyType()));
 
+        if(quote.hasKasko())
+            quote.setCost(quote.getCost().add(addKaskoCosts(quote.getCar().getWorth(),quote.getCar().getRegistrationDate())).setScale(2, RoundingMode.CEILING));
+        else
+            quote.setCost(quote.getCost().add(addOptionalExtraCosts(quote.getCar().getWorth(),quote.getCar().getRegistrationDate(),quote.getOptionalExtras().size())).setScale(2, RoundingMode.CEILING));
 
         quoteRepository.update(quote);
 
-
-        logger.debug("Quote saved correctly");
-
-        return quote;
+        logger.debug("Quote updated correctly");
+        QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = new QuoteWithOptionalExtraDTO();
+        quoteWithOptionalExtraDTO.map(quote);
+        return quoteWithOptionalExtraDTO;
     }
+
+
+
+
+    public Long delete(QuoteForDeleteDTO quoteForDeleteDTO) throws QuoteException {
+
+        Quote quote;
+        if((quote = quoteRepository.findById(quoteForDeleteDTO.getId())) == null){
+            logger.error("Quote is not registered.");
+            throw new QuoteException("Quote is not registered");
+        }
+
+
+        if(!verifyIfQuoteHasRegistrationMark(quoteForDeleteDTO.getId(),quoteForDeleteDTO.getRegistrationMark())){
+            logger.error("Quote has not this Registration Mark ");
+            throw new QuoteException("Quote has not this Registration Mark");
+        }
+
+        quoteRepository.delete(quote);
+        logger.error("Quote has been deleted correctly ");
+        return quote.getId();
+    }
+
+
+
+
 
     /**
      * check if the plate(registrationMark) has the right pattern match and
@@ -216,6 +279,12 @@ public class QuoteService extends MyInsuranceService{
              return false;
 
         return true;
+    }
+
+    public  Boolean verifyIfQuoteHasRegistrationMark(Long quoteId, String registrationMark)  {
+
+       return quoteRepository.verifyRegistrationMarkNumberExist(quoteId,registrationMark);
+
     }
 
     /**
@@ -250,10 +319,24 @@ public class QuoteService extends MyInsuranceService{
 
              if(registrationDate.after(MyInsuranceConstants.STARTING_NEW_TARIFF_DATE.getTime())
                      && worth.compareTo(new BigDecimal(MyInsuranceConstants.WORTH_CAR_LIMIT))!=-1)
-                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRACOST_AFTER_2020).multiply(new BigDecimal(optionalExtraTot));
+                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_AFTER_2020).multiply(new BigDecimal(optionalExtraTot));
              else
-                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRACOST_BEFORE_2020).multiply(new BigDecimal(optionalExtraTot));
+                 extraCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_BEFORE_2020).multiply(new BigDecimal(optionalExtraTot));
 
         return extraCost;
+    }
+
+    public BigDecimal addKaskoCosts(BigDecimal worth, Date registrationDate){
+
+        BigDecimal  kaskoCost = new BigDecimal(0);
+
+        if(registrationDate.after(MyInsuranceConstants.STARTING_NEW_TARIFF_DATE.getTime())
+                && worth.compareTo(new BigDecimal(MyInsuranceConstants.WORTH_CAR_LIMIT))!=-1)
+            kaskoCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_AFTER_2020).multiply(new BigDecimal(optionalExtraRepository.getTotOptionalExtrasIntoKasko()));
+        else
+            kaskoCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_BEFORE_2020)
+                    .multiply(new BigDecimal(optionalExtraRepository.getTotOptionalExtrasIntoKasko())).multiply(MyInsuranceConstants.KASKO_DISCOUNT);
+
+        return kaskoCost;
     }
 }

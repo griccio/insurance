@@ -69,16 +69,10 @@ public class Holder {
     private String email;
 
 
-    @Size(max = 20)
-    @Column(name = "login")
-    private String login;
+    @OneToMany(mappedBy="holder")
+    List<Car> carList = new ArrayList<>();
 
-
-    @Size(max = 20)
-    @Column(name = "password")
-    private String password;
-
-    @OneToMany(mappedBy = "holder")
+    @OneToMany(mappedBy = "car")
     private List<Quote> quoteList = new ArrayList<>();
 
     public Long getId() {
@@ -153,22 +147,6 @@ public class Holder {
         this.email = email;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public List<Quote> getQuoteList() {
         return quoteList;
     }
@@ -177,20 +155,37 @@ public class Holder {
         this.quoteList = quoteList;
     }
 
+    public List<Car> getCarList() {
+        return carList;
+    }
+
+    public void setCarList(List<Car> carList) {
+        this.carList = carList;
+    }
+
+    public void addCar(Car car) {
+        this.carList.add(car);
+    }
+
+    public void deleteCar(Car car){
+        this.carList.remove(car);
+    }
+
+
     @Override
     public String toString() {
         return "Holder{" +
                 "id=" + id +
-                ", name='" + name +
-                ", surname='" + surname +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
                 ", birthDate=" + birthDate +
-                ", fiscalCode='" + fiscalCode +
-                ", residence='" + residence +
-                ", domicile='" + domicile +
+                ", fiscalCode='" + fiscalCode + '\'' +
+                ", residence='" + residence + '\'' +
+                ", domicile='" + domicile + '\'' +
                 ", tel='" + tel + '\'' +
-                ", email='" + email +
-                ", login='" + login +
-                ", password='" + password +
+                ", email='" + email + '\'' +
+                ", carList=" + carList +
+                ", quoteList=" + quoteList +
                 '}';
     }
 }

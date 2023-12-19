@@ -64,6 +64,9 @@ public class OptionalExtra {
         this.quotes = quotes;
     }
 
+    public Boolean isKasko(){
+        return(this.getCode()!=null && this.getCode().equalsIgnoreCase(MyInsuranceConstants.KASKO_CODE));
+    }
     @Override
     public String toString() {
         return "OptionalExtras{" +

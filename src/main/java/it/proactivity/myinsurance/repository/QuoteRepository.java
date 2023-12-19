@@ -2,7 +2,6 @@ package it.proactivity.myinsurance.repository;
 
 import io.ebean.DB;
 import io.ebean.SqlRow;
-import it.proactivity.myinsurance.exception.QuoteException;
 import it.proactivity.myinsurance.model.Quote;
 import it.proactivity.myinsurance.model.query.QQuote;
 import org.springframework.stereotype.Repository;
@@ -20,8 +19,9 @@ public class QuoteRepository {
      * return all the Quote with the info of holder
      * @return
      */
-    public List<Quote> findAllWithHolderData() {
-       return new QQuote().orderBy("quoteNumber").holder.fetch().findList();
+    public List<Quote> findAllWithHolderAndCarData() {
+       return new QQuote().orderBy("quoteNumber")
+               .fetch("holder").fetch("car").findList();
     }
 
 
@@ -40,7 +40,7 @@ public class QuoteRepository {
         return new QQuote()
                 .orderBy("quoteNumber")
                 .holder.fetch()
-                .registrationMark.eq(registrationMark)
+                .car.fetch().car.registrationMark.eq(registrationMark)
                 .findList();
 
     }
@@ -60,7 +60,7 @@ public class QuoteRepository {
                 .orderBy("quoteNumber")
                 .holder.fetch()
                 .holder.id.eq(holderId)
-                .registrationMark.eq(registrationMark)
+                .car.fetch().car.registrationMark.eq(registrationMark)
                 .findList();
     }
 
@@ -110,21 +110,28 @@ public class QuoteRepository {
      */
     public Boolean verifyRegistrationMarkNumber(String registrationMark) {
 
-        int count = new QQuote().registrationMark.eq(registrationMark).findCount();
+        int count = new QQuote().car.registrationMark.eq(registrationMark).findCount();
 
-        return(count == 2);
+        return(count < 2);
 
     }
 
+    public Boolean verifyRegistrationMarkNumberExist(Long id, String registrationMark) {
 
-    public int getValideQuoteCounterForHolderAndRegistrationMark(Long holderId, String registrationMark) {
-        int count = new QQuote().holder.id.eq(holderId).registrationMark.eq(registrationMark).findCount();
+        int count = new QQuote().id.eq(id).car.registrationMark.eq(registrationMark).findCount();
+
+        return(count == 1);
+
+    }
+
+    public int getNextValidIndexByHolder(Long holderId) {
+        int count = new QQuote().holder.id.eq(holderId).findCount();
         return(count+1);
 
     }
 
     public Boolean hasKasko(Long id,String registrationMark){
-        int count = new QQuote().optionalExtras.code.eq("K").registrationMark.eq(registrationMark).findCount();
+        int count = new QQuote().optionalExtras.code.eq("K").car.registrationMark.eq(registrationMark).findCount();
         return count > 0;
     }
 }

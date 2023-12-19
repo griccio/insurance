@@ -22,21 +22,9 @@ public class Quote {
     @JoinColumn(name="holder_id")
     private Holder holder;
 
-
-    @NotBlank
-    @NotNull
-    @Size(max = 10)
-    @Column(name = "registration_mark")
-    private String registrationMark;
-
-    @NotNull
-    @Column(name = "registration_date_car")
-    private Date registrationDateCar;
-
-    @NotNull
-    @NotBlank
-    @Column(name = "worth", columnDefinition = "NUMERIC(9,2)")
-    private BigDecimal worth;
+    @ManyToOne(optional=false) //optional=false is because field is NOT NULL
+    @JoinColumn(name="car_id")
+    private Car car;
 
     @NotNull
     @NotBlank
@@ -79,28 +67,12 @@ public class Quote {
         this.holder = holder;
     }
 
-    public String getRegistrationMark() {
-        return registrationMark;
+    public Car getCar() {
+        return car;
     }
 
-    public void setRegistrationMark(String registrationMark) {
-        this.registrationMark = registrationMark;
-    }
-
-    public Date getRegistrationDateCar() {
-        return registrationDateCar;
-    }
-
-    public void setRegistrationDateCar(Date registrationDateCar) {
-        this.registrationDateCar = registrationDateCar;
-    }
-
-    public BigDecimal getWorth() {
-        return worth;
-    }
-
-    public void setWorth(BigDecimal worth) {
-        this.worth = worth;
+    public void setCar(Car car) {
+        this.car = car;
     }
 
     public PolicyType getPolicyType() {
@@ -147,19 +119,35 @@ public class Quote {
         this.optionalExtras.remove(optionalExtras);
     }
 
+    /**
+     * remove all the optional extras and add only the kasko.
+     * Kasko include all the services.
+     * @param kasko
+     */
+    public void addKaskoOptionalExtra(OptionalExtra kasko){
+        this.optionalExtras.clear();
+        this.optionalExtras.add(kasko);
+    }
 
+    public Boolean hasKasko(){
+        if(this.optionalExtras== null || optionalExtras.size() == 0)
+            return false;
+        for(OptionalExtra extra : this.optionalExtras) {
+            if (extra.isKasko())
+                return (true);
+        }
+        return false;
+    }
 
     @Override
     public String toString() {
         return "Quote{" +
                 "id=" + id +
-                ", holder=" + (holder != null ? holder : "???") +
-                ", registrationMark='" + registrationMark +
-                ", registrationDateCar=" + registrationDateCar +
-                ", worth=" + worth +
+                ", holder=" + (holder != null ? holder.getId() : "???") +
+                ", car=" + car.getRegistrationMark() +
                 ", policyType=" + policyType +
                 ", cost=" + cost +
-                ", quoteNumber='" + quoteNumber +
+                ", quoteNumber=" + quoteNumber +
                 ", date='" + date +'}';
     }
 }

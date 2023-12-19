@@ -1,5 +1,7 @@
+
 delete from quote_optional_extra;
 delete from quote;
+delete from car;
 delete from holder;
 
 
@@ -13,10 +15,18 @@ VALUES (100,'Giuseppe','Riccio','1968-07-08', 'GPPIRCCO456789A', 'Via Manzoni 23
        (103,'Filippo','Aneto','1998-04-11', 'NTFLPPAL61A001V', 'Via Mascherpa 22 int 7 Pavia ', 'Via Mascherpa 22 int 7 Pavia ',
              '994537215', 'f.aneto@gmail.com', 'aneto','13QQQ12');
 
+INSERT INTO car(
+    id, holder_id, registration_mark, registration_date, worth)
+VALUES (200, 100, 'DR1234A', '2010-01-01',10000),
+       (201, 101, 'CD2222A', '2022-01-01',30000),
+       (202, 101, 'CD2222A', '2022-01-01',30000),
+       (203, 103, 'EE1111EA', '2019-01-01',30000),
+       (204, 103, 'EF2222WD', '2023-01-01',30000);
+
 INSERT INTO quote(
-    id, holder_id, registration_mark, registration_date_car, worth, policy_type, cost, quote_number,date)
-VALUES (100, 100, 'DR1234A', '2010-01-01',10000, 'RCA6', 10, '100-DR1234A-100','2023-10-01 13:16:00'),
-       (101, 101, 'CD2222A', '2022-01-01',30000, 'RCA6', 30, '100-CD2222A-101','2023-12-22 13:16:00'),
-       (102, 101, 'CD2222A', '2022-01-01',30000, 'RCA12', 50, '100-CD2222A-102','2023-09-16 13:16:00'),
-       (103, 103, 'EE1111EA', '2019-01-01',30000, 'RCA6', 20, '100-CD2222A-102','2023-05-14 13:16:00'),
-       (104, 103, 'EF2222WD', '2023-01-01',30000, 'RCA50', 30, '100-CD2222A-102','2023-07-30 13:16:00');
+    id, holder_id, car_id,  policy_type, cost, quote_number,date)
+VALUES (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
+       (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
+       (302, 101, 202, 'RCA12', 50, '100-CD2222A-2','2023-09-16 13:16:00'),
+       (303, 103, 203, 'RCA6', 20, '100-CD2222A-1','2023-05-14 13:16:00'),
+       (304, 103, 204, 'RCA50', 30, '100-CD2222A-2','2023-07-30 13:16:00');

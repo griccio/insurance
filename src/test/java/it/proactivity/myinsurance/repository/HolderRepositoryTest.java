@@ -46,7 +46,26 @@ public class HolderRepositoryTest {
     public void findById() {
         Holder holder = holderRepository.findById(100L);
         Assertions.assertNotNull(holder);
+        logger.debug(holder.toString());
     }
+
+    @Test
+    public void findByIdAndCheckCarList() {
+        Holder holder = holderRepository.findById(101L);
+        Assertions.assertNotNull(holder);
+        Assertions.assertEquals(2,holder.getCarList().size());
+        logger.debug(holder.toString());
+    }
+
+
+    @Test
+    public void findByIdAndCheckEmptyCarList() {
+        Holder holder = holderRepository.findById(102L);
+        Assertions.assertNotNull(holder);
+        Assertions.assertEquals(0,holder.getCarList().size());
+        logger.debug(holder.toString());
+    }
+
 
     @Test
     public void findByIdNotExist() {
@@ -73,6 +92,21 @@ public class HolderRepositoryTest {
         Assertions.assertEquals(1, list.size());
     }
 
+
+    @Test
+    public  void getRegistrationMarks(){
+        List<String> registrationMarkList = holderRepository.getRegistrationMarks(103L);
+        Assertions.assertEquals(2,registrationMarkList.size());
+        registrationMarkList.forEach(reg -> logger.debug(reg));
+    }
+
+
+    @Test
+    public  void getRegistrationMarksEmptyList(){
+        List<String> registrationMarkList = holderRepository.getRegistrationMarks(104L);
+        Assertions.assertEquals(0,registrationMarkList.size());
+        registrationMarkList.forEach(reg -> logger.debug(reg));
+    }
 
     @Test
     public void createHolder() {
