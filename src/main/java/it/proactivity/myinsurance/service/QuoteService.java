@@ -58,6 +58,20 @@ public class QuoteService extends MyInsuranceService{
         }
     }
 
+    public Quote findByQuoteNumber(String quoteNumber) {
+        try {
+            Quote quote = quoteRepository.findByQuoteNumber(quoteNumber);
+            if(quote != null)
+                logger.debug("Quote Found: "+ quote.toString());
+            else
+                logger.debug("Quote is null ");
+            return quote;
+        } catch (Exception e) {
+            logger.error("Error finding the quote with quoteNumber =" + quoteNumber +"\n" + e.getMessage());
+            return null;
+        }
+    }
+
 
     public List<Quote> findByRegistrationMark(String registrationMark) {
         try {

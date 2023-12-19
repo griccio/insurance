@@ -35,6 +35,11 @@ public class QuoteRepository {
     }
 
 
+    public Quote findByQuoteNumber(String quoteNumber) {
+        return new QQuote().quoteNumber.eq(quoteNumber).holder.fetch().findOne();
+    }
+
+
     public List<Quote> findByRegistrationMark(String registrationMark){
 
         return new QQuote()
