@@ -20,7 +20,7 @@ public class OptionalExtraRepository {
 
 
     /**
-     * return tot of optional extras included into a Kasko
+     * return tot of optional extras included except a KASKO
      * @return
      */
     public int getTotOptionalExtrasIntoKasko(){

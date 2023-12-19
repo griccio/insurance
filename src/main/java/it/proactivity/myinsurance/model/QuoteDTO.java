@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Entity
+
 public class QuoteDTO {
 
     private String holder;

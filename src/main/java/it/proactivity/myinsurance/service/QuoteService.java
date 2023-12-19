@@ -195,7 +195,7 @@ public class QuoteService extends MyInsuranceService{
                 logger.debug("Cannot find Optional extra with code " + code);
                 throw new QuoteException("cannot find Optional extra with code " + code);
             }
-            //A KASKO include all the Optional Extras for this reason I clean up the
+            //A KASKO includes all the Optional Extras for this reason I clean up the
             //list of optional Extra and  leave only the KASKO
             if(optionalExtra.getCode().equalsIgnoreCase(MyInsuranceConstants.KASKO_CODE)) {
                 logger.debug("this is a kasko optional Extra" + code);
@@ -207,9 +207,9 @@ public class QuoteService extends MyInsuranceService{
             logger.debug("Added correctly new  optional extra : " + code );
         }
 
-        //recalculate the costs with extras
+        //recalculate the base costs
         quote.setCost(calculateQuoteCost(quote.getCar().getWorth(),quote.getCar().getRegistrationDate(),quote.getPolicyType()));
-
+        //add the optional extras
         if(quote.hasKasko())
             quote.setCost(quote.getCost().add(addKaskoCosts(quote.getCar().getWorth(),quote.getCar().getRegistrationDate())).setScale(2, RoundingMode.CEILING));
         else
@@ -217,7 +217,7 @@ public class QuoteService extends MyInsuranceService{
 
         quoteRepository.update(quote);
 
-        logger.debug("Quote updated correctly");
+        logger.debug("Quote updated correctly" + quote.toString());
         QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = new QuoteWithOptionalExtraDTO();
         quoteWithOptionalExtraDTO.map(quote);
         return quoteWithOptionalExtraDTO;
@@ -332,7 +332,7 @@ public class QuoteService extends MyInsuranceService{
 
         if(registrationDate.after(MyInsuranceConstants.STARTING_NEW_TARIFF_DATE.getTime())
                 && worth.compareTo(new BigDecimal(MyInsuranceConstants.WORTH_CAR_LIMIT))!=-1)
-            kaskoCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_AFTER_2020).multiply(new BigDecimal(optionalExtraRepository.getTotOptionalExtrasIntoKasko()));
+            kaskoCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_AFTER_2020).multiply(new BigDecimal(optionalExtraRepository.getTotOptionalExtrasIntoKasko())).multiply(MyInsuranceConstants.KASKO_DISCOUNT);
         else
             kaskoCost = new BigDecimal(MyInsuranceConstants.EXTRA_COST_BEFORE_2020)
                     .multiply(new BigDecimal(optionalExtraRepository.getTotOptionalExtrasIntoKasko())).multiply(MyInsuranceConstants.KASKO_DISCOUNT);

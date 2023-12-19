@@ -4203,3 +4203,39 @@ Unique expecting 0 or 1 results but got 6
 88990 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Quote updated correctly
 95262 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
 95275 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Quote updated correctly
+555  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 30188 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+556  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+558  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1981 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.699 seconds (process running for 2.718)
+459  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 14712 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+459  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+460  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1678 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.455 seconds (process running for 2.325)
+8880 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+8910 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=48.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+51194 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+51195 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+51196 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+62626 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+62628 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+62629 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+73598 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+73599 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+73599 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Cannot find Optional extra with code AL
+87941 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+87942 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+87943 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+87950 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=118.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+102494 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+102495 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+102496 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+102497 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+343394 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+343395 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+343396 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+343397 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - this is a kasko optional ExtraK
+343408 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=74.59, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+357907 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+357909 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+357910 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+357910 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Cannot find Optional extra with code K7

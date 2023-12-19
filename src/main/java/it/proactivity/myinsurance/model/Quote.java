@@ -144,7 +144,7 @@ public class Quote {
         return "Quote{" +
                 "id=" + id +
                 ", holder=" + (holder != null ? holder.getId() : "???") +
-                ", car=" + car.getRegistrationMark() +
+                ", car=" + ( car != null ? car.getRegistrationMark():"???") +
                 ", policyType=" + policyType +
                 ", cost=" + cost +
                 ", quoteNumber=" + quoteNumber +
