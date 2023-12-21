@@ -30,8 +30,8 @@ public class HolderRepository {
     }
 
 
-    public List<Holder> findByFiscalCode(String fiscalCode) {
-        return new QHolder().fiscalCode.contains(fiscalCode).findList();
+    public Holder findByFiscalCode(String fiscalCode) {
+        return new QHolder().fiscalCode.eq(fiscalCode).findOne();
     }
 
     public List<String> getRegistrationMarks(Long holderId){

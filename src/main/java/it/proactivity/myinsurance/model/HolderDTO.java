@@ -128,4 +128,16 @@ public class HolderDTO {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public void map(Holder holder){
+        this.name = holder.getName();
+        this.surname = holder.getSurname();
+        this.birthDate = holder.getBirthDate();
+        this.fiscalCode = holder.getFiscalCode();
+        this.residence = holder.getResidence();
+        this.domicile = holder.getDomicile();
+        this.tel = holder.getTel();
+        this.email = holder.getEmail();
+    }
+
 }

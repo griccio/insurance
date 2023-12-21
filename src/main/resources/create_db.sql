@@ -19,7 +19,8 @@ CREATE TABLE IF NOT EXISTS car
     holder_id INT NOT NULL,
     registration_mark VARCHAR(10) NOT NULL UNIQUE,/*car's plate*/
     registration_date date NOT NULL,
-    worth NUMERIC(9,2) NOT NULL /*1000000,00 car's value*/
+    worth NUMERIC(9,2) NOT NULL, /*1000000,00 car's value*/
+    FOREIGN KEY (holder_id) REFERENCES holder(id)
     );
 
 

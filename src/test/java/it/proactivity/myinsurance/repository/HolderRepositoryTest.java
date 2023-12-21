@@ -88,8 +88,8 @@ public class HolderRepositoryTest {
 
     @Test
     public void findByFiscalCodeWithPartialFiscalCode() {
-        List<Holder> list = holderRepository.findByFiscalCode("RCCO4");
-        Assertions.assertEquals(1, list.size());
+        Holder holder = holderRepository.findByFiscalCode("RCCO4");
+        Assertions.assertNotNull(holder);
     }
 
 

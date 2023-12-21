@@ -1,6 +1,9 @@
 package it.proactivity.myinsurance.controller;
 
 
+import it.proactivity.myinsurance.exception.HolderNotFoundException;
+import it.proactivity.myinsurance.exception.InvalidHolderException;
+import it.proactivity.myinsurance.exception.InvalidParamException;
 import it.proactivity.myinsurance.model.*;
 import it.proactivity.myinsurance.service.HolderService;
 import it.proactivity.myinsurance.service.QuoteService;
@@ -9,7 +12,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.WebRequest;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,7 +23,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/holder")
-public class HolderController {
+public class HolderController extends MyInsuranceController {
 
     @Autowired
     HolderService holderService;
@@ -29,92 +34,70 @@ public class HolderController {
     @GetMapping("/")
     public ResponseEntity<List<HolderDTO>> getAll() {
 
-        List<Holder> holders = holderService.findAll();
-        List<HolderDTO> holdersDTO = new ArrayList<>();
-
-        if (holders == null) {
-            return ResponseEntity.ok(holdersDTO);
-        }
-
-        holdersDTO = holders.stream()
-                .sorted(Comparator.comparing(Holder::getSurname))
-                .map(holder -> {
-                    HolderDTO holderDTO = new HolderDTO();
-                    BeanUtils.copyProperties(holder, holderDTO);
-                    return holderDTO;
-                }).collect(Collectors.toList());
-
-        return ResponseEntity.ok(holdersDTO);
+        return ResponseEntity.ok(holderService.findAllDTO());
 
     }
 
     @GetMapping("/info/{id}")
-    public ResponseEntity<HolderDTO> getById(@PathVariable Long id) {
+    public ResponseEntity<HolderDTO> getById(@Valid @PathVariable Long id) {
 
-        if (id == null || id <= 0)
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        if (id == null || id < 0)
+            throw new InvalidParamException("The param id you have inserted is incorrect id:" + id);
 
-        Holder holder = holderService.findById(id);
+        HolderDTO holderDTO = holderService.findById(id);
 
-        if (holder != null) {
-            HolderDTO holderDTO = new HolderDTO();
-            BeanUtils.copyProperties(holder, holderDTO);
-            return ResponseEntity.ok(holderDTO);
-        } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-        }
+        if (holderDTO == null)
+            throw new HolderNotFoundException("Holder is not found  id:" + id);
+
+        return ResponseEntity.ok(holderDTO);
     }
 
 
     @GetMapping("/{id}")
     public ResponseEntity<List<QuoteByHolderAndCarDTO>> getQuoteByHolderIdGroupByCar(@PathVariable Long id) {
 
-        if (id == null || id <= 0)
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        if (id == null || id < 0)
+            throw new InvalidParamException("The param id you have inserted is incorrect id:" + id);
 
         QuoteByHolderAndCarDTO quoteByCarDTO = new QuoteByHolderAndCarDTO(id);
+
+        if (quoteByCarDTO == null)
+            throw new HolderNotFoundException("Holder is not found  id:" + id);
 
         return ResponseEntity.ok(quoteService.findByHolderIdAndCar(quoteByCarDTO));
 
     }
 
     @PostMapping
-    public ResponseEntity<Long> save(@Valid @RequestBody HolderDTO holderDTO) {
+    public ResponseEntity<Long> save(@Valid @RequestBody HolderDTO holderDTO, BindingResult bindingResult) {
 
-        if(holderService.verifyEmailExistence(holderDTO.getEmail()))
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+        if (bindingResult.hasErrors()) {
+            logger.error(bindingResult.getAllErrors().toString());
+            throw new InvalidHolderException("The input object is incorrect: some required fields are missing or incorrect, Holder has not been saved");
+        }
 
-        if(holderService.verifyFiscalCodeExistence(holderDTO.getFiscalCode()))
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+        Long id = holderService.save(holderDTO);
 
-
-        Holder holder = new Holder();
-        BeanUtils.copyProperties(holderDTO, holder);
-        Long id = holderService.save(holder);
-
-        if (id != null && id > 0)
-            return ResponseEntity.ok(id);
+        if (id == 0)
+            throw new InvalidHolderException("Holder has not been saved");
         else
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
+            return ResponseEntity.ok(id);
     }
 
     @PutMapping
-    public ResponseEntity<Long> update(@Valid @RequestBody HolderWithIdDTO holderWithIdDTO) {
+    public ResponseEntity<Long> update(@Valid @RequestBody HolderForUpdateDTO holderForUpdateDTO, BindingResult bindingResult) {
 
-        if(holderService.verifyEmailExistenceForUpdate(holderWithIdDTO.getEmail(),holderWithIdDTO.getId()))
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+        if (bindingResult.hasErrors()) {
+            logger.error(bindingResult.getAllErrors().toString());
+            throw new InvalidHolderException("The input object is incorrect: some required fields are missing or incorrect. Holder has not been updated");
+        }
 
-        if(holderService.verifyFiscalCodeExistenceForUpdate(holderWithIdDTO.getFiscalCode(),holderWithIdDTO.getId()))
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+        Long id = holderService.update(holderForUpdateDTO);
 
-        Holder holder = new Holder();
-        BeanUtils.copyProperties(holderWithIdDTO, holder);
-        Long id = holderService.update(holder);
-
-        if (id != null && id > 0)
-            return ResponseEntity.ok(id);
+        if (id == 0)
+            throw new InvalidHolderException("Holder has not been updated");
         else
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(0L);
+            return ResponseEntity.ok(id);
     }
 
 

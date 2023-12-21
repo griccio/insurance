@@ -10,6 +10,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Entity
 //@NoArgsConstructor
@@ -69,7 +70,7 @@ public class Holder {
     private String email;
 
 
-    @OneToMany(mappedBy="holder")
+    @OneToMany(mappedBy="holder", cascade = CascadeType.ALL, orphanRemoval = true)
     List<Car> carList = new ArrayList<>();
 
     @OneToMany(mappedBy = "car")
@@ -187,5 +188,14 @@ public class Holder {
                 ", carList=" + carList +
                 ", quoteList=" + quoteList +
                 '}';
+    }
+
+    public void map(HolderForUpdateDTO holderForUpdateDTO) {
+
+        this.id = holderForUpdateDTO.getId();
+
+        if( holderForUpdateDTO.getName()!=null)
+            this.name = holderForUpdateDTO.getName();
+
     }
 }

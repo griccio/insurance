@@ -19,9 +19,10 @@ INSERT INTO car(
     id, holder_id, registration_mark, registration_date, worth)
 VALUES (200, 100, 'DR1234A', '2010-01-01',10000),
        (201, 101, 'CD2222A', '2022-01-01',30000),
-       (202, 101, 'CD2222A', '2022-01-01',30000),
+       (202, 101, 'CD3344A', '2022-01-01',30000),
        (203, 103, 'EE1111EA', '2019-01-01',30000),
-       (204, 103, 'EF2222WD', '2023-01-01',30000);
+       (204, 103, 'EF2222WD', '2023-01-01',30000),
+       (205, 102, 'AA333£WD', '2023-01-01',60000);
 
 INSERT INTO quote(
     id, holder_id, car_id,  policy_type, cost, quote_number,date)
