@@ -1,13 +1,8 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
-import org.springframework.beans.BeanUtils;
+import it.proactivity.myinsurance.model.Quote;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 

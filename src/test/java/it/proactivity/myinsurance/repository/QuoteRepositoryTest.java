@@ -19,6 +19,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+
 @SpringBootTest
 public class QuoteRepositoryTest {
     @Autowired
@@ -40,18 +41,18 @@ public class QuoteRepositoryTest {
      *     id, holder_id, registration_mark, registration_date, worth)
      * VALUES (200, 100, 'DR1234A', '2010-01-01',10000),
      *        (201, 101, 'CD2222A', '2022-01-01',30000),
-     *        (202, 101, 'CD2222A', '2022-01-01',30000),
+     *        (202, 101, 'CD3344A', '2022-01-01',30000),
      *        (203, 103, 'EE1111EA', '2019-01-01',30000),
-     *        (204, 103, 'EF2222WD', '2023-01-01',30000);
+     *        (204, 103, 'EF2222WD', '2023-01-01',30000),
+     *        (205, 102, 'AA333£WD', '2023-01-01',60000);
      *
-     INSERT INTO quote(
-     id, holder_id, car_id,  policy_type, cost, quote_number,date)
-     VALUES (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
-     (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
-     (302, 101, 202, 'RCA12', 50, '100-CD2222A-2','2023-09-16 13:16:00'),
-     (303, 103, 203, 'RCA6', 20, '100-CD2222A-1','2023-05-14 13:16:00'),
-     (304, 103, 204, 'RCA50', 30, '100-CD2222A-2','2023-07-30 13:16:00');
-
+     * INSERT INTO quote(
+     *     id, holder_id, car_id,  policy_type, cost, quote_number,date)
+     * VALUES (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
+     *        (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
+     *        (302, 101, 202, 'RCA12', 50, '100-CD2222A-2','2023-09-16 13:16:00'),
+     *        (303, 103, 203, 'RCA6', 20, '100-CD2222A-1','2023-05-14 13:16:00'),
+     *        (304, 103, 204, 'RCA50', 30, '100-CD2222A-2','2023-07-30 13:16:00');
      */
     @BeforeEach
     public void initTable() {
@@ -76,11 +77,11 @@ public class QuoteRepositoryTest {
 
 
     /**
-     * return the list of quotes and for each quote the holder's data
+     * return the list of quotes with holder info
      * Ebean is lazy by default
      */
     @Test
-    public void findAllWithHolderData() {
+    public void findAllWithHolderAndData() {
         List<Quote> list = quoteRepository.findAllWithHolderAndCarData();
         Assertions.assertEquals(5, list.size());
         list.forEach(quote -> {logger.debug(quote.toString());
@@ -118,7 +119,7 @@ public class QuoteRepositoryTest {
     @Test
     public void findByRegistrationMark() {
         List<Quote> list = quoteRepository.findByRegistrationMark("CD2222A");
-        Assertions.assertEquals(2, list.size());
+        Assertions.assertEquals(1, list.size());
         list.forEach(quote -> logger.debug(quote.toString()));
     }
 

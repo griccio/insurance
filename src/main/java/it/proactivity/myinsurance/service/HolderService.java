@@ -1,20 +1,14 @@
 package it.proactivity.myinsurance.service;
 
-import io.ebean.annotation.NotNull;
 import io.ebean.annotation.Transactional;
 import it.proactivity.myinsurance.exception.InvalidHolderException;
 import it.proactivity.myinsurance.model.Holder;
-import it.proactivity.myinsurance.model.HolderDTO;
-import it.proactivity.myinsurance.model.HolderForUpdateDTO;
+import it.proactivity.myinsurance.model.dto.HolderDTO;
+import it.proactivity.myinsurance.model.dto.HolderForUpdateDTO;
 import it.proactivity.myinsurance.repository.HolderRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -39,6 +33,7 @@ public class HolderService extends MyInsuranceService {
     public List<HolderDTO> findAllDTO() {
 
         List<Holder> holders = findAll();
+        logger.debug("holders loaded correctly, tot: "+ holders.size());
         List<HolderDTO> holdersDTO = new ArrayList<>();
 
         if (holders == null)
@@ -146,9 +141,9 @@ public class HolderService extends MyInsuranceService {
             throw new InvalidHolderException("Holder doesn't exist and cannot be deleted");
 
         logger.debug("Holder Found  " + holder.toString());
-        holderRepository.delete(holder);
+        Boolean  deleteOk = holderRepository.delete(holder);
         logger.debug("Holder deleted Correctly ");
-        return holder.getId();
+        return (deleteOk ? holder.getId():null);
 
     }
 

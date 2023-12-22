@@ -1,5 +1,6 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ public class QuoteForUpdateDTO {
 
 
     @NotNull
+    @Min(1)
     private Long Id;
 
     private List<String> optionalExtraByCodeList = new ArrayList<>();

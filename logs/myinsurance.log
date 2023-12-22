@@ -4844,3 +4844,711 @@ Unique expecting 0 or 1 results but got 6
 48354 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=[Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}], quoteList=BeanList<deferred>}
 72565 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holders Found: 5
 72567 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Holders Found: 5
+871  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 26200 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+871  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 26200 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+872  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+872  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+873  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+873  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2826 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.142 seconds (process running for 3.126)
+2826 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.142 seconds (process running for 3.126)
+4873 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4873 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4874 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+843  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 20936 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+843  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 20936 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+844  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+844  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+845  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+845  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2857 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.197 seconds (process running for 3.156)
+2857 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.197 seconds (process running for 3.156)
+4960 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4960 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4973 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4973 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4974 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4975 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+594  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34052 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+594  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 34052 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+595  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+595  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+595  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+595  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2530 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.114 seconds (process running for 3.058)
+2530 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.114 seconds (process running for 3.058)
+4378 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (1, 100, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.434).
+4378 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (1, 100, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.434).
+4435 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4435 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4435 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4435 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4436 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4485 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4485 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4486 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4493 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4493 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4527 [main] ERROR i.p.m.r.QuoteRepositoryTest - io.ebean.DataIntegrityException: Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (6, 102, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.595).
+4527 [main] ERROR i.p.m.r.QuoteRepositoryTest - io.ebean.DataIntegrityException: Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (6, 102, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.595).
+4543 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4543 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4544 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4544 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4544 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4544 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4561 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4561 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4564 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4564 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4565 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4565 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4566 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4574 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4574 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4574 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4574 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4575 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4583 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4583 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4591 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+4591 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+4591 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+4591 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+4598 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4598 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4598 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4598 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4644 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4652 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (10, null, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.72).
+4652 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (10, null, null, RCA12, 50.00, 123456, 2023-12-21 12:47:02.72).
+592  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2784 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+592  [main] INFO  i.p.m.r.QuoteRepositoryTest - Starting QuoteRepositoryTest using Java 20.0.1 with PID 2784 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+593  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+593  [main] DEBUG i.p.m.r.QuoteRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+593  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+593  [main] INFO  i.p.m.r.QuoteRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2450 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.035 seconds (process running for 3.017)
+2450 [main] INFO  i.p.m.r.QuoteRepositoryTest - Started QuoteRepositoryTest in 2.035 seconds (process running for 3.017)
+4501 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (11, 100, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.527).
+4501 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (11, 100, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.527).
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4557 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4610 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4618 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4618 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4650 [main] ERROR i.p.m.r.QuoteRepositoryTest - io.ebean.DataIntegrityException: Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (16, 102, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.688).
+4650 [main] ERROR i.p.m.r.QuoteRepositoryTest - io.ebean.DataIntegrityException: Error: ERRORE: il valore nullo nella colonna "car_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (16, 102, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.688).
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=4, code='TL', name='TUTELA LEGALE'}
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4668 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=5, code='DC', name='DANNI CONDUCENTE'}
+4684 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4684 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4687 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4687 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4688 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='null', surname='null', birthDate=null, fiscalCode='null', residence='null', domicile='null', tel='null', email='null', carList=null, quoteList=null}
+4689 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4689 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=203, holderId=103, registrationMark='EE1111EA', registrationDate=Tue Jan 01 00:00:00 CET 2019, worth=30000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4697 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=304, holder=103, car=EF2222WD, policyType=RCA50, cost=30.00, quoteNumber=100-CD2222A-2, date='Sun Jul 30 13:16:00 CEST 2023}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=103, name='Filippo', surname='Aneto', birthDate=Sat Apr 11 00:00:00 CEST 1998, fiscalCode='NTFLPPAL61A001V', residence='Via Mascherpa 22 int 7 Pavia ', domicile='Via Mascherpa 22 int 7 Pavia ', tel='994537215', email='f.aneto@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=204, holderId=103, registrationMark='EF2222WD', registrationDate=Sun Jan 01 00:00:00 CET 2023, worth=30000.00}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=BeanList<deferred>, quoteList=BeanList<deferred>}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4698 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}
+4705 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4705 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=303, holder=103, car=EE1111EA, policyType=RCA6, cost=20.00, quoteNumber=100-CD2222A-1, date='Sun May 14 13:16:00 CEST 2023}
+4715 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+4715 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EE1111EA
+4715 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+4715 [main] DEBUG i.p.m.r.QuoteRepositoryTest - EF2222WD
+4723 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4723 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4724 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4724 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+4730 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4730 [main] DEBUG i.p.m.r.QuoteRepositoryTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=1, code='C', name='POLIZZA CRISTALLI'}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=2, code='FI', name='FURTO INCENDIO'}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4761 [main] DEBUG i.p.m.r.QuoteRepositoryTest - OptionalExtras{id=3, code='AS', name='ASSISTENZA STRADALE'}
+4769 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (20, null, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.806).
+4769 [main] ERROR i.p.m.r.QuoteRepositoryTest - Error: ERRORE: il valore nullo nella colonna "holder_id" della relazione "quote" viola il vincolo non nullo   Dettaglio: La riga in errore contiene (20, null, null, RCA12, 50.00, 123456, 2023-12-21 12:47:30.806).
+472  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 18880 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+472  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+473  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1718 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.488 seconds (process running for 2.248)
+13906 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+770072 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+772389 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+773721 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+459  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 13644 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+459  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+460  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1669 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.447 seconds (process running for 2.17)
+7865 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+7889 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - quotes Found 5
+1300449 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Quote is null 
+1314144 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Quote is null 
+812  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 34492 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+813  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+813  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2673 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.049 seconds (process running for 2.971)
+820  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 22700 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+821  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+821  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2689 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.061 seconds (process running for 2.98)
+820  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 18236 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+820  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+821  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2642 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.008 seconds (process running for 2.951)
+4616 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id =300
+818  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 15396 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+818  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+819  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2694 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.07 seconds (process running for 2.988)
+4579 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id =300
+864  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 11612 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+865  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+865  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2946 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.278 seconds (process running for 3.273)
+35597 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id = 300
+948  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 24244 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+949  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+949  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2794 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.037 seconds (process running for 3.233)
+4637 [main] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+478  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11540 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+478  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+478  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1723 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.489 seconds (process running for 2.232)
+10931 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+10955 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - quotes Found 5
+32753 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+59943 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - No quote Found with the id = 3080
+517  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26564 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+520  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+521  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1860 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.636 seconds (process running for 2.415)
+476  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 28460 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+476  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+476  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1713 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.481 seconds (process running for 2.225)
+105065 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@4838fb1f
+500  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 32632 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+500  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+501  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1807 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.57 seconds (process running for 2.438)
+466  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 15680 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+466  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+467  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1732 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.499 seconds (process running for 2.268)
+470  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 17956 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+471  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+471  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1716 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.482 seconds (process running for 2.282)
+474  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 25048 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+474  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+475  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2210 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.973 seconds (process running for 2.723)
+459  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 26508 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+459  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+460  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2180 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.954 seconds (process running for 2.691)
+47244 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@47814711
+2418878 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@6bf0663a
+2523212 [http-nio-8080-exec-7] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@2545f94d
+2550686 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - You cannot create more than two quotes for the same registration mark 
+489  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 19700 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+489  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+490  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1793 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.553 seconds (process running for 2.489)
+465  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 22912 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+466  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+468  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1698 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.467 seconds (process running for 2.219)
+16531 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService -  the car belongs to another holder QuoteForCreateDTO{holderId=102, registrationMark='DR1234A', registrationDateCar=Sun May 23 02:00:00 CEST 2021, worth=100000.00, policyType=RCA6}
+451  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 5236 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+452  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+452  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1576 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.36 seconds (process running for 2.081)
+586  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 6788 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+587  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+587  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1849 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.602 seconds (process running for 2.41)
+3898 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService -  the car belongs to another holder QuoteForCreateDTO{holderId=102, registrationMark='DR1234A', registrationDateCar=Sun May 23 02:00:00 CEST 2021, worth=100000.00, policyType=RCA6}
+28317 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@7e954785
+46843 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.QuoteDTO@3a3aae31
+67143 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - You cannot create more than two quotes for the same registration mark 
+90607 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService -  the car belongs to another holder QuoteForCreateDTO{holderId=102, registrationMark='CD2222A', registrationDateCar=Sun May 23 02:00:00 CEST 2021, worth=300000.00, policyType=RCA6}
+464  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 21008 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+465  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+466  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1742 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.52 seconds (process running for 2.261)
+105294 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+105297 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+105300 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+105302 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - this is a kasko optional ExtraK
+459  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 20088 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+459  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+462  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1681 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.453 seconds (process running for 2.237)
+86505 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+96203 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+107742 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+119738 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - this is a kasko optional ExtraK
+458183 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=74.59, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+486230 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : TL
+486231 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+486232 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+486234 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+486246 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=153.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+561780 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Cannot find Optional extra with code TKL
+565  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 37260 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+565  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+566  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2024 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.751 seconds (process running for 2.627)
+12808 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : TL
+12810 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+12811 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+12813 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+12853 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=153.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+20818 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Cannot find Optional extra with code TJ
+31919 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - cannot find Quote with the id: 30450
+44637 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForUpdateDTO' on field 'Id': rejected value [-1]; codes [Min.quoteForUpdateDTO.Id,Min.Id,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForUpdateDTO.Id,Id]; arguments []; default message [Id],1]; default message [deve essere superiore o uguale a 1]]
+58787 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForUpdateDTO' on field 'Id': rejected value [0]; codes [Min.quoteForUpdateDTO.Id,Min.Id,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForUpdateDTO.Id,Id]; arguments []; default message [Id],1]; default message [deve essere superiore o uguale a 1]]
+77802 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - this is a kasko optional ExtraK
+77820 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=74.59, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+99539 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+99541 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+99542 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+99543 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+134420 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+134423 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+134425 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+134426 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+519  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34088 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+520  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+520  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1851 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.587 seconds (process running for 2.519)
+44831 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+44832 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+44833 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+44834 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+120114 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+120115 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+120115 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+120115 [http-nio-8080-exec-4] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+147940 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+147941 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Cannot find Optional extra with code AL
+160078 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+160079 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : TL
+160079 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+160080 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+160094 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=153.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+204897 [http-nio-8080-exec-9] ERROR i.p.m.service.HolderService - Quote has been deleted correctly 
+242765 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : AS
+242766 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : TL
+242767 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : C
+242773 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Added correctly new  optional extra : DC
+242776 [http-nio-8080-exec-10] DEBUG i.p.m.service.HolderService - Quote updated correctlyQuote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=153.34, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+36137453 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34088 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+36137453 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+36137453 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+36137953 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 0.571 seconds (process running for 36138.62)
+36139472 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 34088 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+36139472 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+36139472 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+36139741 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 0.293 seconds (process running for 36140.409)
+536  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 27484 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+536  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+536  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1946 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.671 seconds (process running for 2.744)
+15611 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - The Holder with this id 100 has these cars [DR1234A]
+32106 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+78588 [http-nio-8080-exec-5] DEBUG i.p.m.service.HolderService - The Holder with this id 102 has these cars [AA333£WD]
+83996 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - The Holder with this id 1029 has these cars []
+106279 [http-nio-8080-exec-8] DEBUG i.p.m.service.HolderService - The Holder with this id 0 has these cars []
+828  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31016 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+828  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+829  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2856 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.212 seconds (process running for 3.16)
+5016 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+5036 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+812  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 5668 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+813  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+814  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2782 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.158 seconds (process running for 3.082)
+4606 [main] DEBUG i.p.m.service.HolderService - Quote Found: Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+833  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27300 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+833  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+834  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2714 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.064 seconds (process running for 3.011)
+4520 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id = null
+837  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 29208 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+837  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+838  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2902 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.255 seconds (process running for 3.227)
+812  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 34988 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+812  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+813  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2666 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.04 seconds (process running for 2.974)
+830  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 20488 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+831  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+832  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2804 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.159 seconds (process running for 3.108)
+888  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 2012 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+888  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+889  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2758 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.059 seconds (process running for 3.073)
+4570 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id = -123
+821  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31156 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+822  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+822  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2599 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.961 seconds (process running for 2.921)
+4507 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 1
+4511 [main] DEBUG i.p.m.service.QuoteServiceTest - Quote{id=300, holder=100, car=DR1234A, policyType=RCA6, cost=10.00, quoteNumber=100-DR1234A-1, date='Sun Oct 01 13:16:00 CEST 2023}
+831  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28008 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+831  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+832  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2676 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.026 seconds (process running for 2.972)
+4546 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 0
+824  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 21696 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+825  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+826  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2580 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.946 seconds (process running for 2.886)
+4455 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 0
+823  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 33836 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+824  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+825  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2639 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.994 seconds (process running for 2.932)
+4383 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 0
+824  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 5680 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+825  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+826  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2552 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.913 seconds (process running for 2.845)
+4401 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 0
+843  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 16632 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+844  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+844  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2723 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.068 seconds (process running for 3.028)
+4474 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by registration mark, tot: 0
+852  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35688 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+853  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+854  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2848 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.186 seconds (process running for 3.145)
+4689 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by holder id, tot: 2
+837  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 20572 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+837  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+838  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2830 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.188 seconds (process running for 3.129)
+4629 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by holder id, tot: 2
+4646 [main] DEBUG i.p.m.service.QuoteServiceTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4646 [main] DEBUG i.p.m.service.QuoteServiceTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+822  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 16912 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+822  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+823  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2697 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.061 seconds (process running for 2.997)
+4558 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly by holder id, tot: 2
+4576 [main] DEBUG i.p.m.service.QuoteServiceTest - Quote{id=301, holder=101, car=CD2222A, policyType=RCA6, cost=30.00, quoteNumber=100-CD2222A-1, date='Fri Dec 22 13:16:00 CET 2023}
+4576 [main] DEBUG i.p.m.service.QuoteServiceTest - Quote{id=302, holder=101, car=CD3344A, policyType=RCA12, cost=50.00, quoteNumber=100-CD2222A-2, date='Sat Sep 16 13:16:00 CEST 2023}
+813  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 2600 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+813  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+814  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2564 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.93 seconds (process running for 2.858)
+4373 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 103 has these cars [EE1111EA, EF2222WD]
+4390 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EE1111EA', quotes=[it.proactivity.myinsurance.model.dto.QuoteDTO@1c65ec63]}
+4390 [main] DEBUG i.p.m.service.QuoteServiceTest - QuoteByHolderAndCarDTO{holder_id=103, registrationMark='EF2222WD', quotes=[it.proactivity.myinsurance.model.dto.QuoteDTO@25f73119]}
+881  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 24604 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+881  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+882  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2777 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.094 seconds (process running for 3.076)
+4561 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 111 has these cars []
+854  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 16616 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+855  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+856  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2663 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.01 seconds (process running for 2.969)
+4433 [main] DEBUG i.p.m.service.HolderService - The Holder with this id 111 has these cars []
+839  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 6364 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+839  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+840  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2628 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.967 seconds (process running for 2.927)
+845  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 39680 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+846  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+847  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2606 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.946 seconds (process running for 2.904)
+883  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 21916 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+884  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+884  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2777 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.085 seconds (process running for 3.106)
+4577 [main] ERROR i.p.m.service.HolderService - QuoteByHolderAndCarDTO is null
+887  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 2276 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+888  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+888  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2769 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.087 seconds (process running for 3.076)
+4561 [main] ERROR i.p.m.service.HolderService - QuoteByHolderAndCarDTO is null
+836  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 18612 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+838  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+838  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2710 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.058 seconds (process running for 3.025)
+4668 [main] DEBUG i.p.m.service.HolderService - The Holder with this id null has these cars []
+832  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 11480 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+833  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+833  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2782 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.141 seconds (process running for 3.079)
+4585 [main] DEBUG i.p.m.service.HolderService - The Holder with this id null has these cars []
+829  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 13384 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+830  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+830  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2599 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.946 seconds (process running for 2.913)
+4438 [main] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.dto.QuoteDTO@3962b216
+4444 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 6
+4461 [main] DEBUG i.p.m.service.HolderService - quotes Found 6
+876  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 17936 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+877  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+877  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2773 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.08 seconds (process running for 3.088)
+4593 [main] DEBUG i.p.m.service.HolderService - No quote Found with the id = null
+814  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32468 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+815  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+816  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2627 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.989 seconds (process running for 2.935)
+4695 [main] ERROR i.p.m.service.HolderService - Quote has been deleted correctly 
+864  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 8020 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+865  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+865  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2985 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.315 seconds (process running for 3.355)
+5017 [main] ERROR i.p.m.service.HolderService - Quote is not registered.
+5017 [main] ERROR i.p.m.service.QuoteServiceTest - Quote is not registered
+847  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 1264 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+848  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+849  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2707 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.034 seconds (process running for 3.02)
+4607 [main] ERROR i.p.m.service.HolderService - Quote has not this Registration Mark 
+4607 [main] ERROR i.p.m.service.QuoteServiceTest - Quote has not this Registration Mark
+473  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 30416 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+474  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+474  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1718 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.494 seconds (process running for 2.231)
+809  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 16152 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+810  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+811  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2723 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.09 seconds (process running for 3.038)
+4689 [main] ERROR i.p.m.service.HolderService - Quote has not this Registration Mark 
+4690 [main] ERROR i.p.m.service.QuoteServiceTest - Quote has not this Registration Mark
+849  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 36056 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+850  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+851  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2639 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.986 seconds (process running for 2.978)
+4463 [main] ERROR i.p.m.service.HolderService - Quote has not this Registration Mark or the registration Mark is assigned to another quoteQuoteForDeleteDTO{Id=300, registrationMark='EF2222WD'}
+4463 [main] ERROR i.p.m.service.QuoteServiceTest - Quote has not this Registration Mark or the registration Mark is assigned to another quote
+469  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11216 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+470  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+470  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1717 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.49 seconds (process running for 2.234)
+8061 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 11480 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+8062 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+8063 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+10206 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.368 seconds (process running for 10.513)
+12340 [main] ERROR i.p.m.service.HolderService - input param is null
+12340 [main] ERROR i.p.m.service.QuoteServiceTest - input param is null
+825  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 3616 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+825  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+826  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2622 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 1.966 seconds (process running for 2.94)
+1302302 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11216 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1302302 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+1302303 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+1304042 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 11216 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1304042 [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+1304042 [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+871  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 9760 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+871  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+872  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+1304407 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 0.388 seconds (process running for 1304.924)
+2819 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.14 seconds (process running for 3.143)
+4659 [main] ERROR i.p.m.service.HolderService - input param is null or incorrectQuoteForDeleteDTO{Id=null, registrationMark='null'}
+4659 [main] ERROR i.p.m.service.QuoteServiceTest - input param is null or incorrect
+1348082 [http-nio-8080-exec-2] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForDeleteDTO' on field 'id': rejected value [null]; codes [NotNull.quoteForDeleteDTO.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.id,id]; arguments []; default message [id]]; default message [non deve essere null]]
+1366658 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForDeleteDTO' on field 'registrationMark': rejected value [null]; codes [NotNull.quoteForDeleteDTO.registrationMark,NotNull.registrationMark,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.registrationMark,registrationMark]; arguments []; default message [registrationMark]]; default message [non deve essere null], Field error in object 'quoteForDeleteDTO' on field 'registrationMark': rejected value [null]; codes [NotBlank.quoteForDeleteDTO.registrationMark,NotBlank.registrationMark,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.registrationMark,registrationMark]; arguments []; default message [registrationMark]]; default message [non deve essere spazio], Field error in object 'quoteForDeleteDTO' on field 'id': rejected value [null]; codes [NotNull.quoteForDeleteDTO.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.id,id]; arguments []; default message [id]]; default message [non deve essere null]]
+1311 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 17228 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1313 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1315 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3930 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.86 seconds (process running for 4.362)
+6524 [main] ERROR i.p.m.service.HolderService - input param is null or incorrectQuoteForDeleteDTO{Id=null, registrationMark='null'}
+6525 [main] ERROR i.p.m.service.QuoteServiceTest - input param is null or incorrect
+560  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 22996 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+560  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+561  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2002 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.736 seconds (process running for 2.649)
+17286 [http-nio-8080-exec-3] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForDeleteDTO' on field 'id': rejected value [null]; codes [NotNull.quoteForDeleteDTO.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.id,id]; arguments []; default message [id]]; default message [non deve essere null], Field error in object 'quoteForDeleteDTO' on field 'registrationMark': rejected value [null]; codes [NotNull.quoteForDeleteDTO.registrationMark,NotNull.registrationMark,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.registrationMark,registrationMark]; arguments []; default message [registrationMark]]; default message [non deve essere null], Field error in object 'quoteForDeleteDTO' on field 'registrationMark': rejected value [null]; codes [NotBlank.quoteForDeleteDTO.registrationMark,NotBlank.registrationMark,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.registrationMark,registrationMark]; arguments []; default message [registrationMark]]; default message [non deve essere spazio]]
+53613 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForDeleteDTO' on field 'registrationMark': rejected value []; codes [NotBlank.quoteForDeleteDTO.registrationMark,NotBlank.registrationMark,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.registrationMark,registrationMark]; arguments []; default message [registrationMark]]; default message [non deve essere spazio], Field error in object 'quoteForDeleteDTO' on field 'id': rejected value [null]; codes [NotNull.quoteForDeleteDTO.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.id,id]; arguments []; default message [id]]; default message [non deve essere null]]
+64182 [http-nio-8080-exec-6] ERROR i.p.m.service.HolderService - [Field error in object 'quoteForDeleteDTO' on field 'id': rejected value [null]; codes [NotNull.quoteForDeleteDTO.id,NotNull.id,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quoteForDeleteDTO.id,id]; arguments []; default message [id]]; default message [non deve essere null]]
+578  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 23572 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+578  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+579  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2127 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.839 seconds (process running for 2.812)

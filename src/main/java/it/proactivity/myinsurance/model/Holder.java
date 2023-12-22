@@ -1,16 +1,14 @@
 package it.proactivity.myinsurance.model;
 
+import it.proactivity.myinsurance.model.dto.HolderForUpdateDTO;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.*;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 @Entity
 //@NoArgsConstructor

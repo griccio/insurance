@@ -1,8 +1,12 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This DTO contains the holder id, the car plate(registration mark)
+ * and the quotes related to the holder and the car
+ */
 public class QuoteByHolderAndCarDTO {
 
 

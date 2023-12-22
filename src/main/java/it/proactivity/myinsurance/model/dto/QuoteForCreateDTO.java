@@ -1,5 +1,8 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
+import it.proactivity.myinsurance.model.PolicyType;
+import it.proactivity.myinsurance.model.Quote;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -10,43 +13,62 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 
-public class QuoteDTO {
+public class QuoteForCreateDTO {
+    public QuoteForCreateDTO() {
+    }
 
-    private String holder;
+    public QuoteForCreateDTO(Long holderId, String registrationMark, Date registrationDateCar, BigDecimal worth, PolicyType policyType) {
+        this.holderId = holderId;
+        this.registrationMark = registrationMark;
+        this.registrationDateCar = registrationDateCar;
+        this.worth = worth;
+        this.policyType = policyType;
+    }
 
+
+    @NotNull
+    @Min(1)
+    private Long holderId;
+
+    @NotBlank
+    @NotNull
+    @Size(max = 10)
     private String registrationMark;
 
+    @NotNull
     private Date registrationDateCar;
 
+    @NotNull
     private BigDecimal worth;
 
-    @Enumerated(EnumType.STRING)
+    @NotNull
     private PolicyType policyType;
 
-    private BigDecimal cost;
-
-    private String quoteNumber;
-
-    private Date date;
-
-    public String getHolder() {
-        return holder;
+    public Long getHolderId() {
+        return holderId;
     }
 
-    public void setHolder(String holder) {
-        this.holder = holder;
+    public void setHolderId(Long holderId) {
+        this.holderId = holderId;
     }
 
-    public void setHolder(Holder holder){
-        this.holder = holder.getName() + " "+ holder.getSurname()
-                + " (" + holder.getFiscalCode() + ")";
-    }
     public String getRegistrationMark() {
         return registrationMark;
     }
 
     public void setRegistrationMark(String registrationMark) {
         this.registrationMark = registrationMark;
+    }
+
+    @Override
+    public String toString() {
+        return "QuoteForCreateDTO{" +
+                "holderId=" + holderId +
+                ", registrationMark='" + registrationMark + '\'' +
+                ", registrationDateCar=" + registrationDateCar +
+                ", worth=" + worth +
+                ", policyType=" + policyType +
+                '}';
     }
 
     public Date getRegistrationDateCar() {
@@ -73,35 +95,16 @@ public class QuoteDTO {
         this.policyType = policyType;
     }
 
-    public BigDecimal getCost() {
-        return cost;
-    }
 
-    public void setCost(BigDecimal cost) {
-        this.cost = cost;
-    }
 
-    public String getQuoteNumber() {
-        return quoteNumber;
-    }
-
-    public void setQuoteNumber(String quoteNumber) {
-        this.quoteNumber = quoteNumber;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public void map(Quote quote){
         BeanUtils.copyProperties(quote,this);
-        this.setHolder(quote.getHolder());
+        this.setHolderId(quote.getHolder().getId());
         this.registrationMark = quote.getCar().getRegistrationMark();
         this.registrationDateCar = quote.getCar().getRegistrationDate();
         this.worth = quote.getCar().getWorth();
     }
+
 }
+

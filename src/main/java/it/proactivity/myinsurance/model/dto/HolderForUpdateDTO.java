@@ -1,10 +1,10 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
-import jakarta.validation.constraints.Min;
+import it.proactivity.myinsurance.model.Holder;
+import it.proactivity.myinsurance.model.dto.HolderDTO;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 
-public class HolderForUpdateDTO extends HolderDTO{
+public class HolderForUpdateDTO extends HolderDTO {
 
     @NotNull
     private Long id;

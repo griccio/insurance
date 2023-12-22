@@ -1,8 +1,11 @@
-package it.proactivity.myinsurance.model;
+package it.proactivity.myinsurance.model.dto;
 
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import org.springframework.util.NumberUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +17,8 @@ public class QuoteForDeleteDTO {
 
 
     @NotNull
-    private Long Id;
+    @Min(1)
+    private Long id;
 
     @NotBlank
     @NotNull
@@ -23,11 +27,11 @@ public class QuoteForDeleteDTO {
 
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getRegistrationMark() {
@@ -38,10 +42,18 @@ public class QuoteForDeleteDTO {
         this.registrationMark = registrationMark;
     }
 
+
+    public Boolean isCorrect(){
+        return
+                (this.getId() != null && this.getId() >0)  &&
+                (this.getRegistrationMark() != null && this.getRegistrationMark().length() >0) ;
+
+    }
+
     @Override
     public String toString() {
         return "QuoteForDeleteDTO{" +
-                "Id=" + Id +
+                "Id=" + id +
                 ", registrationMark='" + registrationMark + '\'' +
                 '}';
     }

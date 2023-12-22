@@ -1,49 +1,27 @@
 package it.proactivity.myinsurance.controller;
 
 
-import it.proactivity.myinsurance.model.*;
+import it.proactivity.myinsurance.exception.*;
+import it.proactivity.myinsurance.model.dto.*;
 import it.proactivity.myinsurance.service.QuoteService;
 import jakarta.validation.Valid;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/quote")
-public class QuoteController {
+public class QuoteController extends MyInsuranceController{
 
     @Autowired
     QuoteService quoteService;
 
     @GetMapping("/")
     public ResponseEntity<List<QuoteDTO>> getAll() {
-
-        List<Quote> quotes = quoteService.findAll();
-
-        List<QuoteDTO> quotesDTO = new ArrayList<>();
-
-        if (quotes == null) {
-            return ResponseEntity.ok(quotesDTO);
-        }
-
-        quotesDTO = quotes.stream()
-                .sorted(Comparator.comparing(Quote::getDate))
-                .map(quote -> {
-                    QuoteDTO quoteDTO = new QuoteDTO();
-                    BeanUtils.copyProperties(quote, quoteDTO);
-                    quoteDTO.setHolder(quote.getHolder());
-                    return quoteDTO;
-                }).collect(Collectors.toList());
-
-        return ResponseEntity.ok(quotesDTO);
-
+        return ResponseEntity.ok(quoteService.findAll());
     }
 
 
@@ -51,55 +29,64 @@ public class QuoteController {
     public ResponseEntity<QuoteDTO> getById(@PathVariable Long id) {
 
         if (id == null || id <= 0)
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            throw new InvalidParamException("The param id you have inserted is incorrect id:" + id);
 
-        Quote quote = quoteService.findById(id);
+        QuoteDTO quoteDTO = quoteService.findById(id);
 
-        if (quote != null) {
-            QuoteDTO quoteDTO = new QuoteDTO();
-            BeanUtils.copyProperties(quote, quoteDTO);
-            quoteDTO.setHolder( quote.getHolder());
+        if (quoteDTO == null)
+            throw new QuoteNotFoundException("Quote is not found  id:" + id);
+        else
             return ResponseEntity.ok(quoteDTO);
-        } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-        }
+
     }
 
 
     @PostMapping
-    public ResponseEntity<QuoteDTO> save(@Valid @RequestBody QuoteForCreateDTO quoteForCreateDTO) {
+    public ResponseEntity<QuoteDTO> save(@Valid @RequestBody QuoteForCreateDTO quoteForCreateDTO, BindingResult bindingResult) {
 
-        try{
-            return ResponseEntity.ok(quoteService.save(quoteForCreateDTO));
-        }catch(Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        if (bindingResult.hasErrors()) {
+            logger.error(bindingResult.getAllErrors().toString());
+            throw new InvalidQuoteException("The input object is incorrect: some required fields are missing or incorrect, quote was not saved");
         }
+
+        QuoteDTO quoteDTO = quoteService.save(quoteForCreateDTO);
+
+        if (quoteDTO == null)
+            throw new InvalidQuoteException("Quote was not saved");
+        else
+            return ResponseEntity.ok(quoteDTO);
 
     }
 
     @PutMapping
-    public ResponseEntity<QuoteWithOptionalExtraDTO> update(@Valid @RequestBody QuoteForUpdateDTO quoteForUpdateDTO) {
-        try{
-            return ResponseEntity.ok(quoteService.update(quoteForUpdateDTO));
-        }catch(Exception e){
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+    public ResponseEntity<QuoteWithOptionalExtraDTO> update(@Valid @RequestBody QuoteForUpdateDTO quoteForUpdateDTO, BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            logger.error(bindingResult.getAllErrors().toString());
+            throw new InvalidQuoteException("The input object is incorrect: some required fields are missing or incorrect, quote was not saved");
         }
+
+        QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+
+        return ResponseEntity.ok(quoteWithOptionalExtraDTO);
+
     }
 
 
     @DeleteMapping
-    public ResponseEntity<Long> delete(@Valid @RequestBody QuoteForDeleteDTO quoteForDeleteDTO){
+    public ResponseEntity<Long> delete(@Valid @RequestBody QuoteForDeleteDTO quoteForDeleteDTO,
+                                       BindingResult bindingResult){
 
-        if (quoteForDeleteDTO.getId() == null || quoteForDeleteDTO.getId() <= 0)
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
+        if (bindingResult.hasErrors()) {
+            logger.error(bindingResult.getAllErrors().toString());
+            throw new InvalidQuoteException("The input object is incorrect: some required fields are missing or incorrect, quote was not saved");
+        }
 
         if (!quoteService.verifyIfQuoteHasRegistrationMark(quoteForDeleteDTO.getId(),quoteForDeleteDTO.getRegistrationMark()))
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
-        try {
-            return ResponseEntity.ok(quoteService.delete(quoteForDeleteDTO));
-        }catch(Exception e){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(0L);
-        }
+            throw new InvalidQuoteException("Quote has not the registration mark. Cannot delete the quote with id = " + quoteForDeleteDTO.getId());
+
+        return ResponseEntity.ok(quoteService.delete(quoteForDeleteDTO));
+
     }
 
 
