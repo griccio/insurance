@@ -106,5 +106,16 @@ public class QuoteForCreateDTO {
         this.worth = quote.getCar().getWorth();
     }
 
+
+
+    public boolean isCorrect (){
+
+        if(this.holderId == null) return false;
+        if(registrationMark == null || registrationMark.length()==0) return false;
+        if(registrationDateCar == null) return false;
+        if(this.worth == null) return false;
+
+        return true;
+    }
 }
 

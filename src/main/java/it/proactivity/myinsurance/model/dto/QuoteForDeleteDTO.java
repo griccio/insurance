@@ -47,7 +47,6 @@ public class QuoteForDeleteDTO {
         return
                 (this.getId() != null && this.getId() >0)  &&
                 (this.getRegistrationMark() != null && this.getRegistrationMark().length() >0) ;
-
     }
 
     @Override

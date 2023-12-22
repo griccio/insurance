@@ -195,6 +195,38 @@ public class QuoteServiceTest {
 
 
 
+    @Test
+    public void saveWithNull(){
+        QuoteForCreateDTO quoteForCreateDTO = null;
+
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO);
+            Assertions.fail();
+         }catch(Exception e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
+
+
+
+
+
+    @Test
+    public void saveWithEmpty(){
+        QuoteForCreateDTO quoteForCreateDTO = new QuoteForCreateDTO();
+
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO);
+            Assertions.fail();
+        }catch(Exception e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
+
 
     @Test
     public void update(){
@@ -230,6 +262,67 @@ public class QuoteServiceTest {
 
 
 
+
+    @Test
+    public void updateWithWrongQuoteID(){
+        //I prepare the test data creationg  a new quote
+        try {
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+            quoteForUpdateDTO.setId(333L);
+            quoteForUpdateDTO.setOptionalExtraByCodeList(Arrays.asList("C","FI","TL"));
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+
+            Assertions.assertNull(quoteWithOptionalExtraDTO);
+
+        }catch(InvalidQuoteException e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
+
+
+
+    @Test
+    public void updateWithNullDTO(){
+
+        try {
+
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = null;
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+
+            Assertions.fail();
+
+        }catch(InvalidQuoteException e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
+
+
+    @Test
+    public void updateWithEmptyDTO(){
+
+        try {
+
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+
+            Assertions.fail();
+
+        }catch(InvalidQuoteException e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
 
 
     /**

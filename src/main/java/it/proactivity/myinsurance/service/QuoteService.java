@@ -152,6 +152,12 @@ public class QuoteService extends MyInsuranceService{
             throw new InvalidQuoteException("Input values are null");
         }
 
+        if(!quoteForCreateDTO.isCorrect()){
+            logger.error("Input values are null or incorrect " + quoteForCreateDTO);
+            throw new InvalidQuoteException("Input values are null or incorrect");
+        }
+
+
         Holder holder;
         if((holder = holderRepository.findById(quoteForCreateDTO.getHolderId())) == null){
             logger.error("Holder is not registered. In order to receive our quotes, please register to the site");
@@ -194,6 +200,16 @@ public class QuoteService extends MyInsuranceService{
     }
 
     public QuoteWithOptionalExtraDTO update(QuoteForUpdateDTO quoteForUpdateDTO)  {
+
+        if(quoteForUpdateDTO == null){
+            logger.debug("input param is null ");
+            throw new InvalidQuoteException("input param is null ");
+        }
+
+        if(!quoteForUpdateDTO.isCorrect()){
+            logger.debug("input param is null ");
+            throw new InvalidQuoteException("input param is null ");
+        }
 
         Quote quote = quoteRepository.findById(quoteForUpdateDTO.getId());
 

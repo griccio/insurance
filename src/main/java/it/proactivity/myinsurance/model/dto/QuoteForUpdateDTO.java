@@ -33,6 +33,11 @@ public class QuoteForUpdateDTO {
     public void setOptionalExtraByCodeList(List<String> optionalExtraByCodeList) {
         this.optionalExtraByCodeList = optionalExtraByCodeList;
     }
+
+
+    public Boolean isCorrect(){
+        return (this.getId() != null && this.getId() >0) ;
+    }
 }
 
 

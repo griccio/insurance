@@ -5552,3 +5552,45 @@ Unique expecting 0 or 1 results but got 6
 578  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
 579  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
 2127 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 1.839 seconds (process running for 2.812)
+1601 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 26012 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1603 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1604 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5019 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.714 seconds (process running for 5.894)
+9289 [main] DEBUG i.p.m.service.HolderService - input param is null 
+9289 [main] ERROR i.p.m.service.QuoteServiceTest - input param is null 
+1864 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 35476 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1865 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1866 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5316 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.81 seconds (process running for 5.935)
+9038 [main] DEBUG i.p.m.service.HolderService - input param is null 
+9038 [main] ERROR i.p.m.service.QuoteServiceTest - input param is null 
+1731 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 19256 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1732 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1734 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5183 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.798 seconds (process running for 5.774)
+8850 [main] DEBUG i.p.m.service.HolderService - cannot find Quote with the id: 333
+8850 [main] ERROR i.p.m.service.QuoteServiceTest - cannot find Quote with the id: 333
+2142 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 15932 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+2145 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2148 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+6534 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 5.004 seconds (process running for 7.149)
+10099 [main] ERROR i.p.m.service.HolderService - Input values are null
+10100 [main] ERROR i.p.m.service.QuoteServiceTest - Input values are null
+1832 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 32452 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1834 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1835 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5420 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.976 seconds (process running for 6.091)
+8496 [main] ERROR i.p.m.service.HolderService - Input values are null
+8497 [main] ERROR i.p.m.service.QuoteServiceTest - Input values are null
+1637 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 27560 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1639 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1640 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5162 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.85 seconds (process running for 5.816)
+8660 [main] ERROR i.p.m.service.HolderService - Input values are null or incorrect QuoteForCreateDTO{holderId=null, registrationMark='null', registrationDateCar=null, worth=null, policyType=null}
+8661 [main] ERROR i.p.m.service.QuoteServiceTest - Input values are null or incorrect
+1895 [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 31644 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+1896 [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+1897 [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+5291 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.738 seconds (process running for 6.009)
+8635 [main] ERROR i.p.m.service.HolderService - Input values are null
+8635 [main] ERROR i.p.m.service.QuoteServiceTest - Input values are null
