@@ -195,6 +195,7 @@ public class QuoteServiceTest {
 
 
 
+
     @Test
     public void saveWithNull(){
         QuoteForCreateDTO quoteForCreateDTO = null;
@@ -227,8 +228,94 @@ public class QuoteServiceTest {
         }
     }
 
+    /**
+     * INSERT INTO quote(
+     *     id, holder_id, car_id,  policy_type, cost, quote_number,date)
+     * VALUES (300, 100, 200, 'RCA6', 10, '100-DR1234A-1','2023-10-01 13:16:00'),
+     *        (301, 101, 201, 'RCA6', 30, '100-CD2222A-1','2023-12-22 13:16:00'),
+     *        (302, 101, 202, 'RCA12', 50, '100-CD3344A-2','2023-09-16 13:16:00'),
+     *        (303, 103, 203, 'RCA6', 20, '100-EE1111EA-1','2023-05-14 13:16:00'),
+     *        (304, 103, 204, 'RCA50', 30, '100-EF2222WD-2','2023-07-30 13:16:00');
+     */
+    @Test
+    public void saveWithWrongRegistrationMark(){
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"&&AA1234BB",
+                        new GregorianCalendar(2014, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO);
+            Assertions.fail();
+         }catch(Exception e){
+
+            Assertions.assertEquals(TOT_QUOTES_BEFORE_TEST, quoteService.findAll().size());
+            logger.error(e.getMessage());
+
+        }
+    }
 
     @Test
+    public void saveWithTooMuchTheSameRegistrationMArk(){
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"AA1234BB",
+                        new GregorianCalendar(2014, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO); //ok
+            quoteDTO = quoteService.save(quoteForCreateDTO);//ok
+            quoteDTO = quoteService.save(quoteForCreateDTO);//exception
+            Assertions.fail();
+        }catch(Exception e){
+            Assertions.assertEquals(TOT_QUOTES_BEFORE_TEST+2, quoteService.findAll().size());
+            logger.error(e.getMessage());
+
+        }
+    }
+
+    @Test
+    public void saveWithWrongRegistrationDate(){
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L,"AA1234BB",
+                        new GregorianCalendar(1900, Calendar.MARCH,01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO);
+            Assertions.fail();
+        }catch(Exception e){
+
+            Assertions.assertEquals(TOT_QUOTES_BEFORE_TEST, quoteService.findAll().size());
+            logger.error(e.getMessage());
+
+        }
+    }
+
+
+    @Test
+    public void saveWithWrongRegistrationCar() {
+        QuoteForCreateDTO quoteForCreateDTO =
+                new QuoteForCreateDTO(103L, "LKASDASDJKSFSJDKF4354359083238912EIUWRWEIURFHUDWHNDCASNCASIUDH",
+                        new GregorianCalendar(1900, Calendar.MARCH, 01).getTime(),
+                        new BigDecimal(15000),
+                        PolicyType.RCA6);
+        try {
+            QuoteDTO quoteDTO;
+            quoteDTO = quoteService.save(quoteForCreateDTO);
+            Assertions.fail();
+        } catch (Exception e) {
+
+            Assertions.assertEquals(TOT_QUOTES_BEFORE_TEST, quoteService.findAll().size());
+            logger.error(e.getMessage());
+
+        }
+    }
+
+        @Test
     public void update(){
         //I prepare the test data creationg  a new quote
         QuoteForCreateDTO quoteForCreateDTO =
@@ -317,6 +404,26 @@ public class QuoteServiceTest {
             QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
 
             Assertions.fail();
+
+        }catch(InvalidQuoteException e){
+            logger.error(e.getMessage());
+            Assertions.assertTrue(true);
+        }
+    }
+
+    @Test
+    public void updateWithWrongOptionalExtra(){
+        //I prepare the test data creationg  a new quote
+        try {
+            //start the update test
+            //update the quote, adding the optional extras
+            QuoteForUpdateDTO quoteForUpdateDTO = new QuoteForUpdateDTO();
+            quoteForUpdateDTO.setId(333L);
+            quoteForUpdateDTO.setOptionalExtraByCodeList(Arrays.asList("XX","FI","TL"));
+
+            QuoteWithOptionalExtraDTO quoteWithOptionalExtraDTO = quoteService.update(quoteForUpdateDTO);
+            Assertions.fail();
+
 
         }catch(InvalidQuoteException e){
             logger.error(e.getMessage());

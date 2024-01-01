@@ -161,7 +161,7 @@ public class QuoteService extends MyInsuranceService{
         Holder holder;
         if((holder = holderRepository.findById(quoteForCreateDTO.getHolderId())) == null){
             logger.error("Holder is not registered. In order to receive our quotes, please register to the site");
-            throw new InvalidQuoteException("Quote is not registered. In order to receive our quotes, please register to the site");
+            throw new InvalidQuoteException("Holder is not registered. In order to receive our quotes, please register to the site");
         }
 
         if(!verifyRegistrationMarkPattern(quoteForCreateDTO.getRegistrationMark())){

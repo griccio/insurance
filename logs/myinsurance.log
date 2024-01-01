@@ -5594,3 +5594,93 @@ Unique expecting 0 or 1 results but got 6
 5291 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 3.738 seconds (process running for 6.009)
 8635 [main] ERROR i.p.m.service.HolderService - Input values are null
 8635 [main] ERROR i.p.m.service.QuoteServiceTest - Input values are null
+808  [restartedMain] INFO  i.p.m.MyinsuranceApplication - Starting MyinsuranceApplication using Java 20.0.1 with PID 29964 (C:\Users\Giuseppe\dev\MyInsurance\myinsurance\target\classes started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+809  [restartedMain] DEBUG i.p.m.MyinsuranceApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+810  [restartedMain] INFO  i.p.m.MyinsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2869 [restartedMain] INFO  i.p.m.MyinsuranceApplication - Started MyinsuranceApplication in 2.493 seconds (process running for 3.744)
+251754 [http-nio-8080-exec-1] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=[Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}], quoteList=BeanList<deferred>}
+331212 [http-nio-8080-exec-8] ERROR i.p.m.service.HolderService - No holder  found with id = 199
+964618 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Email is not present: a.santamaria@gmail.com
+964620 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Fiscal Code is not present: SMTGLCC56789A
+964634 [http-nio-8080-exec-3] DEBUG i.p.m.service.HolderService - Holder saved correctly; id:2
+990921 [http-nio-8080-exec-4] ERROR i.p.m.service.HolderService - [Field error in object 'holderDTO' on field 'name': rejected value [null]; codes [NotNull.holderDTO.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [holderDTO.name,name]; arguments []; default message [name]]; default message [non deve essere null], Field error in object 'holderDTO' on field 'name': rejected value [null]; codes [NotBlank.holderDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [holderDTO.name,name]; arguments []; default message [name]]; default message [non deve essere spazio]]
+1090934 [http-nio-8080-exec-7] ERROR i.p.m.service.HolderService - Email is already present,  another holder has already  been registered with the same email: a.santamaria@gmail.com
+1278991 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=[Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}], quoteList=BeanList<deferred>}
+1389366 [http-nio-8080-exec-2] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=100, name='Giuseppe', surname='Riccio', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='GPPIRCCO456789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='giu.riccio@gmail.com', carList=[Car{id=200, holderId=100, registrationMark='DR1234A', registrationDate=Fri Jan 01 00:00:00 CET 2010, worth=10000.00}], quoteList=BeanList<deferred>}
+1396429 [http-nio-8080-exec-6] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=101, name='Mario', surname='Rossi', birthDate=Tue Jan 18 00:00:00 CET 2000, fiscalCode='MRARSS07A01L788R', residence='Via della Vittoria 14 int 4 ', domicile='Via della Vittoria 14 int 4', tel='994537215', email='m.rossi@gmail.com', carList=[Car{id=201, holderId=101, registrationMark='CD2222A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}, Car{id=202, holderId=101, registrationMark='CD3344A', registrationDate=Sat Jan 01 00:00:00 CET 2022, worth=30000.00}], quoteList=BeanList<deferred>}
+1544460 [http-nio-8080-exec-5] ERROR i.p.m.service.HolderService - No holder  found with id = 104
+1635334 [http-nio-8080-exec-9] DEBUG i.p.m.service.HolderService - Holder Found: Holder{id=2, name='ANGELO', surname='Santamaria', birthDate=Mon Jul 08 00:00:00 CEST 1968, fiscalCode='SMTGLCC56789A', residence='Via Manzoni 23 Albisola (SV)', domicile='Via Manzoni 23 Albisola (SV)', tel='123456789', email='a.santamaria@gmail.com', carList=[], quoteList=BeanList<deferred>}
+914  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 18004 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+914  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+915  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2729 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.015 seconds (process running for 3.161)
+4931 [main] ERROR i.p.m.service.HolderService - Holder is not registered. In order to receive our quotes, please register to the site
+4932 [main] ERROR i.p.m.service.QuoteServiceTest - Quote is not registered. In order to receive our quotes, please register to the site
+870  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 14564 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+871  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+873  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2736 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.065 seconds (process running for 3.062)
+4549 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+4583 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+916  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 5200 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+917  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+918  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3218 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.518 seconds (process running for 3.891)
+15829 [main] ERROR i.p.m.service.HolderService - Holder is not registered. In order to receive our quotes, please register to the site
+77353 [main] ERROR i.p.m.service.QuoteServiceTest - Quote is not registered. In order to receive our quotes, please register to the site
+876  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 7016 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+876  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+877  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3272 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.582 seconds (process running for 3.604)
+5188 [main] ERROR i.p.m.service.HolderService - Holder is not registered. In order to receive our quotes, please register to the site
+5210 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+5230 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+5233 [main] ERROR i.p.m.service.QuoteServiceTest - Quote is not registered. In order to receive our quotes, please register to the site
+890  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 28280 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+890  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+891  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2809 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.111 seconds (process running for 3.162)
+4662 [main] ERROR i.p.m.service.HolderService - Registration Mark is invalid
+4670 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+4690 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+4694 [main] ERROR i.p.m.service.QuoteServiceTest - Registration Mark is invalid
+898  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 13120 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+899  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+900  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2983 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.277 seconds (process running for 3.368)
+17042 [main] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.dto.QuoteDTO@d3b0397
+17048 [main] DEBUG i.p.m.service.HolderService - Quote saved correctlyit.proactivity.myinsurance.model.dto.QuoteDTO@6464f017
+17049 [main] ERROR i.p.m.service.HolderService - You cannot create more than two quotes for the same registration mark 
+17055 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 7
+17072 [main] DEBUG i.p.m.service.HolderService - quotes Found 7
+17074 [main] ERROR i.p.m.service.QuoteServiceTest - You cannot create more than two quotes for the same registration mark 
+842  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 14476 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+843  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+844  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2740 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.077 seconds (process running for 3.08)
+4685 [main] ERROR i.p.m.service.HolderService - Holder is not registered. In order to receive our quotes, please register to the site
+4701 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+4723 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+4727 [main] ERROR i.p.m.service.QuoteServiceTest - Holder is not registered. In order to receive our quotes, please register to the site
+828  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 4204 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+830  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+830  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2763 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.111 seconds (process running for 3.08)
+4601 [main] ERROR i.p.m.service.HolderService - Registration date of the car is incorret 
+4608 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+4634 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+4637 [main] ERROR i.p.m.service.QuoteServiceTest - Registration date of the car is incorret 
+882  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 14936 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+883  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+883  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+3144 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.45 seconds (process running for 3.526)
+5389 [main] ERROR i.p.m.service.HolderService - Registration Mark is invalid
+5399 [main] DEBUG i.p.m.service.HolderService - Quotes loaded correctly, tot: 5
+5418 [main] DEBUG i.p.m.service.HolderService - quotes Found 5
+5421 [main] ERROR i.p.m.service.QuoteServiceTest - Registration Mark is invalid
+868  [main] INFO  i.p.m.service.QuoteServiceTest - Starting QuoteServiceTest using Java 20.0.1 with PID 14824 (started by Giuseppe in C:\Users\Giuseppe\dev\MyInsurance\myinsurance)
+870  [main] DEBUG i.p.m.service.QuoteServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+871  [main] INFO  i.p.m.service.QuoteServiceTest - No active profile set, falling back to 1 default profile: "default"
+2766 [main] INFO  i.p.m.service.QuoteServiceTest - Started QuoteServiceTest in 2.102 seconds (process running for 3.09)
+4750 [main] DEBUG i.p.m.service.HolderService - cannot find Quote with the id: 333
+4750 [main] ERROR i.p.m.service.QuoteServiceTest - cannot find Quote with the id: 333

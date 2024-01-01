@@ -34,7 +34,7 @@ public class HolderController extends MyInsuranceController {
 
     }
 
-    @GetMapping("/info/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<HolderDTO> getById(@Valid @PathVariable Long id) {
 
         if (id == null || id <= 0)
@@ -49,7 +49,7 @@ public class HolderController extends MyInsuranceController {
     }
 
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/quotes")
     public ResponseEntity<List<QuoteByHolderAndCarDTO>> getQuoteByHolderIdGroupByCar(@PathVariable Long id) {
 
         if (id == null || id <= 0)
